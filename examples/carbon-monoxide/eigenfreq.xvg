@@ -1,0 +1,24 @@
+# This file was created Sun Oct  7 20:01:13 2018
+# Created by:
+#  :-) GROMACS - gmx nmeig, 2019-dev-20181004-83c2c3a2f (double precision) (-:
+# 
+# Executable:   /Users/spoel/software-master/bin/gmx_mpi_d
+# Data prefix:  /Users/spoel/software-master
+# Working dir:  /Users/spoel/Liquids/FORCE_FIELD/THERMO/GAFF-ESP/carbon-monoxide
+# Command line:
+#   gmx_mpi_d nmeig -maxspec 5000 -s nm -f nm.mtx -sigma 1 -last 500 -scale 1.018000
+# gmx nmeig is part of G R O M A C S:
+#
+# Great Red Owns Many ACres of Sand 
+#
+@    title "Eigenfrequencies"
+@    xaxis  label "Eigenvector index"
+@    yaxis  label "Wavenumber [cm\S-1\N]"
+@TYPE xy
+@ subtitle "mass weighted"
+     1               0
+     2     3.34519e-11
+     3     3.50768e-05
+     4      0.00144931
+     5      0.00144932
+     6         1614.36

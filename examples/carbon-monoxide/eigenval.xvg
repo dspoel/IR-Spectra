@@ -1,0 +1,24 @@
+# This file was created Sun Oct  7 20:01:12 2018
+# Created by:
+#  :-) GROMACS - gmx nmeig, 2019-dev-20181004-83c2c3a2f (double precision) (-:
+# 
+# Executable:   /Users/spoel/software-master/bin/gmx_mpi_d
+# Data prefix:  /Users/spoel/software-master
+# Working dir:  /Users/spoel/Liquids/FORCE_FIELD/THERMO/GAFF-ESP/carbon-monoxide
+# Command line:
+#   gmx_mpi_d nmeig -maxspec 5000 -s nm -f nm.mtx -sigma 1 -last 500 -scale 1.018000
+# gmx nmeig is part of G R O M A C S:
+#
+# God Rules Over Mankind, Animals, Cosmos and Such
+#
+@    title "Eigenvalues"
+@    xaxis  label "Eigenvalue index"
+@    yaxis  label "Eigenvalue [Gromacs units]"
+@TYPE xy
+@ subtitle "mass weighted"
+     1    -7.88478e-13
+     2     3.97047e-23
+     3     4.36557e-11
+     4     7.45284e-08
+     5     7.45294e-08
+     6         92469.7

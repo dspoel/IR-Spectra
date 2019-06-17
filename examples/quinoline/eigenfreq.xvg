@@ -1,0 +1,69 @@
+# This file was created Sun Oct  7 19:53:20 2018
+# Created by:
+#  :-) GROMACS - gmx nmeig, 2019-dev-20181004-83c2c3a2f (double precision) (-:
+# 
+# Executable:   /Users/spoel/software-master/bin/gmx_mpi_d
+# Data prefix:  /Users/spoel/software-master
+# Working dir:  /Users/spoel/Liquids/FORCE_FIELD/THERMO/GAFF-ESP/quinoline
+# Command line:
+#   gmx_mpi_d nmeig -maxspec 5000 -s nm -f nm.mtx -sigma 1 -last 500 -scale 1.018000
+# gmx nmeig is part of G R O M A C S:
+#
+# Glycine aRginine prOline Methionine Alanine Cystine Serine
+#
+@    title "Eigenfrequencies"
+@    xaxis  label "Eigenvector index"
+@    yaxis  label "Wavenumber [cm\S-1\N]"
+@TYPE xy
+@ subtitle "mass weighted"
+     1               0
+     2               0
+     3      0.00170776
+     4      0.00229361
+     5       0.0559807
+     6       0.0740539
+     7         203.595
+     8         222.401
+     9         400.038
+    10         410.546
+    11         481.806
+    12         496.716
+    13         516.045
+    14         534.007
+    15         613.859
+    16         679.874
+    17         759.156
+    18         771.933
+    19         803.308
+    20         804.796
+    21         835.637
+    22         936.091
+    23         946.471
+    24         993.218
+    25         1001.92
+    26          1050.8
+    27         1089.68
+    28         1135.93
+    29         1148.96
+    30         1165.56
+    31         1186.95
+    32         1247.27
+    33         1291.54
+    34         1334.98
+    35         1367.73
+    36         1498.52
+    37         1613.67
+    38         1642.22
+    39         1711.74
+    40         1729.21
+    41         1748.52
+    42         1799.34
+    43         1804.95
+    44         1883.94
+    45         2958.48
+    46         2975.78
+    47         2976.54
+    48         2977.14
+    49         2977.79
+    50         2979.01
+    51         2981.18

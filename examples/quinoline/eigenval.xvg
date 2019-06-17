@@ -1,0 +1,69 @@
+# This file was created Sun Oct  7 19:53:20 2018
+# Created by:
+#  :-) GROMACS - gmx nmeig, 2019-dev-20181004-83c2c3a2f (double precision) (-:
+# 
+# Executable:   /Users/spoel/software-master/bin/gmx_mpi_d
+# Data prefix:  /Users/spoel/software-master
+# Working dir:  /Users/spoel/Liquids/FORCE_FIELD/THERMO/GAFF-ESP/quinoline
+# Command line:
+#   gmx_mpi_d nmeig -maxspec 5000 -s nm -f nm.mtx -sigma 1 -last 500 -scale 1.018000
+# gmx nmeig is part of G R O M A C S:
+#
+# Gyas ROwers Mature At Cryogenic Speed
+#
+@    title "Eigenvalues"
+@    xaxis  label "Eigenvalue index"
+@    yaxis  label "Eigenvalue [Gromacs units]"
+@TYPE xy
+@ subtitle "mass weighted"
+     1    -8.71957e-05
+     2    -3.20104e-07
+     3     1.03479e-07
+     4     1.86655e-07
+     5     0.000111193
+     6     0.000194579
+     7         1470.74
+     8         1754.99
+     9         5678.12
+    10         5980.32
+    11         8236.56
+    12         8754.21
+    13         9448.81
+    14           10118
+    15         13370.2
+    16         16400.5
+    17         20448.6
+    18         21142.7
+    19         22896.3
+    20         22981.2
+    21         24776.3
+    22         31091.2
+    23         31784.5
+    24         35001.8
+    25         35617.6
+    26         39178.2
+    27         42130.8
+    28         45783.1
+    29           46839
+    30         48202.2
+    31         49987.8
+    32         55197.9
+    33         59185.9
+    34         63234.4
+    35         66374.7
+    36         79675.7
+    37           92391
+    38           95690
+    39          103962
+    40          106095
+    41          108478
+    42          114876
+    43          115593
+    44          125932
+    45          310555
+    46          314198
+    47          314359
+    48          314484
+    49          314623
+    50          314880
+    51          315339

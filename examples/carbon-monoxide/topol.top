@@ -1,0 +1,32 @@
+; Topology generated from /home/ghahremanpour/Liquids/MOLECULES/OEP/carbon-monoxide/carbon-monoxide-3-oep.log.gz
+; Charge method used esp
+; MOL_GMX.top created by acpype (Rev: 0) on Wed Feb 14 17:43:35 2018
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.8333
+
+[ atomtypes ]
+;name   bond_type     mass     charge   ptype   sigma         epsilon       Amb
+ o        o           0.00000  0.00000   A     2.95992e-01   8.78640e-01 ; 1.66  0.2100
+ c1       c1          0.00000  0.00000   A     3.39967e-01   8.78640e-01 ; 1.91  0.2100
+
+[ moleculetype ]
+;name            nrexcl
+ MOL              3
+
+[ atoms ]
+;   nr  type  resi  res  atom  cgnr     charge      mass       ; qtot   bond_type
+     1    o     1   MOL    O1    1     0.006571     16.00000 ; qtot 0.007
+     2   c1     1   MOL    C1    2    -0.006571     12.01000 ; qtot 0.000
+
+[ bonds ]
+;   ai     aj funct   r             k
+     1      2   1    1.1724e-01    6.3438e+05 ;     O1 - C1    
+
+[ system ]
+ MOL
+
+[ molecules ]
+; Compound        nmols
+ MOL              1     

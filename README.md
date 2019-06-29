@@ -12,3 +12,12 @@ GROMACS should be compiled in double precision using:
 
 cmake -DGMX_DOUBLE=ON 
 
+Important literature
+====================
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4877123/
+
+https://link.springer.com/article/10.1007/s00249-014-1005-6
+
+https://link.springer.com/article/10.1007/s00249-013-0927-8
+

@@ -15,6 +15,8 @@ cmake -DGMX_DOUBLE=ON
 Important literature
 ====================
 
+https://pubs.acs.org/doi/10.1021/acs.chemrev.9b00007 Review focusing on high-accuracy computational spectroscopy.
+
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4877123/
 
 https://link.springer.com/article/10.1007/s00249-014-1005-6

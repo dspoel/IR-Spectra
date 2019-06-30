@@ -23,3 +23,7 @@ https://link.springer.com/article/10.1007/s00249-014-1005-6 Calculation of the i
 
 https://link.springer.com/article/10.1007/s00249-013-0927-8 Fast calculation of the infrared spectra of large biomolecules.
 
+Other related projects
+======================
+
+The Virtual Multifrequency Spectrometer project http://dreamslab.sns.it/vms/index.php

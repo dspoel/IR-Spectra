@@ -17,9 +17,9 @@ Important literature
 
 https://pubs.acs.org/doi/10.1021/acs.chemrev.9b00007 Review focusing on high-accuracy computational spectroscopy.
 
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4877123/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4877123/ About the NIST Quantitative Infrared Database.
 
-https://link.springer.com/article/10.1007/s00249-014-1005-6
+https://link.springer.com/article/10.1007/s00249-014-1005-6 Calculation of the infrared spectra of proteins.
 
-https://link.springer.com/article/10.1007/s00249-013-0927-8
+https://link.springer.com/article/10.1007/s00249-013-0927-8 Fast calculation of the infrared spectra of large biomolecules.
 

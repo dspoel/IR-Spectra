@@ -1,0 +1,70 @@
+Encountered a second block of parameters for dihedral type 9 for the same
+  atoms, with either different parameters and/or the first block has
+  multiple lines. This is not supported.
+
+        
+13-dimethyl-13-diazinan-2-one
+ERROR 1 [file LIG_ffbonded.itp, line 15]:
+ERROR 2 [file LIG_ffbonded.itp, line 18]:
+
+4-methyl-5-thiazoleethanol
+ERROR 1 [file LIG_ffbonded.itp, line 14]:
+
+14-dimethylcyclopent-1-ene
+ERROR 1 [file LIG_ffbonded.itp, line 10]:
+
+1-methyl-4--propan-2-yl-cyclopent-1-ene
+ERROR 1 [file LIG_ffbonded.itp, line 14]:
+
+arginine
+ERROR 1 [file LIG_ffbonded.itp, line 10]:
+ERROR 2 [file LIG_ffbonded.itp, line 12]:
+
+valine
+ERROR 1 [file LIG_ffbonded.itp, line 6]:
+
+glutamic-acid
+ERROR 1 [file LIG_ffbonded.itp, line 7]:
+
+4-ethylcyclopent-1-ene
+ERROR 1 [file LIG_ffbonded.itp, line 18]:
+
+3-methyl-1--propan-2-yl-cyclopent-1-ene
+ERROR 1 [file LIG_ffbonded.itp, line 24]:
+ERROR 2 [file LIG_ffbonded.itp, line 34]:
+
+benzeneacetonitrile
+ERROR 1 [file LIG_ffbonded.itp, line 6]:
+
+1-butylcyclopent-1-ene
+ERROR 1 [file LIG_ffbonded.itp, line 15]:
+
+123-trimethylcyclopent-1-ene 
+ERROR 1 [file LIG_ffbonded.itp, line 16]:
+ERROR 2 [file LIG_ffbonded.itp, line 22]:
+
+13-dimethylcyclopent-1-ene
+ERROR 1 [file LIG_ffbonded.itp, line 13]:
+ERROR 2 [file LIG_ffbonded.itp, line 21]:
+
+hexamethyleneimine
+ERROR 1 [file LIG_ffbonded.itp, line 9]:
+
+3-methylcyclopentene
+ERROR 1 [file LIG_ffbonded.itp, line 11]:
+ERROR 2 [file LIG_ffbonded.itp, line 13]:
+
+1-methylpyrazole
+ERROR 1 [file LIG_ffbonded.itp, line 6]:
+
+1-methylpyrrole
+ERROR 1 [file LIG_ffbonded.itp, line 6]:
+
+piperidine-axial
+ERROR 1 [file LIG_ffbonded.itp, line 9]:
+
+2-propylbenzothiophene
+ERROR 1 [file LIG_ffbonded.itp, line 11]
+
+N-prop-2-enylprop-2-en-1-amine
+ERROR 1 [file LIG_ffbonded.itp, line 6]:

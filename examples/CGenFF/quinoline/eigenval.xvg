@@ -1,0 +1,69 @@
+# This file was created Wed Jun 19 21:30:20 2019
+# Created by:
+#  :-) GROMACS - gmx nmeig, 2019.2-dev-20190326-dfd7b5ac4-dirty (double precision) (-:
+# 
+# Executable:   /Users/spoel/software-release-2019/bin/gmx_mpi_d
+# Data prefix:  /Users/spoel/software-release-2019
+# Working dir:  /Users/spoel/Liquids/FORCE_FIELD/THERMO/CGenFF/quinoline
+# Command line:
+#   gmx_mpi_d nmeig -last 1000 -s nm.tpr -f nm.mtx -sigma 1
+# gmx nmeig is part of G R O M A C S:
+#
+# GROningen Mixture of Alchemy and Childrens' Stories
+#
+@    title "Eigenvalues"
+@    xaxis  label "Eigenvalue index"
+@    yaxis  label "Eigenvalue [Gromacs units]"
+@TYPE xy
+@ subtitle "mass weighted"
+     1    -2.00974e-05
+     2    -6.08357e-06
+     3    -1.91994e-07
+     4    -4.78676e-08
+     5     4.58393e-07
+     6     6.25591e-06
+     7         984.661
+     8          1359.7
+     9         4519.57
+    10         4563.19
+    11         6680.25
+    12         7594.21
+    13         7964.65
+    14         10367.7
+    15         10749.4
+    16         14387.2
+    17         18695.5
+    18         20125.7
+    19         20996.8
+    20         22334.3
+    21         22499.1
+    22         26331.3
+    23         29062.4
+    24         30966.2
+    25         34510.9
+    26         34664.4
+    27         35309.9
+    28         36030.1
+    29         38612.4
+    30         40088.3
+    31         43639.5
+    32         50825.9
+    33         52886.1
+    34         55308.5
+    35         58456.4
+    36         67382.1
+    37         72580.8
+    38         72711.3
+    39         73440.8
+    40         76417.2
+    41         78519.1
+    42         81525.4
+    43         83226.9
+    44         93223.3
+    45          331212
+    46          331245
+    47          331370
+    48          331642
+    49          331927
+    50          332382
+    51          337772

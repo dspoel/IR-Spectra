@@ -1,0 +1,54 @@
+# This file was created Sun Oct  7 19:25:41 2018
+# Created by:
+#  :-) GROMACS - gmx nmeig, 2019-dev-20181004-83c2c3a2f (double precision) (-:
+# 
+# Executable:   /Users/spoel/software-master/bin/gmx_mpi_d
+# Data prefix:  /Users/spoel/software-master
+# Working dir:  /Users/spoel/Liquids/FORCE_FIELD/THERMO/CGenFF/N-methylacetamide
+# Command line:
+#   gmx_mpi_d nmeig -maxspec 5000 -s nm -f nm.mtx -sigma 1 -last 500 -scale 1.035000
+# gmx nmeig is part of G R O M A C S:
+#
+# Grunge ROck MAChoS
+#
+@    title "Eigenfrequencies"
+@    xaxis  label "Eigenvector index"
+@    yaxis  label "Wavenumber [cm\S-1\N]"
+@TYPE xy
+@ subtitle "mass weighted"
+     1               0
+     2               0
+     3               0
+     4               0
+     5      0.00394591
+     6       0.0281569
+     7          65.066
+     8         94.7582
+     9         183.608
+    10         272.664
+    11          432.44
+    12         573.845
+    13         580.492
+    14         717.809
+    15         776.635
+    16         949.454
+    17         996.381
+    18         1056.24
+    19         1081.07
+    20         1088.18
+    21          1267.3
+    22         1384.43
+    23         1412.51
+    24         1415.79
+    25         1418.63
+    26         1426.94
+    27         1481.39
+    28         1588.18
+    29          1682.6
+    30         2852.81
+    31         2914.01
+    32         2914.72
+    33         2917.04
+    34         2975.21
+    35         2975.37
+    36          3325.5

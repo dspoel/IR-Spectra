@@ -1,0 +1,69 @@
+# This file was created Wed Jun 19 21:30:20 2019
+# Created by:
+#  :-) GROMACS - gmx nmeig, 2019.2-dev-20190326-dfd7b5ac4-dirty (double precision) (-:
+# 
+# Executable:   /Users/spoel/software-release-2019/bin/gmx_mpi_d
+# Data prefix:  /Users/spoel/software-release-2019
+# Working dir:  /Users/spoel/Liquids/FORCE_FIELD/THERMO/CGenFF/quinoline
+# Command line:
+#   gmx_mpi_d nmeig -last 1000 -s nm.tpr -f nm.mtx -sigma 1
+# gmx nmeig is part of G R O M A C S:
+#
+# Giant Rising Ordinary Mutants for A Clerical Setup
+#
+@    title "Eigenfrequencies"
+@    xaxis  label "Eigenvector index"
+@    yaxis  label "Wavenumber [cm\S-1\N]"
+@TYPE xy
+@ subtitle "mass weighted"
+     1               0
+     2               0
+     3               0
+     4               0
+     5      0.00359433
+     6       0.0132784
+     7         166.588
+     8         195.759
+     9         356.901
+    10         358.619
+    11         433.906
+    12         462.637
+    13         473.787
+    14         540.555
+    15         550.418
+    16         636.777
+    17         725.885
+    18          753.14
+    19         769.266
+    20         793.387
+    21         796.309
+    22         861.461
+    23         905.035
+    24         934.207
+    25         986.229
+    26          988.42
+    27          997.58
+    28          1007.7
+    29         1043.19
+    30         1062.94
+    31         1109.02
+    32         1196.86
+    33         1220.87
+    34         1248.52
+    35         1283.56
+    36         1378.07
+    37         1430.24
+    38         1431.53
+    39         1438.69
+    40         1467.56
+    41          1487.6
+    42         1515.81
+    43         1531.55
+    44         1620.92
+    45         3055.29
+    46         3055.44
+    47         3056.02
+    48         3057.27
+    49         3058.58
+    50         3060.68
+    51          3085.4

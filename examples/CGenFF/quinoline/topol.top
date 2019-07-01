@@ -1,0 +1,196 @@
+; Topology generated using molcal v1.0  
+; For use with CGenFF force-field version 4.1
+;
+; Include forcefield parameters
+#include "forcefield.itp"
+
+;
+; Include ligand specific parameters
+# include "./LIG_ffbonded.itp"
+;
+[ moleculetype ]
+; Name            nrexcl
+Other               3
+;
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
+; residue   1 LIG rtp LIG  q -0.0
+     1     CG2R61      1    LIG     C1      1      0.375     12.011   ; qtot 0.375
+     2     CG2R61      1    LIG     C2      2     -0.109     12.011   ; qtot -0.109
+     3      HGR61      1    LIG     H3      3      0.115      1.008   ; qtot 0.115
+     4     CG2R61      1    LIG     C4      4     -0.115     12.011   ; qtot -0.115
+     5      HGR61      1    LIG     H5      5      0.115      1.008   ; qtot 0.115
+     6     CG2R61      1    LIG     C6      6     -0.115     12.011   ; qtot -0.115
+     7      HGR61      1    LIG     H7      7      0.115      1.008   ; qtot 0.115
+     8     CG2R61      1    LIG     C8      8     -0.117     12.011   ; qtot -0.117
+     9      HGR61      1    LIG     H9      9      0.115      1.008   ; qtot 0.115
+    10     CG2R61      1    LIG    C10     10     -0.006     12.011   ; qtot -0.006
+    11     CG2R61      1    LIG    C11     11     -0.116     12.011   ; qtot -0.116
+    12      HGR61      1    LIG    H12     12      0.115      1.008   ; qtot 0.115
+    13     CG2R61      1    LIG    C13     13     -0.117     12.011   ; qtot -0.117
+    14      HGR61      1    LIG    H14     14      0.115      1.008   ; qtot 0.115
+    15     CG2R61      1    LIG    C15     15      0.145     12.011   ; qtot 0.145
+    16      HGR62      1    LIG    H16     16      0.124      1.008   ; qtot 0.124
+    17     NG2R60      1    LIG    N17     17     -0.639     14.007   ; qtot -0.639
+
+[ bonds ]
+;  ai    aj funct            c0            c1            c2            c3
+   17    15     1
+   17     1     1
+   16    15     1
+   15    13     1
+   14    13     1
+   13    11     1
+   12    11     1
+   11    10     1
+   10     8     1
+   10     1     1
+    9     8     1
+    8     6     1
+    7     6     1
+    6     4     1
+    5     4     1
+    4     2     1
+    3     2     1
+    2     1     1
+
+[ pairs ]
+;  ai    aj funct            c0            c1            c2            c3
+    1     5     1
+    1     6     1
+    1     9     1
+    1    12     1
+    1    13     1
+    1    16     1
+    2     7     1
+    2     8     1
+    2    11     1
+    2    15     1
+    3     5     1
+    3     6     1
+    3    10     1
+    3    17     1
+    4     9     1
+    4    10     1
+    4    17     1
+    5     7     1
+    5     8     1
+    6    11     1
+    7     9     1
+    7    10     1
+    8    12     1
+    8    13     1
+    8    17     1
+    9    11     1
+   10    14     1
+   10    15     1
+   11    16     1
+   11    17     1
+   12    14     1
+   12    15     1
+   14    16     1
+   14    17     1
+
+[ angles ]
+;  ai    aj    ak funct            c0            c1            c2            c3
+   17     1    10     5
+   17     1     2     5
+   10     1     2     5
+    4     2     3     5
+    4     2     1     5
+    3     2     1     5
+    6     4     5     5
+    6     4     2     5
+    5     4     2     5
+    8     6     7     5
+    8     6     4     5
+    7     6     4     5
+   10     8     9     5
+   10     8     6     5
+    9     8     6     5
+   11    10     8     5
+   11    10     1     5
+    8    10     1     5
+   13    11    12     5
+   13    11    10     5
+   12    11    10     5
+   15    13    14     5
+   15    13    11     5
+   14    13    11     5
+   17    15    16     5
+   17    15    13     5
+   16    15    13     5
+   15    17     1     5
+
+[ dihedrals ]
+;  ai    aj    ak    al funct            c0            c1            c2            c3            c4            c5
+    1    17    15    16     9
+    1    17    15    13     9
+   15    17     1    10     9
+   15    17     1     2     9
+   17    15    13    14     9
+   17    15    13    11     9
+   16    15    13    14     9
+   16    15    13    11     9
+   15    13    11    12     9
+   15    13    11    10     9
+   14    13    11    12     9
+   14    13    11    10     9
+   13    11    10     8     9
+   13    11    10     1     9
+   12    11    10     8     9
+   12    11    10     1     9
+   11    10     8     9     9
+   11    10     8     6     9
+    1    10     8     9     9
+    1    10     8     6     9
+   11    10     1    17     9
+   11    10     1     2     9
+    8    10     1    17     9
+    8    10     1     2     9
+   10     8     6     7     9
+   10     8     6     4     9
+    9     8     6     7     9
+    9     8     6     4     9
+    8     6     4     5     9
+    8     6     4     2     9
+    7     6     4     5     9
+    7     6     4     2     9
+    6     4     2     3     9
+    6     4     2     1     9
+    5     4     2     3     9
+    5     4     2     1     9
+    4     2     1    17     9
+    4     2     1    10     9
+    3     2     1    17     9
+    3     2     1    10     9
+
+
+
+; Include Position restraint file
+#ifdef POSRES
+#include "posre.itp"
+#endif
+
+; Include water topology
+#include "tip3p.itp"
+
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "ions.itp"
+
+
+[ system ]
+; Name
+    Ligand
+
+[ molecules ]
+; Compound        #mols
+Other           1

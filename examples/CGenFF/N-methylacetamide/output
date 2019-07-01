@@ -1,0 +1,10 @@
+Using begin = 1 and end = 36
+Full matrix storage format, nrow=36, ncols=36
+Writing eigenfrequencies - negative eigenvalues will be set to zero.
+Translational entropy 162.381 J/mol K
+Rotational entropy    106.302 J/mol K
+Vibrational entropy   59.084 J/mol K
+Total entropy         327.767 J/mol K
+Heat capacity         85.9483 J/mol K
+Internal energy       281.746 kJ/mol
+Zero-point energy     265.092 kJ/mol

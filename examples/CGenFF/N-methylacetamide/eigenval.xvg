@@ -1,0 +1,54 @@
+# This file was created Sun Oct  7 19:25:41 2018
+# Created by:
+#  :-) GROMACS - gmx nmeig, 2019-dev-20181004-83c2c3a2f (double precision) (-:
+# 
+# Executable:   /Users/spoel/software-master/bin/gmx_mpi_d
+# Data prefix:  /Users/spoel/software-master
+# Working dir:  /Users/spoel/Liquids/FORCE_FIELD/THERMO/CGenFF/N-methylacetamide
+# Command line:
+#   gmx_mpi_d nmeig -maxspec 5000 -s nm -f nm.mtx -sigma 1 -last 500 -scale 1.035000
+# gmx nmeig is part of G R O M A C S:
+#
+# Great Red Oystrich Makes All Chemists Sane
+#
+@    title "Eigenvalues"
+@    xaxis  label "Eigenvalue index"
+@    yaxis  label "Eigenvalue [Gromacs units]"
+@TYPE xy
+@ subtitle "mass weighted"
+     1    -0.000456702
+     2    -6.15176e-05
+     3    -3.60131e-07
+     4    -5.55521e-08
+     5     5.52453e-07
+     6       2.813e-05
+     7         150.213
+     8         318.592
+     9         1196.14
+    10          2637.9
+    11         6635.19
+    12           11684
+    13         11956.2
+    14         18281.8
+    15           21401
+    16         31985.2
+    17         35225.1
+    18         39584.5
+    19         41467.9
+    20         42014.6
+    21         56985.4
+    22         68005.3
+    23         70792.3
+    24           71121
+    25           71407
+    26         72245.6
+    27         77864.9
+    28         89495.4
+    29          100453
+    30          288766
+    31          301288
+    32          301436
+    33          301916
+    34          314076
+    35          314110
+    36          392387

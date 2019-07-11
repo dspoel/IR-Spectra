@@ -9,12 +9,10 @@ class Atom:
 		self.__squared_mass      = squared_mass
 		self.__charge_mass_ratio = charge_mass_ratio
 
-	@property
 	def squared_mass(self):
 		"""Return the squared atomic mass of an Atom"""
 		return self.__squared_mass
 
-	@property
 	def charge_mass_ratio(self):
 		"""Return the ratio consisting of the atomic charge divided by the square root of the atomic mass of an Atom"""
 		return self.__charge_mass_ratio
@@ -29,12 +27,10 @@ class NormalMode:
 		self.__eigenvector_converted_and_normalized = False
 		self.__intensity                            = None
 
-	@property
 	def eigenfrequency(self):
 		"""Return the eigenfrequency of the NormalMode"""
 		return self.__eigenfrequency
 
-	@property
 	def intensity(self):
 		"""Return the intensity of the NormalMode"""
 		return self.__intensity
@@ -43,7 +39,7 @@ class NormalMode:
 		"""Convert from Cartesian back to mass-weighted coordinates and normalize the eigenvectors"""
 		if not self.__eigenvector_converted_and_normalized:
 			for i, atom in enumerate(atoms):
-				self.__eigenvector[i,:] = self.__eigenvector[i,:]*atom.squared_mass
+				self.__eigenvector[i,:] = self.__eigenvector[i,:]*atom.squared_mass()
 			self.__eigenvector = self.__eigenvector/la.norm(self.__eigenvector)
 			self.__eigenvector_converted_and_normalized = True
 
@@ -57,7 +53,7 @@ class NormalMode:
 			# get charge mass ratios
 			charge_mass_ratios = np.empty([0,0])
 			for atom in atoms:
-				charge_mass_ratios = np.append(charge_mass_ratios, atom.charge_mass_ratio)
+				charge_mass_ratios = np.append(charge_mass_ratios, atom.charge_mass_ratio())
 			# iterate over dimensions
 			intensity = 0
 			for k in range(3):
@@ -76,12 +72,10 @@ class Molecule:
 		else:
 			self.__normal_modes = normal_modes[6:]
 
-	@property
 	def atoms(self):
 		"""Return a list of Atom objects in Molecule"""
 		return self.__atoms
 
-	@property
 	def normal_modes(self):
 		"""Return a list of NormalMode objects in Molecule"""
 		return self.__normal_modes

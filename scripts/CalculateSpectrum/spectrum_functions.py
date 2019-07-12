@@ -151,7 +151,11 @@ def save_spectrum_as_figure(spectra, outdir, outname, outformat):
 	plt.savefig(output, format=outformat)
 	check_or_die(output, False)
 
-def save_spectrum(molecule_path1, molecule_name1, linear1, log1, molecule_path2, molecule_name2, linear2, log2, start, stop, step_size, gamma, outdir, outname, header, csv, png, pdf, svg):
+def save_spectrum(molecule_path1, molecule_name1, linear1, log1, 
+                  molecule_path2, molecule_name2, linear2, log2, 
+                  start, stop, step_size, gamma, outdir, outname, 
+                  header, csv, png, pdf, svg):
+
 	possible_formats         = ["csv", "png", "pdf", "svg"]
 	desired_formats          = [ csv,   png,   pdf,   svg ]
 	spectra = [generate_spectrum(molecule_path1, molecule_name1, linear1, log1, start, stop, step_size, gamma)]
@@ -187,7 +191,7 @@ def generate_spectrum_from_log(log, molecule_name, start, stop, step_size, gamma
 				for word in words:
 					intensities.append(float(word))
 	else:
-        	sys.exit("The G4 log file does not exist!!!")
+        	sys.exit("The QM log file does not exist!!!")
 	if eigenfrequencies and intensities:
 		frequencies         = np.linspace(start, stop, int((stop-start)/step_size)+1)
 		intensity_all_modes = np.zeros(len(frequencies))
@@ -196,4 +200,4 @@ def generate_spectrum_from_log(log, molecule_name, start, stop, step_size, gamma
 			intensity_all_modes += intensity_one_mode
 		return [frequencies, intensity_all_modes, molecule_name]
 	else:
-		sys.exit("There are no frequency and intencity in the log file!!!")
+		sys.exit("There are no frequency and intensty in the QM log file!!!")

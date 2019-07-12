@@ -65,7 +65,7 @@ class Molecule:
 
 	def __init__(self, linear, atoms, normal_modes):
 		"""Initialize a Molecule object"""
-		self.__atoms   = atoms
+		self.__atoms        = atoms
 		self.__normal_modes = None
 		if linear:
 			self.__normal_modes = normal_modes[5:]

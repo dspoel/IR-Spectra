@@ -48,7 +48,7 @@ if __name__ == "__main__":
 		else:
 			with open(statistics_file, 'w') as csvfile:
 				writer = csv.writer(csvfile, delimiter=',')
-				writer.writerow(['molecule', 'score', 'v0', 'scaling_factor'])
+				writer.writerow(['molecule', 'cc', 'euc', 'cos'])
 			check_or_die(statistics_file, True)	
 
 	for molecule in molecules:

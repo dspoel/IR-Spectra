@@ -151,21 +151,26 @@ def normalize_spectra(spectra):
 		spectra[i][1] = spectrum[1]/np.trapz(spectrum[1],spectrum[0])
 	return spectra
 
+def cosine_distance(spectrum1,spectrum2):
+	return (spectrum1.dot(spectrum2))/(math.sqrt(spectrum1.dot(spectrum1))*math.sqrt(spectrum2.dot(spectrum2)))
+
 def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 	"""Write the spectrum of all normal modes of a molecule as a PNG, PDF or SVG"""
 	output = output_dir + "/" + molecule + '.' + outformat
 
 	spectra = normalize_spectra(spectra)
-	score_factor = np.amax(np.correlate(spectra[0][1], spectra[0][1])).item()
+	cc_factor = np.correlate(spectra[0][1], spectra[0][1]).item()
 
 	plt.figure(figsize=(18, 8))
 	for spectrum in spectra:
 		if not spectrum[2] == "G4":
-			spectrum_score  = np.amax(np.correlate(spectra[0][1], spectrum[1])).item()/score_factor
+			cc_score        = np.correlate(spectra[0][1], spectrum[1]).item()/cc_factor
+			euc_score       = la.norm(spectra[0][1]-spectrum[1])
+			cos_score       = cosine_distance(spectra[0][1], spectrum[1])
 			statistics_file = output_dir + '/' + spectrum[2] + '_statistics.csv'
 			with open(statistics_file, 'a') as csvfile:
 				writer = csv.writer(csvfile, delimiter=',')
-				writer.writerow([molecule, spectrum_score, 0, 1])
+				writer.writerow([molecule, cc_score, euc_score, cos_score])
 		plt.plot(spectrum[0], spectrum[1], label=spectrum[2])
 	plt.legend(loc='upper right')
 	plt.title(molecule)

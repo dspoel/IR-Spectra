@@ -114,11 +114,11 @@ def generate_normal_modes(molecule_path):
 		normal_modes.append(normal_mode)
 	return normal_modes
 
-def generate_molecule(molecule_path, linear):
+def generate_molecule(molecule_path, eigfreq_count):
 	"""Initialize Molecule object"""
 	atoms        = generate_atoms(molecule_path)
 	normal_modes = generate_normal_modes(molecule_path)
-	molecule     = Molecule(linear, atoms, normal_modes)
+	molecule     = Molecule(eigfreq_count, atoms, normal_modes)
 	for normal_mode in molecule.normal_modes():
 		normal_mode.calculate_intensity(molecule.atoms())
 	return molecule
@@ -130,29 +130,34 @@ def generate_cauchy_distribution(frequencies, eigenfrequency, gamma, intensity):
 		cauchy[i] = intensity*(1/math.pi)*(((1/2)*gamma)/((frequencies[i]-eigenfrequency)**2+((1/2)*gamma)**2))
 	return cauchy
 
-def generate_spectrum(input_dir, origin, molecule, linear, log, start, stop, step_size, gamma):
+def generate_spectrum(input_dir, origin, molecule, eigfreq_count, start, stop, step_size, gamma):
 	print("\n<" + origin + ">")
-	if log:
+	if not eigfreq_count:
 		path = input_dir + "/" + molecule
 		return generate_spectrum_from_log(path, origin, start, stop, step_size, gamma)
 	else:
 		frequencies         = np.linspace(start, stop, int((stop-start)/step_size)+1)
 		intensity_all_modes = np.zeros(len(frequencies))
 		path = input_dir + "/" + origin + "/" + molecule
-		molecule            = generate_molecule(path, linear)
+		molecule            = generate_molecule(path, eigfreq_count)
 		normal_modes        = molecule.normal_modes()
+		eigenfrequencies    = []
 		for normal_mode in normal_modes:
 			intensity_one_mode   = generate_cauchy_distribution(frequencies, normal_mode.eigenfrequency(), gamma, normal_mode.intensity())
 			intensity_all_modes += intensity_one_mode
-		return [frequencies, intensity_all_modes, origin]
+			eigenfrequencies.append(normal_mode.eigenfrequency())
+		return [frequencies, intensity_all_modes, np.array(eigenfrequencies), origin]
 
 def normalize_spectra(spectra):
 	for i, spectrum in enumerate(spectra):
 		spectra[i][1] = spectrum[1]/np.trapz(spectrum[1],spectrum[0])
 	return spectra
 
-def cosine_distance(spectrum1,spectrum2):
+def cosine_distance(spectrum1, spectrum2):
 	return (spectrum1.dot(spectrum2))/(math.sqrt(spectrum1.dot(spectrum1))*math.sqrt(spectrum2.dot(spectrum2)))
+
+def rmsd(eigfreqs1, eigfreqs2):
+	return math.sqrt(sum((eigfreqs1-eigfreqs2)**2)/len(eigfreqs1))
 
 def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 	"""Write the spectrum of all normal modes of a molecule as a PNG, PDF or SVG"""
@@ -162,14 +167,15 @@ def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 
 	#plt.figure(figsize=(18, 8))
 	for spectrum in spectra:
-		if not spectrum[2] == "G4":
+		if not spectrum[3] == "G4":
 			euc_score       = la.norm(spectra[0][1]-spectrum[1])
 			cos_score       = cosine_distance(spectra[0][1], spectrum[1])
-			statistics_file = output_dir + '/' + spectrum[2] + '_statistics.csv'
+			rmsd_score      = rmsd(spectra[0][2], spectrum[2]) 
+			statistics_file = output_dir + '/' + spectrum[3] + '_statistics.csv'
 			with open(statistics_file, 'a') as csvfile:
 				writer = csv.writer(csvfile, delimiter=',')
-				writer.writerow([molecule, euc_score, cos_score])
-		#plt.plot(spectrum[0], spectrum[1], label=spectrum[2])
+				writer.writerow([molecule, euc_score, cos_score, rmsd_score])
+		#plt.plot(spectrum[0], spectrum[1], label=spectrum[3])
 	#plt.legend(loc='upper right')
 	#plt.title(molecule)
 	#plt.xlabel('Frequency, $cm^{-1}$')
@@ -182,11 +188,11 @@ def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 	#print('\n' + outformat.upper() + ' file saved at:', output)
 
 def save_spectrum(g4_dir, input_dir, force_fields, molecule, output_dir,
-                  linear, start, stop, step_size, gamma,
-                  png, pdf, svg):
-	spectra = [generate_spectrum(g4_dir, "G4", molecule, linear, True, start, stop, step_size, gamma)]
+                  start, stop, step_size, gamma, png, pdf, svg):
+	spectra       = [generate_spectrum(g4_dir, "G4", molecule, None, start, stop, step_size, gamma)]
+	eigfreq_count = len(spectra[0][2])
 	for force_field in force_fields:
-		spectra.append(generate_spectrum(input_dir, force_field, molecule, linear, False, start, stop, step_size, gamma))
+		spectra.append(generate_spectrum(input_dir, force_field, molecule, eigfreq_count, start, stop, step_size, gamma))
 	possible_formats         = ["png", "pdf", "svg"]
 	desired_formats          = [ png,   pdf,   svg ]
 	for i, desired_format in enumerate(desired_formats):
@@ -228,6 +234,6 @@ def generate_spectrum_from_log(path, origin, start, stop, step_size, gamma):
 		for i, eigenfrequency in enumerate(eigenfrequencies):
 			intensity_one_mode   = generate_cauchy_distribution(frequencies, eigenfrequency, gamma, intensities[i])
 			intensity_all_modes += intensity_one_mode
-		return [frequencies, intensity_all_modes, origin]
+		return [frequencies, intensity_all_modes, np.array(eigenfrequencies), origin]
 	else:
 		sys.exit("There are no frequencies and/or intensities in the QM log file!!!")

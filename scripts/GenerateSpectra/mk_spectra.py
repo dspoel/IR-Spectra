@@ -48,12 +48,11 @@ if __name__ == "__main__":
 		else:
 			with open(statistics_file, 'w') as csvfile:
 				writer = csv.writer(csvfile, delimiter=',')
-				writer.writerow(['molecule', 'euc', 'cos'])
+				writer.writerow(['molecule', 'euc', 'cos', 'rmsd'])
 			check_or_die(statistics_file, True)	
 
 	for molecule in molecules:
 		print('\nNOW PROCESSING:', molecule)
 		save_spectrum(g4_dir, input_dir, force_fields, molecule, output_dir,
-                              linear, start, stop, step_size, gamma, 
-                              generate_png, generate_pdf, generate_svg)
+                              start, stop, step_size, gamma, generate_png, generate_pdf, generate_svg)
 

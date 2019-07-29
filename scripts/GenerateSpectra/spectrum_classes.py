@@ -63,14 +63,10 @@ class NormalMode:
 class Molecule:
 	"""Molecule class for GROMACS normal mode calculations"""
 
-	def __init__(self, linear, atoms, normal_modes):
+	def __init__(self, eigfreq_count, atoms, normal_modes):
 		"""Initialize a Molecule object"""
 		self.__atoms        = atoms
-		self.__normal_modes = None
-		if linear:
-			self.__normal_modes = normal_modes[5:]
-		else:
-			self.__normal_modes = normal_modes[6:]
+		self.__normal_modes = normal_modes[-eigfreq_count:]
 
 	def atoms(self):
 		"""Return a list of Atom objects in Molecule"""

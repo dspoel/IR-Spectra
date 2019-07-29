@@ -1,6 +1,6 @@
 import os, sys, math, re, csv, glob, gzip
 import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from numpy import linalg as la
 from numpy import trapz
 from distutils.spawn import find_executable
@@ -68,7 +68,7 @@ def extract_eigenvectors(molecule_path):
 	eigenvectors = []
 	eigenvector  = np.empty([0,3])
 	full_path    = molecule_path + "/eigenvec.trr"
-	temp_txt     = molecule_path + "/eigenvec.txt"
+	temp_txt     = "eigenvec.txt"
 	print('reading eigenvectors from:', full_path )
 	os.system(find_gmx() + " dump -f " + full_path + " -quiet > " + temp_txt)
 	for line in open(temp_txt, "r").readlines():
@@ -79,7 +79,7 @@ def extract_eigenvectors(molecule_path):
 			eigenvectors.append(eigenvector)
 			eigenvector = np.empty([0,3])
 	eigenvectors.append(eigenvector)
-	os.remove(molecule_path + "/eigenvec.txt")
+	os.remove(temp_txt)
 	return eigenvectors[1:]
 
 def extract_atomic_properties(molecule_path):
@@ -159,29 +159,27 @@ def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 	output = output_dir + "/" + molecule + '.' + outformat
 
 	spectra = normalize_spectra(spectra)
-	cc_factor = np.correlate(spectra[0][1], spectra[0][1]).item()
 
-	plt.figure(figsize=(18, 8))
+	#plt.figure(figsize=(18, 8))
 	for spectrum in spectra:
 		if not spectrum[2] == "G4":
-			cc_score        = np.correlate(spectra[0][1], spectrum[1]).item()/cc_factor
 			euc_score       = la.norm(spectra[0][1]-spectrum[1])
 			cos_score       = cosine_distance(spectra[0][1], spectrum[1])
 			statistics_file = output_dir + '/' + spectrum[2] + '_statistics.csv'
 			with open(statistics_file, 'a') as csvfile:
 				writer = csv.writer(csvfile, delimiter=',')
-				writer.writerow([molecule, cc_score, euc_score, cos_score])
-		plt.plot(spectrum[0], spectrum[1], label=spectrum[2])
-	plt.legend(loc='upper right')
-	plt.title(molecule)
-	plt.xlabel('Frequency, $cm^{-1}$')
-	plt.ylabel('IR intensity')
-	plt.yticks([])
-	plt.rcParams.update({'font.size': 18})
-	plt.savefig(output, format=outformat)
-	plt.close()
-	check_or_die(output, False)
-	print('\n' + outformat.upper() + ' file saved at:', output)
+				writer.writerow([molecule, euc_score, cos_score])
+		#plt.plot(spectrum[0], spectrum[1], label=spectrum[2])
+	#plt.legend(loc='upper right')
+	#plt.title(molecule)
+	#plt.xlabel('Frequency, $cm^{-1}$')
+	#plt.ylabel('IR intensity')
+	#plt.yticks([])
+	#plt.rcParams.update({'font.size': 18})
+	#plt.savefig(output, format=outformat)
+	#plt.close()
+	#check_or_die(output, False)
+	#print('\n' + outformat.upper() + ' file saved at:', output)
 
 def save_spectrum(g4_dir, input_dir, force_fields, molecule, output_dir,
                   linear, start, stop, step_size, gamma,

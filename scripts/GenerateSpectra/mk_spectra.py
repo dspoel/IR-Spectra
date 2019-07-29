@@ -37,7 +37,7 @@ if __name__ == "__main__":
 	generate_svg = args.svg
 	
 	molecules = find_molecules(g4_dir, input_dir, force_fields)
-	for atom in ["brom", "chlor","iod"]:
+	for atom in ["aluminate","brom","chlor","halo"]:
 		molecules = [molecule for molecule in molecules if atom not in molecule]
 	print('\nThe following number of molecules were found in all listed directories and will be processed:', len(molecules))
 
@@ -48,7 +48,7 @@ if __name__ == "__main__":
 		else:
 			with open(statistics_file, 'w') as csvfile:
 				writer = csv.writer(csvfile, delimiter=',')
-				writer.writerow(['molecule', 'cc', 'euc', 'cos'])
+				writer.writerow(['molecule', 'euc', 'cos'])
 			check_or_die(statistics_file, True)	
 
 	for molecule in molecules:

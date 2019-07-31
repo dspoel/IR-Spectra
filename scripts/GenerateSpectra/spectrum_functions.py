@@ -1,6 +1,8 @@
-import os, sys, math, re, csv, glob, gzip
+import os, sys, math, re, csv, glob, gzip, itertools
 import numpy as np
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
+plt.switch_backend('agg')
+plt.rcParams.update({'font.size': 11})
 from numpy import linalg as la
 from numpy import trapz
 from distutils.spawn import find_executable
@@ -161,31 +163,34 @@ def rmsd(eigfreqs1, eigfreqs2):
 
 def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 	"""Write the spectrum of all normal modes of a molecule as a PNG, PDF or SVG"""
-	output = output_dir + "/" + molecule + '.' + outformat
+	outformat_dir = output_dir + "/" + outformat.upper()
+	if not Path(outformat_dir).is_dir():
+		os.system("mkdir " + outformat_dir)
+	output = outformat_dir + "/" + molecule + '.' + outformat
 
 	spectra = normalize_spectra(spectra)
 
-	#plt.figure(figsize=(18, 8))
+	colors     = itertools.cycle(('k', 'r', 'b', 'g'))
+	linestyles = itertools.cycle(('-', '-', '-', ':'))
+	plt.figure(figsize=(10.8, 4.8))
 	for spectrum in spectra:
 		if not spectrum[3] == "G4":
 			euc_score       = la.norm(spectra[0][1]-spectrum[1])
 			cos_score       = cosine_distance(spectra[0][1], spectrum[1])
 			rmsd_score      = rmsd(spectra[0][2], spectrum[2]) 
-			statistics_file = output_dir + '/' + spectrum[3] + '_statistics.csv'
+			statistics_file = output_dir + '/CSV/SINGLE/' + spectrum[3] + '_statistics.csv'
 			with open(statistics_file, 'a') as csvfile:
-				writer = csv.writer(csvfile, delimiter=',')
-				writer.writerow([molecule, euc_score, cos_score, rmsd_score])
-		#plt.plot(spectrum[0], spectrum[1], label=spectrum[3])
-	#plt.legend(loc='upper right')
-	#plt.title(molecule)
-	#plt.xlabel('Frequency, $cm^{-1}$')
-	#plt.ylabel('IR intensity')
-	#plt.yticks([])
-	#plt.rcParams.update({'font.size': 18})
-	#plt.savefig(output, format=outformat)
-	#plt.close()
-	#check_or_die(output, False)
-	#print('\n' + outformat.upper() + ' file saved at:', output)
+			 	writer = csv.writer(csvfile, delimiter=',')
+			 	writer.writerow([molecule, euc_score, cos_score, rmsd_score])
+		plt.plot(spectrum[0], spectrum[1], color=next(colors), linestyle=next(linestyles), label=spectrum[3])
+	plt.legend(loc='upper right')
+	plt.xlabel('Frequency, $cm^{-1}$')
+	plt.ylabel('IR intensity')
+	plt.yticks([])
+	plt.savefig(output, format=outformat, bbox_inches='tight')
+	plt.close()
+	check_or_die(output, False)
+	print('\n' + outformat.upper() + ' file saved at:', output)
 
 def save_spectrum(g4_dir, input_dir, force_fields, molecule, output_dir,
                   start, stop, step_size, gamma, png, pdf, svg):
@@ -198,11 +203,7 @@ def save_spectrum(g4_dir, input_dir, force_fields, molecule, output_dir,
 	for i, desired_format in enumerate(desired_formats):
 		if desired_format:
 			selected_format = possible_formats[i]
-			if Path(output_dir + "/" + molecule + '.' + selected_format).is_file():
-				sys.exit('the file "' + molecule + "." + selected_format + '" already exists')
-			elif not Path(output_dir).is_dir():
-				sys.exit('the specified output folder "' + output_dir + '" does not exist')
-			elif selected_format in [ "png", "pdf", "svg" ]:
+			if selected_format in [ "png", "pdf", "svg" ]:
 				save_spectra_as_figure(spectra, output_dir, molecule, selected_format)
 
 def generate_spectrum_from_log(path, origin, start, stop, step_size, gamma):

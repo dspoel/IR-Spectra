@@ -37,22 +37,33 @@ if __name__ == "__main__":
 	generate_svg = args.svg
 	
 	molecules = find_molecules(g4_dir, input_dir, force_fields)
-	for atom in ["aluminate","brom","chlor","halo"]:
-		molecules = [molecule for molecule in molecules if atom not in molecule]
+	
+	blacklist = ["S-amino-sulfanyl-methanol","1-hydroxy-2-5-dihydro-1-l5-phosphole-1-oxide","nitronium"]
+	molecules = [molecule for molecule in molecules if molecule not in blacklist]
+	for subname in ["aluminate","brom","chlor","halo"]:
+		molecules = [molecule for molecule in molecules if subname not in molecule]
 	print('\nThe following number of molecules were found in all listed directories and will be processed:', len(molecules))
 
+	csv_dir = output_dir + "/CSV"
+	if Path(csv_dir).is_dir() and os.listdir(csv_dir):
+		print("the directory " + csv_dir + " already exists and it has contents. That directory will be emptied")
+		os.system("rm -r " + csv_dir + "/*")
+	elif Path(csv_dir).is_dir():
+		print("the directory " + csv_dir + " already exists and but it has contents. That directory will not be emptied")
+	else:
+		print("creating directory " + csv_dir)
+		os.system("mkdir " + csv_dir)
+	stats_dir = csv_dir + "/SINGLE" 
+	os.system("mkdir " + stats_dir)
+	
 	for force_field in force_fields:
-		statistics_file = output_dir + "/" + force_field + '_statistics.csv'
-		if Path(statistics_file).is_file():
-				sys.exit('the file "' + force_field + '_statistics.csv" already exists')
-		else:
-			with open(statistics_file, 'w') as csvfile:
-				writer = csv.writer(csvfile, delimiter=',')
-				writer.writerow(['molecule', 'euc', 'cos', 'rmsd'])
-			check_or_die(statistics_file, True)	
+		statistics_file = stats_dir + "/" + force_field + '_statistics.csv'
+		with open(statistics_file, 'w') as csvfile:
+			writer = csv.writer(csvfile, delimiter=',')
+			writer.writerow(['molecule', 'euc', 'cos', 'rmsd'])
+		check_or_die(statistics_file, True)	
 
 	for molecule in molecules:
 		print('\nNOW PROCESSING:', molecule)
 		save_spectrum(g4_dir, input_dir, force_fields, molecule, output_dir,
                               start, stop, step_size, gamma, generate_png, generate_pdf, generate_svg)
-

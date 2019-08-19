@@ -51,13 +51,13 @@ class NormalMode:
 			if not self.__eigenvector_converted_and_normalized:
 				self.convert_from_cartesian_and_normalize(atoms)
 			# get charge mass ratios
-			charge_mass_ratios = np.empty([0,0])
-			for atom in atoms:
-				charge_mass_ratios = np.append(charge_mass_ratios, atom.charge_mass_ratio())
+			charge_mass_ratios = [atoms[0].charge_mass_ratio()]
+			for i in range(1,len(atoms)):
+				charge_mass_ratios = np.append(charge_mass_ratios, [atoms[i].charge_mass_ratio()], axis=0)
 			# iterate over dimensions
 			intensity = 0
 			for k in range(3):
-				intensity += (charge_mass_ratios.dot(self.__eigenvector[:,k]))**2
+				intensity += (charge_mass_ratios[:,k].dot(self.__eigenvector[:,k]))**2
 			self.__intensity = intensity
 
 class Molecule:

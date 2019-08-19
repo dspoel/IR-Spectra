@@ -12,11 +12,18 @@ from spectrum_classes import *
 def intersection(lst1, lst2): 
 	return set(lst1).intersection(lst2)
 
-def find_molecules(g4_dir, path, force_field_folders):
-	common_molecules = [f.path.split("/")[-1] for f in os.scandir(g4_dir) if f.is_dir()]
-	for folder in force_field_folders:
-		molecules        = [f.path.split("/")[-1] for f in os.scandir(path + "/" + folder) if f.is_dir()]
-		common_molecules = intersection(common_molecules, molecules)
+def find_molecules(exp_dir, qm_dir, qms, ff_dir, ffs):
+	exp_molecules    = [os.path.splitext(os.path.basename(f.path))[0] for f in os.scandir(exp_dir) if f.is_file()]
+	print("Number of molecules in %s data directory: %d" % ("experimental", len(exp_molecules)))
+	common_molecules = exp_molecules
+	for qm in qms:
+		qm_molecules     = [f.path.split("/")[-1] for f in os.scandir(qm_dir + "/" + qm) if f.is_dir()]
+		print("Number of molecules in %s data directory: %d" % (qm, len(qm_molecules)))
+		common_molecules = intersection(common_molecules, qm_molecules)
+	for ff in ffs:
+		ff_molecules     = [f.path.split("/")[-1] for f in os.scandir(ff_dir + "/" + ff) if f.is_dir()]
+		print("Number of molecules in %s data directory: %d" % (ff, len(ff_molecules)))
+		common_molecules = intersection(common_molecules, ff_molecules)
 	return common_molecules
 
 def check_or_die(filenm, die):
@@ -84,25 +91,56 @@ def extract_eigenvectors(molecule_path):
 	os.remove(temp_txt)
 	return eigenvectors[1:]
 
-def extract_atomic_properties(molecule_path):
-	"""Extract atomic properties from GROMACS topology file"""
+def read_topol(topol):
 	squared_masses = []
-	charge_mass_factors = []
-	full_path = molecule_path + "/topol.top"
-	print('reading atomic properties from:', full_path)
-	for line in open(full_path, "r").readlines():
+	charges        = []
+	for line in open(topol, "r").readlines():
 		words = line.strip().split()
 		if len(words) == 11:
-			squared_masses.append(math.sqrt(float(words[7])))
-			charge_mass_factors.append(float(words[6])/math.sqrt(float(words[7])))
+			squared_masses.append([math.sqrt(float(words[7]))])
+			charges.append([float(words[6])]*3)
+	return np.array(squared_masses), np.array(charges)
+
+def read_mu(mu):
+	charges = []
+	row     = []
+	counter = 1
+	for line in open(mu, "r").readlines():
+		values = line.split()
+		row.append(float(values[counter]))
+		if counter == 3:
+			charges.append(row)
+			row     = []
+			counter = 1
+		else:
+			counter += 1
+	return np.array(charges)
+
+def extract_atomic_properties(molecule_path):
+	"""Extract atomic properties from GROMACS topology file"""
+	topol     = molecule_path + "/topol.top"
+	mu        = molecule_path + "/mu.txt"
+	mu_exists = os.path.isfile(mu)
+	msg       = 'reading atomic properties from: %s' % (topol)
+	if mu_exists:
+		msg = "%s and %s" % (msg, mu)
+	print(msg)
+	squared_masses, charges = read_topol(topol)
+	if mu_exists:
+		charges = read_mu(mu)
+		squared_masses = squared_masses[:charges.shape[0],:]            
+	charge_mass_factors = np.zeros(charges.shape)
+	for i in range(charges.shape[0]):
+		for j in range(3):
+			charge_mass_factors[i,j] = charges[i,j]/squared_masses[i]
 	return squared_masses, charge_mass_factors
 
 def generate_atoms(molecule_path):
 	"""Initialize Atom objects and return them as a list"""
 	squared_masses, charge_mass_ratios = extract_atomic_properties(molecule_path)
 	atoms = []
-	for i in range(len(squared_masses)):
-		atom = Atom(squared_masses[i], charge_mass_ratios[i])
+	for i in range(squared_masses.shape[0]):
+		atom = Atom(squared_masses[i], charge_mass_ratios[i,:])
 		atoms.append(atom)
 	return atoms
 
@@ -132,13 +170,13 @@ def generate_cauchy_distribution(frequencies, eigenfrequency, gamma, intensity):
 		cauchy[i] = intensity*(1/math.pi)*(((1/2)*gamma)/((frequencies[i]-eigenfrequency)**2+((1/2)*gamma)**2))
 	return cauchy
 
-def generate_spectrum(input_dir, origin, molecule, eigfreq_count, start, stop, step_size, gamma):
+def generate_spectrum(input_dir, origin, molecule, eigfreq_count, start, stop, npoints, gamma):
 	print("\n<" + origin + ">")
-	if not eigfreq_count:
-		path = input_dir + "/" + molecule
-		return generate_spectrum_from_log(path, origin, start, stop, step_size, gamma)
-	else:
-		frequencies         = np.linspace(start, stop, int((stop-start)/step_size)+1)
+	if origin in ["G4", "OEP"]:
+		path = "%s/%s/%s" % (input_dir, origin, molecule)
+		return generate_spectrum_from_log(path, origin, start, stop, npoints, gamma)
+	elif origin in ["CGenFF", "GAFF-ESP", "GAFF-BCC"]:
+		frequencies         = np.linspace(start, stop, npoints)
 		intensity_all_modes = np.zeros(len(frequencies))
 		path = input_dir + "/" + origin + "/" + molecule
 		molecule            = generate_molecule(path, eigfreq_count)
@@ -149,6 +187,8 @@ def generate_spectrum(input_dir, origin, molecule, eigfreq_count, start, stop, s
 			intensity_all_modes += intensity_one_mode
 			eigenfrequencies.append(normal_mode.eigenfrequency())
 		return [frequencies, intensity_all_modes, np.array(eigenfrequencies), origin]
+	else:
+		raise Exception("%s is not a supported format. Please add it to code!" % (origin))
 
 def normalize_spectra(spectra):
 	for i, spectrum in enumerate(spectra):
@@ -167,21 +207,21 @@ def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 	if not Path(outformat_dir).is_dir():
 		os.system("mkdir " + outformat_dir)
 	output = outformat_dir + "/" + molecule + '.' + outformat
-
+	
 	spectra = normalize_spectra(spectra)
 
-	colors     = itertools.cycle(('k', 'r', 'b', 'g'))
-	linestyles = itertools.cycle(('-', '-', '-', ':'))
+	colors     = itertools.cycle(('k', 'r', 'b'))
+	linestyles = itertools.cycle(('-', '-', '-', ':', ':',':'))
 	plt.figure(figsize=(10.8, 4.8))
 	for spectrum in spectra:
-		if not spectrum[3] == "G4":
-			euc_score       = la.norm(spectra[0][1]-spectrum[1])
+		if not spectrum[3] == "Experimental data":
 			cos_score       = cosine_distance(spectra[0][1], spectrum[1])
-			rmsd_score      = rmsd(spectra[0][2], spectrum[2]) 
 			statistics_file = output_dir + '/CSV/SINGLE/' + spectrum[3] + '_statistics.csv'
 			with open(statistics_file, 'a') as csvfile:
 			 	writer = csv.writer(csvfile, delimiter=',')
-			 	writer.writerow([molecule, euc_score, cos_score, rmsd_score])
+			 	writer.writerow([molecule, cos_score])
+		if spectrum[3] == "OEP":
+			spectrum[3] = "B3LYP/aug-cc-pVTZ"
 		plt.plot(spectrum[0], spectrum[1], color=next(colors), linestyle=next(linestyles), label=spectrum[3])
 	plt.legend(loc='upper right')
 	plt.xlabel('Frequency, $cm^{-1}$')
@@ -192,12 +232,19 @@ def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 	check_or_die(output, False)
 	print('\n' + outformat.upper() + ' file saved at:', output)
 
-def save_spectrum(g4_dir, input_dir, force_fields, molecule, output_dir,
-                  start, stop, step_size, gamma, png, pdf, svg):
-	spectra       = [generate_spectrum(g4_dir, "G4", molecule, None, start, stop, step_size, gamma)]
-	eigfreq_count = len(spectra[0][2])
-	for force_field in force_fields:
-		spectra.append(generate_spectrum(input_dir, force_field, molecule, eigfreq_count, start, stop, step_size, gamma))
+def save_spectrum(exp_dir, qm_dir, qms, ff_dir, ffs, molecule, output_dir, gamma, png, pdf, svg):
+	spectra = []
+	
+	exp_spectrum, start, stop, npoints = read_exp_data(exp_dir, molecule)
+	spectra.append(exp_spectrum)
+	
+	for qm in qms:
+		spectra.append(generate_spectrum(qm_dir, qm, molecule, None, start, stop, npoints, gamma))
+	
+	eigfreq_count = len(spectra[1][2])
+	for ff in ffs:
+		spectra.append(generate_spectrum(ff_dir, ff, molecule, eigfreq_count, start, stop, npoints, gamma))
+	
 	possible_formats         = ["png", "pdf", "svg"]
 	desired_formats          = [ png,   pdf,   svg ]
 	for i, desired_format in enumerate(desired_formats):
@@ -206,9 +253,9 @@ def save_spectrum(g4_dir, input_dir, force_fields, molecule, output_dir,
 			if selected_format in [ "png", "pdf", "svg" ]:
 				save_spectra_as_figure(spectra, output_dir, molecule, selected_format)
 
-def generate_spectrum_from_log(path, origin, start, stop, step_size, gamma):
+def generate_spectrum_from_log(path, origin, start, stop, npoints, gamma):
 	log = None
-	for found_file in glob.glob(path + '/*g4.log*'):
+	for found_file in glob.glob('%s/*%s.log*' % (path, origin.lower())):
     		log = found_file
 	if log:
 		eigenfrequencies = []
@@ -230,7 +277,7 @@ def generate_spectrum_from_log(path, origin, start, stop, step_size, gamma):
 	else:
         	sys.exit("The QM log file does not exist!!!")
 	if eigenfrequencies and intensities:
-		frequencies         = np.linspace(start, stop, int((stop-start)/step_size)+1)
+		frequencies         = np.linspace(start, stop, npoints)
 		intensity_all_modes = np.zeros(len(frequencies))
 		for i, eigenfrequency in enumerate(eigenfrequencies):
 			intensity_one_mode   = generate_cauchy_distribution(frequencies, eigenfrequency, gamma, intensities[i])
@@ -238,3 +285,31 @@ def generate_spectrum_from_log(path, origin, start, stop, step_size, gamma):
 		return [frequencies, intensity_all_modes, np.array(eigenfrequencies), origin]
 	else:
 		sys.exit("There are no frequencies and/or intensities in the QM log file!!!")
+
+def read_exp_data(exp_dir, molecule):
+	full_path = exp_dir + '/' + molecule + '.jdx'
+	exp = None
+	for found_file in glob.glob(full_path):
+		exp = found_file
+	if exp:
+		intensities = []
+		print('\n<EXP>\nreading experimental data file at:', exp)
+		lines = open(exp, 'r').readlines()
+		for line in lines:
+			words  = line.split('=')
+			if len(words) == 2:
+				if "MAXX" in words[0]:
+					stop = float(words[1])
+				elif "MINX" in words[0]:
+					start = float(words[1])
+				elif "NPOINTS" in words[0]:
+					npoints = int(words[1])
+			else:
+				words = line.split()
+				if words[0].replace('.','',1).isdigit():
+					for word in words[1:]:
+						intensities.append(float(word))
+		frequencies = np.linspace(start, stop, npoints)
+		return [frequencies, np.array(intensities), None, "Experimental data"], start, stop, npoints
+	else:
+		sys.exit("The experimental data file does not exist!!!")

@@ -254,6 +254,9 @@ def save_spectrum(exp_dir, qm_dir, qms, ff_dir, ffs, molecule, output_dir, gamma
 				save_spectra_as_figure(spectra, output_dir, molecule, selected_format)
 
 def generate_spectrum_from_log(path, origin, start, stop, npoints, gamma):
+	method_factors = {"G4": 0.965, "OEP": 0.968}
+	scaling_factor = method_factors.get(origin, 1.0)
+	print(scaling_factor)
 	log = None
 	for found_file in glob.glob('%s/*%s.log*' % (path, origin.lower())):
     		log = found_file
@@ -269,7 +272,7 @@ def generate_spectrum_from_log(path, origin, start, stop, npoints, gamma):
 			if "Frequencies" in line:
 				values  = re.findall(r"[-+]?\d*\.\d+|\d+", line)
 				for value in values:
-					eigenfrequencies.append(float(value))
+					eigenfrequencies.append(float(value) * scaling_factor)
 			elif "IR Inten" in line:
 				values  = re.findall(r"[-+]?\d*\.\d+|\d+", line)
 				for value in values:

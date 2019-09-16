@@ -8,6 +8,7 @@ from numpy import trapz
 from distutils.spawn import find_executable
 from pathlib import Path
 from spectrum_classes import *
+from scipy.stats import pearsonr, spearmanr
 
 def intersection(lst1, lst2): 
 	return set(lst1).intersection(lst2)
@@ -216,10 +217,12 @@ def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 	for spectrum in spectra:
 		if not spectrum[3] == "Experimental data":
 			cos_score       = cosine_distance(spectra[0][1], spectrum[1])
+			pearson_score   = pearsonr(spectra[0][1], spectrum[1])[0]
+			spearman_score  = spearmanr(spectra[0][1], spectrum[1])[0]
 			statistics_file = output_dir + '/CSV/SINGLE/' + spectrum[3] + '_statistics.csv'
 			with open(statistics_file, 'a') as csvfile:
 			 	writer = csv.writer(csvfile, delimiter=',')
-			 	writer.writerow([molecule, cos_score])
+			 	writer.writerow([molecule, cos_score, pearson_score, spearman_score])
 		if spectrum[3] == "OEP":
 			spectrum[3] = "B3LYP/aug-cc-pVTZ"
 		plt.plot(spectrum[0], spectrum[1], color=next(colors), linestyle=next(linestyles), label=spectrum[3])
@@ -256,7 +259,6 @@ def save_spectrum(exp_dir, qm_dir, qms, ff_dir, ffs, molecule, output_dir, gamma
 def generate_spectrum_from_log(path, origin, start, stop, npoints, gamma):
 	method_factors = {"G4": 0.965, "OEP": 0.968}
 	scaling_factor = method_factors.get(origin, 1.0)
-	print(scaling_factor)
 	log = None
 	for found_file in glob.glob('%s/*%s.log*' % (path, origin.lower())):
     		log = found_file

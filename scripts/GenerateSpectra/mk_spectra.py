@@ -62,7 +62,7 @@ if __name__ == "__main__":
 		statistics_file = stats_dir + "/" + type + '_statistics.csv'
 		with open(statistics_file, 'w') as csvfile:
 			writer = csv.writer(csvfile, delimiter=',')
-			writer.writerow(['molecule', 'cos'])
+			writer.writerow(['molecule', 'cos', 'pearson', 'spearman'])
 		check_or_die(statistics_file, True)	
 
 	for molecule in molecules:

@@ -11,7 +11,7 @@ from pathlib import Path
 
 if __name__ == "__main__":
 
-	DB                   = DbUtils('/home/spoel/Liquids/DATABASE/molecules.sqlite3.dat', False)
+	DB                   = DbUtils('/home/henning/Liquids/DATABASE/molecules.sqlite3.dat', False)
 	molecules            = []
 	CAS_registry_numbers = []
 	for row in DB.cursor.execute("SELECT filename, cas FROM molecules"):
@@ -21,7 +21,7 @@ if __name__ == "__main__":
 	print(len(CAS_registry_numbers))	
 	
 
-	outpath = "/home/alfred/JCAMP-DX/"
+	outpath = "/home/henning/JCAMP-DX/"
 	for i, molecule in enumerate(molecules):
 		CAS_registry_number = CAS_registry_numbers[i]
 		numbers             = CAS_registry_number.split(';')

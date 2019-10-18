@@ -2,10 +2,14 @@
 
 #SBATCH -n 2
 #SBATCH -t 5:00:00
-#SBATCH -J running_all_spectra
+#SBATCH -J get_spectra
+#SBATCH -o get_spectra.o
+#SBATCH -e get_spectra.e
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user alfred.andersson.9942@student.uu.se
+#SBATCH --mail-user henning.henschel@icm.uu.se
 
 module load miniconda/3
+export PYTHONPATH="/home/henning/Liquids/PYTHON/"
+export LIQUIDS="/home/henning/Liquids/"
 
-python /home/alfred/IR-Spectra/scripts/GenerateSpectra/get_exp_data.py
+python3 /home/henning/projects/IR-Spectra/scripts/GenerateSpectra/get_exp_data.py

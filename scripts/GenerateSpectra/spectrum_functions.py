@@ -25,7 +25,7 @@ def find_molecules(exp_dir, qm_dir, qms, ff_dir, ffs):
 		ff_molecules     = [f.path.split("/")[-1] for f in os.scandir(ff_dir + "/" + ff) if f.is_dir()]
 		print("Number of molecules in %s data directory: %d" % (ff, len(ff_molecules)))
 		common_molecules = intersection(common_molecules, ff_molecules)
-	return common_molecules
+	return list(common_molecules)
 
 def check_or_die(filenm, die):
 	if not os.path.isfile(filenm):
@@ -62,15 +62,15 @@ def run_one_nm(die, sigma, scale_factor, mdpdir, output):
 	check_or_die(mtz, die )
 	os.system(("%s nmeig -last 1000 -s %s -f %s -sigma %d > %s") % (gmx, tpr, mtz, sigma, output))
 
-def extract_eigenfrequencies(molecule_path):
+def extract_eigenfrequencies(molecule_path, scaling_factor):
 	"""Extract eigenfrequencies from GROMACS eigenfrequency file"""
 	eigenfrequencies = []
 	full_path = molecule_path + "/eigenfreq.xvg"
-	print('reading eigenfrequencies from:', full_path)
+	#print('reading eigenfrequencies from:', full_path)
 	for line in open(full_path, "r").readlines():
 		if not line == line.lstrip():
 			words = line.strip().split()
-			eigenfrequencies.append(float(words[1]))
+			eigenfrequencies.append(float(words[1]) * scaling_factor)
 	return eigenfrequencies
 
 def extract_eigenvectors(molecule_path):
@@ -79,7 +79,7 @@ def extract_eigenvectors(molecule_path):
 	eigenvector  = np.empty([0,3])
 	full_path    = molecule_path + "/eigenvec.trr"
 	temp_txt     = "eigenvec.txt"
-	print('reading eigenvectors from:', full_path )
+	#print('reading eigenvectors from:', full_path )
 	os.system(find_gmx() + " dump -f " + full_path + " -quiet > " + temp_txt)
 	for line in open(temp_txt, "r").readlines():
 		if re.match(r"\s+x\[", line):
@@ -95,11 +95,18 @@ def extract_eigenvectors(molecule_path):
 def read_topol(topol):
 	squared_masses = []
 	charges        = []
+	readatoms      = False
 	for line in open(topol, "r").readlines():
-		words = line.strip().split()
-		if len(words) == 11:
-			squared_masses.append([math.sqrt(float(words[7]))])
-			charges.append([float(words[6])]*3)
+		if line[0:9] == "[ atoms ]":
+			readatoms = True
+			continue
+		if readatoms:
+			if line[0] == "[":
+				break
+			words = line.strip().split()
+			if (len(words) > 7) and not (words[0] == ";"):
+				squared_masses.append([math.sqrt(float(words[7]))])
+				charges.append([float(words[6])]*3)
 	return np.array(squared_masses), np.array(charges)
 
 def read_mu(mu):
@@ -122,10 +129,10 @@ def extract_atomic_properties(molecule_path):
 	topol     = molecule_path + "/topol.top"
 	mu        = molecule_path + "/mu.txt"
 	mu_exists = os.path.isfile(mu)
-	msg       = 'reading atomic properties from: %s' % (topol)
-	if mu_exists:
-		msg = "%s and %s" % (msg, mu)
-	print(msg)
+	#msg       = 'reading atomic properties from: %s' % (topol)
+	#if mu_exists:
+	#	msg = "%s and %s" % (msg, mu)
+	#print(msg)
 	squared_masses, charges = read_topol(topol)
 	if mu_exists:
 		charges = read_mu(mu)
@@ -145,9 +152,9 @@ def generate_atoms(molecule_path):
 		atoms.append(atom)
 	return atoms
 
-def generate_normal_modes(molecule_path):
+def generate_normal_modes(molecule_path, scaling_factor):
 	"""Initialize NormalMode objects and return them as a list"""
-	eigenfrequencies = extract_eigenfrequencies(molecule_path)
+	eigenfrequencies = extract_eigenfrequencies(molecule_path, scaling_factor)
 	eigenvectors     = extract_eigenvectors(molecule_path)
 	normal_modes     = []
 	for i in range(len(eigenfrequencies)):
@@ -155,10 +162,10 @@ def generate_normal_modes(molecule_path):
 		normal_modes.append(normal_mode)
 	return normal_modes
 
-def generate_molecule(molecule_path, eigfreq_count):
+def generate_molecule(molecule_path, eigfreq_count, scaling_factor):
 	"""Initialize Molecule object"""
 	atoms        = generate_atoms(molecule_path)
-	normal_modes = generate_normal_modes(molecule_path)
+	normal_modes = generate_normal_modes(molecule_path, scaling_factor)
 	molecule     = Molecule(eigfreq_count, atoms, normal_modes)
 	for normal_mode in molecule.normal_modes():
 		normal_mode.calculate_intensity(molecule.atoms())
@@ -171,16 +178,16 @@ def generate_cauchy_distribution(frequencies, eigenfrequency, gamma, intensity):
 		cauchy[i] = intensity*(1/math.pi)*(((1/2)*gamma)/((frequencies[i]-eigenfrequency)**2+((1/2)*gamma)**2))
 	return cauchy
 
-def generate_spectrum(input_dir, origin, molecule, eigfreq_count, start, stop, npoints, gamma):
+def generate_spectrum(input_dir, origin, molecule, eigfreq_count, start, stop, npoints, gamma, scaling_factor):
 	print("\n<" + origin + ">")
 	if origin in ["G4", "OEP"]:
 		path = "%s/%s/%s" % (input_dir, origin, molecule)
-		return generate_spectrum_from_log(path, origin, start, stop, npoints, gamma)
-	elif origin in ["CGenFF", "GAFF-ESP", "GAFF-BCC"]:
+		return generate_spectrum_from_log(path, origin, start, stop, npoints, gamma, scaling_factor)
+	elif origin in ["CGenFF", "GAFF-ESP", "GAFF-BCC", "OPLS"]:
 		frequencies         = np.linspace(start, stop, npoints)
 		intensity_all_modes = np.zeros(len(frequencies))
 		path = input_dir + "/" + origin + "/" + molecule
-		molecule            = generate_molecule(path, eigfreq_count)
+		molecule            = generate_molecule(path, eigfreq_count, scaling_factor)
 		normal_modes        = molecule.normal_modes()
 		eigenfrequencies    = []
 		for normal_mode in normal_modes:
@@ -202,6 +209,39 @@ def cosine_distance(spectrum1, spectrum2):
 def rmsd(eigfreqs1, eigfreqs2):
 	return math.sqrt(sum((eigfreqs1-eigfreqs2)**2)/len(eigfreqs1))
 
+def cross_compare(molecules, all_spectra, methods, output_dir):
+	for method in methods:
+		out_pearson = open(output_dir + '/CSV/' + method + '_pearson.csv', 'w')
+		out_spearman = open(output_dir + '/CSV/' + method + '_spearman.csv', 'w')
+		write_pearson = csv.writer(out_pearson, delimiter ='|')
+		write_spearman = csv.writer(out_spearman, delimiter ='|')
+		write_pearson.writerow(['Molecules'] + molecules)
+		write_spearman.writerow(['Molecules'] + molecules)
+		pearsoncorrect = 0
+		spearmancorrect = 0
+		for molecule1 in molecules:
+			for spectrum in all_spectra[molecule1]:
+				if spectrum[3] == method:
+					pearsons = []
+					spearmans = []
+					for molecule2 in molecules:
+						if len(all_spectra[molecule2][0][1]) == len(spectrum[1]):
+							pearsons.append(pearsonr(all_spectra[molecule2][0][1], spectrum[1])[0])
+							spearmans.append(spearmanr(all_spectra[molecule2][0][1], spectrum[1])[0])
+						else:
+							pearsons.append(0)
+							spearmans.append(0)
+					if molecules[pearsons.index(max(pearsons))] == molecule1:
+						pearsoncorrect += 1
+					if molecules[spearmans.index(max(spearmans))] == molecule1:
+						spearmancorrect += 1
+					pearsons.insert(0, molecule1)
+					spearmans.insert(0, molecule1)
+					write_pearson.writerow(pearsons)
+					write_spearman.writerow(spearmans)
+		print(method, " PC: ", pearsoncorrect, " of ", len(molecules))
+		print(method, " SC: ", pearsoncorrect, " of ", len(molecules))
+
 def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 	"""Write the spectrum of all normal modes of a molecule as a PNG, PDF or SVG"""
 	outformat_dir = output_dir + "/" + outformat.upper()
@@ -211,8 +251,9 @@ def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 	
 	spectra = normalize_spectra(spectra)
 
-	colors     = itertools.cycle(('k', 'r', 'b'))
-	linestyles = itertools.cycle(('-', '-', '-', ':', ':',':'))
+	#colors     = itertools.cycle(('k', 'r', 'b'))
+	colors     = itertools.cycle(('k', '#1b9e77', '#d95f02', '#7570b3', '#e7298a', '#66a61e', '#e6ab02'))
+	linestyles = itertools.cycle(('-', '--', '--', '-', '-','-', '-'))
 	plt.figure(figsize=(10.8, 4.8))
 	for spectrum in spectra:
 		if not spectrum[3] == "Experimental data":
@@ -221,10 +262,14 @@ def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 			spearman_score  = spearmanr(spectra[0][1], spectrum[1])[0]
 			statistics_file = output_dir + '/CSV/SINGLE/' + spectrum[3] + '_statistics.csv'
 			with open(statistics_file, 'a') as csvfile:
-			 	writer = csv.writer(csvfile, delimiter=',')
+			 	writer = csv.writer(csvfile, delimiter='|')
 			 	writer.writerow([molecule, cos_score, pearson_score, spearman_score])
 		if spectrum[3] == "OEP":
-			spectrum[3] = "B3LYP/aug-cc-pVTZ"
+			figlabel = "B3LYP/aug-cc-pVTZ"
+		elif spectrum[3] == "G4":
+			figlabel = "B3LYP/6-31G(2df,p)"
+		else:
+			figlabel = spectrum[3]
 		plt.plot(spectrum[0], spectrum[1], color=next(colors), linestyle=next(linestyles), label=spectrum[3])
 	plt.legend(loc='upper right')
 	plt.xlabel('Frequency, $cm^{-1}$')
@@ -241,12 +286,15 @@ def save_spectrum(exp_dir, qm_dir, qms, ff_dir, ffs, molecule, output_dir, gamma
 	exp_spectrum, start, stop, npoints = read_exp_data(exp_dir, molecule)
 	spectra.append(exp_spectrum)
 	
+	method_factors = {"G4": 0.965, "OEP": 0.968}
 	for qm in qms:
-		spectra.append(generate_spectrum(qm_dir, qm, molecule, None, start, stop, npoints, gamma))
+		scaling_factor = method_factors.get(qm, 1.0)
+		spectra.append(generate_spectrum(qm_dir, qm, molecule, None, start, stop, npoints, gamma, scaling_factor))
 	
 	eigfreq_count = len(spectra[1][2])
 	for ff in ffs:
-		spectra.append(generate_spectrum(ff_dir, ff, molecule, eigfreq_count, start, stop, npoints, gamma))
+		scaling_factor = method_factors.get(ff, 1.0)
+		spectra.append(generate_spectrum(ff_dir, ff, molecule, eigfreq_count, start, stop, npoints, gamma, scaling_factor))
 	
 	possible_formats         = ["png", "pdf", "svg"]
 	desired_formats          = [ png,   pdf,   svg ]
@@ -255,17 +303,16 @@ def save_spectrum(exp_dir, qm_dir, qms, ff_dir, ffs, molecule, output_dir, gamma
 			selected_format = possible_formats[i]
 			if selected_format in [ "png", "pdf", "svg" ]:
 				save_spectra_as_figure(spectra, output_dir, molecule, selected_format)
+	return spectra
 
-def generate_spectrum_from_log(path, origin, start, stop, npoints, gamma):
-	method_factors = {"G4": 0.965, "OEP": 0.968}
-	scaling_factor = method_factors.get(origin, 1.0)
+def generate_spectrum_from_log(path, origin, start, stop, npoints, gamma, scaling_factor):
 	log = None
 	for found_file in glob.glob('%s/*%s.log*' % (path, origin.lower())):
     		log = found_file
 	if log:
 		eigenfrequencies = []
 		intensities      = []
-		print('reading log file at:', log)
+		#print('reading log file at:', log)
 		if log.endswith(".gz"):
 			lines = gzip.open(log, 'rt').readlines()
 		else:
@@ -298,7 +345,7 @@ def read_exp_data(exp_dir, molecule):
 		exp = found_file
 	if exp:
 		intensities = []
-		print('\n<EXP>\nreading experimental data file at:', exp)
+		#print('\n<EXP>\nreading experimental data file at:', exp)
 		lines = open(exp, 'r').readlines()
 		for line in lines:
 			words  = line.split('=')

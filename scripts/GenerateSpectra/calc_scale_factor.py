@@ -3,6 +3,8 @@
 import argparse, os, sys
 from spectrum_functions import *
 from pathlib import Path
+from scipy.optimize import minimize
+from scipy.optimize import minimize_scalar
 
 pwd = os.getcwd()
 parser = argparse.ArgumentParser(description='Generate the IR-spectrum for a molecule using GROMACS output files.')
@@ -20,6 +22,26 @@ parser.add_argument('--linear'   ,                                       help='M
 parser.add_argument('--png'      ,                                       help='Generate the spectrum as a PNG'        , action='store_true')
 parser.add_argument('--pdf'      ,                                       help='Generate the spectrum as a PDF'        , action='store_true')
 parser.add_argument('--svg'      ,                                       help='Generate the spectrum as a SVG'        , action='store_true')
+
+
+def produce_measure(scaling_factor):
+	total_score = 0
+	for molecule in molecules:
+		#print('\nNOW PROCESSING:', molecule)
+		spectra = []
+		exp_spectrum, start, stop, npoints = read_exp_data(exp_dir, molecule)
+		spectra.append(exp_spectrum)	
+		if method in qms:
+			spectra.append(generate_spectrum(qm_dir, method, molecule, None, start, stop, npoints, gamma, scaling_factor))
+			#exp_range_eigen_count.append(np.sum((np.array(spectra[-1][2]) > start) * (np.array(spectra[-1][2]) < stop)))
+		if method in ffs:
+			spectra.append(generate_spectrum(ff_dir, method, molecule, eigfreq_count[molecule], start, stop, npoints, gamma, scaling_factor))
+			#exp_range_eigen_count.append(np.sum((np.array(spectra[-1][2]) > start) * (np.array(spectra[-1][2]) < stop)))
+		#cos_score       = cosine_distance(spectra[0][1], spectra[1][1])
+		#pearson_score   = pearsonr(spectra[0][1], spectra[1][1])[0]
+		spearman_score  = spearmanr(spectra[0][1], spectra[1][1])[0]
+		total_score += spearman_score
+	return -1 * total_score / len(molecules)
 
 if __name__ == "__main__":
   
@@ -44,33 +66,22 @@ if __name__ == "__main__":
 	
 	print('\nThe following number of molecules were found in all listed directories and will be processed:', len(molecules))
 
-	csv_dir = output_dir + "/CSV"
-	if Path(csv_dir).is_dir() and os.listdir(csv_dir):
-		print("the directory " + csv_dir + " already exists and it has contents. That directory will be emptied")
-		os.system("rm -r " + csv_dir + "/*")
-	elif Path(csv_dir).is_dir():
-		print("the directory " + csv_dir + " already exists and but it has no contents. That directory will not be emptied")
-	else:
-		print("creating directory " + csv_dir)
-		os.system("mkdir " + csv_dir)
-	stats_dir = csv_dir + "/SINGLE" 
-	os.system("mkdir " + stats_dir)
-	
 	types = qms + ffs	
 
-	for type in types:
-		statistics_file = stats_dir + "/" + type + '_statistics.csv'
-		with open(statistics_file, 'w') as csvfile:
-			writer = csv.writer(csvfile, delimiter=',')
-			writer.writerow(['molecule', 'cos', 'pearson', 'spearman'])
-		check_or_die(statistics_file, True)	
-
-	all_spectra = {} 
-	#molecules = molecules[0:10]
-
+	exp_range_eigen_count = []
+	all_scaling_factors = {}
+	all_measures = {}
+	unscaled_measures = {}
+	#molecules = ["propylamine", "cyanoacetylene", "butyl-formate", "decane", "3-bromopentane"]
+	eigfreq_count = {}
 	for molecule in molecules:
-		print('\nNOW PROCESSING:', molecule)
-		all_spectra[molecule] = save_spectrum(exp_dir, qm_dir, qms, ff_dir, ffs, molecule, output_dir,
-                                                     gamma, generate_png, generate_pdf, generate_svg)
+		spectrum = generate_spectrum(qm_dir, qms[0], molecule, None, start, stop, npoints, gamma, 1.0)
+		eigfreq_count[molecule] = len(spectrum[2])
 
-	cross_compare(molecules, all_spectra, types, output_dir)
+	for method in types: 
+		all_scaling_factors[method] = minimize_scalar(produce_measure).x
+		all_measures[method] = -1 * produce_measure(all_scaling_factors[method])
+		unscaled_measures[method] = -1 * produce_measure(1.0)
+	for method in types:
+		print(method, all_scaling_factors[method], all_measures[method])
+		print(method, "1.0" , unscaled_measures[method])

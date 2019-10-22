@@ -1,4 +1,4 @@
-Number of molecules in experimental data directory: 592
+Number of molecules in experimental data directory: 591
 Number of molecules in G4 data directory: 2095
 Number of molecules in OEP data directory: 2662
 Number of molecules in CGenFF data directory: 1915
@@ -8,3846 +8,6 @@ Number of molecules in OPLS data directory: 2007
 
 The following number of molecules were found in all listed directories and will be processed: 345
 the directory /home/henning/projects/IR-Spectra/results_with_comparison/CSV already exists and it has contents. That directory will be emptied
-
-NOW PROCESSING: pyrrolidine-axial
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/pyrrolidine-axial.png
-
-NOW PROCESSING: 3-chloropropan-1-ol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-chloropropan-1-ol.png
-
-NOW PROCESSING: oxetane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/oxetane.png
-
-NOW PROCESSING: 13-oxazole
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/13-oxazole.png
-
-NOW PROCESSING: n-propyl-propionate
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/n-propyl-propionate.png
-
-NOW PROCESSING: 1-4-chlorophenylethanone
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-4-chlorophenylethanone.png
-
-NOW PROCESSING: 3E-3-methyl-13-pentadiene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3E-3-methyl-13-pentadiene.png
-
-NOW PROCESSING: 15-dimethylcyclopent-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/15-dimethylcyclopent-1-ene.png
-
-NOW PROCESSING: 3E-22-dimethylhex-3-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3E-22-dimethylhex-3-ene.png
-
-NOW PROCESSING: 2-propan-2-ylphenol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-propan-2-ylphenol.png
-
-NOW PROCESSING: methylpropene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/methylpropene.png
-
-NOW PROCESSING: ethylcyclopropane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/ethylcyclopropane.png
-
-NOW PROCESSING: propanoic-acid-cis
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/propanoic-acid-cis.png
-
-NOW PROCESSING: furfuryl-alcohol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/furfuryl-alcohol.png
-
-NOW PROCESSING: 3-methylbutyraldehyde
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylbutyraldehyde.png
-
-NOW PROCESSING: decane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/decane.png
-
-NOW PROCESSING: nonanoic-acid
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/nonanoic-acid.png
-
-NOW PROCESSING: 2-acetyloxyethyl-acetate
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-acetyloxyethyl-acetate.png
-
-NOW PROCESSING: 2E-34-dimethylhex-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2E-34-dimethylhex-2-ene.png
-
-NOW PROCESSING: 1-bromonaphthalene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-bromonaphthalene.png
-
-NOW PROCESSING: 2-methylpenta-14-diene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylpenta-14-diene.png
-
-NOW PROCESSING: cyclohexanethiol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/cyclohexanethiol.png
-
-NOW PROCESSING: N-butylacetamide
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/N-butylacetamide.png
-
-NOW PROCESSING: 1-ethoxy-2-2-ethoxyethoxyethane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-ethoxy-2-2-ethoxyethoxyethane.png
-
-NOW PROCESSING: 4R-4-methylhept-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4R-4-methylhept-1-ene.png
-
-NOW PROCESSING: N-methylformamide
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/N-methylformamide.png
-
-NOW PROCESSING: dicyclopropylmethanone
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/dicyclopropylmethanone.png
-
-NOW PROCESSING: hexane-16-dithiol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/hexane-16-dithiol.png
-
-NOW PROCESSING: 3-ethyl-2-methylpent-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethyl-2-methylpent-1-ene.png
-
-NOW PROCESSING: 3-methyl-1-butyne
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methyl-1-butyne.png
-
-NOW PROCESSING: 3-heptanone
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-heptanone.png
-
-NOW PROCESSING: 1--butylsulfinyl-butane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1--butylsulfinyl-butane.png
-
-NOW PROCESSING: naphthalen-1-amine
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/naphthalen-1-amine.png
-
-NOW PROCESSING: 3Z-2-methylhept-3-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3Z-2-methylhept-3-ene.png
-
-NOW PROCESSING: 4-chlorobutanoic-acid
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-chlorobutanoic-acid.png
-
-NOW PROCESSING: 1-chloro-2-propanol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-chloro-2-propanol.png
-
-NOW PROCESSING: dibutyl-ether
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/dibutyl-ether.png
-
-NOW PROCESSING: 22-dimethylbutane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/22-dimethylbutane.png
-
-NOW PROCESSING: n-aminoethyl-ethanolamine
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/n-aminoethyl-ethanolamine.png
-
-NOW PROCESSING: diethylene-glycol-monomethyl-ether
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/diethylene-glycol-monomethyl-ether.png
-
-NOW PROCESSING: 2-methylnonane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylnonane.png
-
-NOW PROCESSING: 13-difluorobenzene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/13-difluorobenzene.png
-
-NOW PROCESSING: 2Z-3-methylhex-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2Z-3-methylhex-2-ene.png
-
-NOW PROCESSING: Z-hex-3-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/Z-hex-3-ene.png
-
-NOW PROCESSING: non-1-yne
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/non-1-yne.png
-
-NOW PROCESSING: hexamethylphosphoric-triamide
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/hexamethylphosphoric-triamide.png
-
-NOW PROCESSING: propylamine
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/propylamine.png
-
-NOW PROCESSING: 233-trimethylbut-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/233-trimethylbut-1-ene.png
-
-NOW PROCESSING: 1236-tetrahydrobenzaldehyde
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1236-tetrahydrobenzaldehyde.png
-
-NOW PROCESSING: m-phenylenediamine
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/m-phenylenediamine.png
-
-NOW PROCESSING: 2S5R-25-dimethyltetrahydrofuran
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2S5R-25-dimethyltetrahydrofuran.png
-
-NOW PROCESSING: diethyl-sulfide
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/diethyl-sulfide.png
-
-NOW PROCESSING: 2-methylaniline
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylaniline.png
-
-NOW PROCESSING: 23-dihydrofuran
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/23-dihydrofuran.png
-
-NOW PROCESSING: oct-2-yne
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/oct-2-yne.png
-
-NOW PROCESSING: 3-hexanol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-hexanol.png
-
-NOW PROCESSING: 4-methyloctane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-methyloctane.png
-
-NOW PROCESSING: 1--3-pyridinyl-ethanone
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1--3-pyridinyl-ethanone.png
-
-NOW PROCESSING: 23-dimethylpent-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/23-dimethylpent-1-ene.png
-
-NOW PROCESSING: N-methyl-N-phenyl-formamide
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/N-methyl-N-phenyl-formamide.png
-
-NOW PROCESSING: 22-dimethylpentane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/22-dimethylpentane.png
-
-NOW PROCESSING: tetrahydropyran
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/tetrahydropyran.png
-
-NOW PROCESSING: pentyl-formate
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/pentyl-formate.png
-
-NOW PROCESSING: morpholine
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/morpholine.png
-
-NOW PROCESSING: 234-trimethylpent-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/234-trimethylpent-2-ene.png
-
-NOW PROCESSING: 2-heptanol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-heptanol.png
-
-NOW PROCESSING: propanenitrile
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/propanenitrile.png
-
-NOW PROCESSING: heptan-1-ol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/heptan-1-ol.png
-
-NOW PROCESSING: 2-bromopropene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-bromopropene.png
-
-NOW PROCESSING: 44-dimethylpent-2-yne
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/44-dimethylpent-2-yne.png
-
-NOW PROCESSING: 2-methylfuran
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylfuran.png
-
-NOW PROCESSING: methylcyclobutane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/methylcyclobutane.png
-
-NOW PROCESSING: 25-dimethylhex-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/25-dimethylhex-1-ene.png
-
-NOW PROCESSING: 12345-pentafluorobenzene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/12345-pentafluorobenzene.png
-
-NOW PROCESSING: methyl-butanoate
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/methyl-butanoate.png
-
-NOW PROCESSING: 1-ethylcyclopent-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-ethylcyclopent-1-ene.png
-
-NOW PROCESSING: butylcyclopentane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/butylcyclopentane.png
-
-NOW PROCESSING: 1-methylpyrrole
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-methylpyrrole.png
-
-NOW PROCESSING: 3E-25-dimethylhex-3-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3E-25-dimethylhex-3-ene.png
-
-NOW PROCESSING: 11-dimethylcyclopropane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/11-dimethylcyclopropane.png
-
-NOW PROCESSING: pent-2-yne
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/pent-2-yne.png
-
-NOW PROCESSING: 24-dimethylpent-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/24-dimethylpent-1-ene.png
-
-NOW PROCESSING: 1-methylpyrrolidin-2-one
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-methylpyrrolidin-2-one.png
-
-NOW PROCESSING: 3-ethylpentan-3-ol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethylpentan-3-ol.png
-
-NOW PROCESSING: ethyl-trans-cinnamate
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/ethyl-trans-cinnamate.png
-
-NOW PROCESSING: but-3-en-2-ol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/but-3-en-2-ol.png
-
-NOW PROCESSING: 3-ethylpyridine
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethylpyridine.png
-
-NOW PROCESSING: Z-3-methylpent-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/Z-3-methylpent-2-ene.png
-
-NOW PROCESSING: 25-dimethyl-24-hexadiene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/25-dimethyl-24-hexadiene.png
-
-NOW PROCESSING: 2-methylhept-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylhept-2-ene.png
-
-NOW PROCESSING: N-prop-2-enylprop-2-en-1-amine
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/N-prop-2-enylprop-2-en-1-amine.png
-
-NOW PROCESSING: cyclohepta-135-triene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/cyclohepta-135-triene.png
-
-NOW PROCESSING: 45-dimethylhex-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/45-dimethylhex-1-ene.png
-
-NOW PROCESSING: 2Z-34-dimethylpent-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2Z-34-dimethylpent-2-ene.png
-
-NOW PROCESSING: bis-2-chloroethyl-ether
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/bis-2-chloroethyl-ether.png
-
-NOW PROCESSING: 2-fluoropyridine
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-fluoropyridine.png
-
-NOW PROCESSING: 3-methylcyclopentene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylcyclopentene.png
-
-NOW PROCESSING: 2E-44-dimethylhex-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2E-44-dimethylhex-2-ene.png
-
-NOW PROCESSING: 33-dimethyl-1-butyne
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/33-dimethyl-1-butyne.png
-
-NOW PROCESSING: 3Z-3-methylhex-3-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3Z-3-methylhex-3-ene.png
-
-NOW PROCESSING: propyl-formate
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/propyl-formate.png
-
-NOW PROCESSING: 2-chloroethanol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-chloroethanol.png
-
-NOW PROCESSING: 3-methyl-1-pentanol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methyl-1-pentanol.png
-
-NOW PROCESSING: naphthalene-1-carbaldehyde
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/naphthalene-1-carbaldehyde.png
-
-NOW PROCESSING: 23-dimethylhexane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/23-dimethylhexane.png
-
-NOW PROCESSING: cis-2-buten-1-ol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/cis-2-buten-1-ol.png
-
-NOW PROCESSING: 3-methyl-1-butanethiol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methyl-1-butanethiol.png
-
-NOW PROCESSING: spiropentane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/spiropentane.png
-
-NOW PROCESSING: 2-methylbut-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylbut-2-ene.png
-
-NOW PROCESSING: 2-ethylnaphthalene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-ethylnaphthalene.png
-
-NOW PROCESSING: pentadecane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/pentadecane.png
-
-NOW PROCESSING: 33-dimethylbutan-2-one
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/33-dimethylbutan-2-one.png
-
-NOW PROCESSING: diethyl-oxalate
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/diethyl-oxalate.png
-
-NOW PROCESSING: 2-methylpropanenitrile
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylpropanenitrile.png
-
-NOW PROCESSING: 22-dichloro-111-trifluoroethane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/22-dichloro-111-trifluoroethane.png
-
-NOW PROCESSING: 3-pentanol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-pentanol.png
-
-NOW PROCESSING: 7-methyloct-3-yne
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/7-methyloct-3-yne.png
-
-NOW PROCESSING: 124-trimethylbenzene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/124-trimethylbenzene.png
-
-NOW PROCESSING: 2-ethylphenol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-ethylphenol.png
-
-NOW PROCESSING: 3-ethylpent-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethylpent-1-ene.png
-
-NOW PROCESSING: 3-ethyl-2-methylpentane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethyl-2-methylpentane.png
-
-NOW PROCESSING: 2E-4-methylhex-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2E-4-methylhex-2-ene.png
-
-NOW PROCESSING: 244-trimethylpent-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/244-trimethylpent-1-ene.png
-
-NOW PROCESSING: azulene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/azulene.png
-
-NOW PROCESSING: 1133-tetramethylurea
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1133-tetramethylurea.png
-
-NOW PROCESSING: 34-dimethylhex-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/34-dimethylhex-1-ene.png
-
-NOW PROCESSING: 4-methylpenta-13-diene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-methylpenta-13-diene.png
-
-NOW PROCESSING: 2R-1-bromo-2-methylbutane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2R-1-bromo-2-methylbutane.png
-
-NOW PROCESSING: p-ethylphenol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/p-ethylphenol.png
-
-NOW PROCESSING: 34-dimethylhexane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/34-dimethylhexane.png
-
-NOW PROCESSING: trans-1-propenylbenzene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/trans-1-propenylbenzene.png
-
-NOW PROCESSING: 23-dihydro-1H-indole
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/23-dihydro-1H-indole.png
-
-NOW PROCESSING: 3-methoxypropanenitrile
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methoxypropanenitrile.png
-
-NOW PROCESSING: 4-chlorobenzenemethanethiol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-chlorobenzenemethanethiol.png
-
-NOW PROCESSING: 3-ethylcyclopent-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethylcyclopent-1-ene.png
-
-NOW PROCESSING: 2-methylhex-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylhex-1-ene.png
-
-NOW PROCESSING: hex-3-yne
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/hex-3-yne.png
-
-NOW PROCESSING: ethyl-2-chloroacetate
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/ethyl-2-chloroacetate.png
-
-NOW PROCESSING: 2-methyl-2-propanethiol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methyl-2-propanethiol.png
-
-NOW PROCESSING: 1-phenylpropan-1-one
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-phenylpropan-1-one.png
-
-NOW PROCESSING: cis-13-pentadiene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/cis-13-pentadiene.png
-
-NOW PROCESSING: 25-dihydrofuran
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/25-dihydrofuran.png
-
-NOW PROCESSING: 3-ethylhex-3-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethylhex-3-ene.png
-
-NOW PROCESSING: 3-amino-1-propanol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-amino-1-propanol.png
-
-NOW PROCESSING: 2-methylpropyl-cyclopentane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylpropyl-cyclopentane.png
-
-NOW PROCESSING: naphthalene-2-carbaldehyde
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/naphthalene-2-carbaldehyde.png
-
-NOW PROCESSING: dichloroacetic-acid
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/dichloroacetic-acid.png
-
-NOW PROCESSING: dodecane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/dodecane.png
-
-NOW PROCESSING: dimethyl-disulfide
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/dimethyl-disulfide.png
-
-NOW PROCESSING: 4-1h-13-benzodiazol-2-yl-13-thiazole
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-1h-13-benzodiazol-2-yl-13-thiazole.png
-
-NOW PROCESSING: 11-difluoroethane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/11-difluoroethane.png
-
-NOW PROCESSING: methyl-acetoacetate
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/methyl-acetoacetate.png
-
-NOW PROCESSING: 4E-hexa-14-diene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4E-hexa-14-diene.png
-
-NOW PROCESSING: trifluoroacetic-acid
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/trifluoroacetic-acid.png
-
-NOW PROCESSING: 2-tert-butylphenol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-tert-butylphenol.png
-
-NOW PROCESSING: anisole
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/anisole.png
-
-NOW PROCESSING: 9-chloroanthracene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/9-chloroanthracene.png
-
-NOW PROCESSING: 3--hydroxymethyl-pyridine
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3--hydroxymethyl-pyridine.png
-
-NOW PROCESSING: 24-pentanediol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/24-pentanediol.png
-
-NOW PROCESSING: 3-ethylhexane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethylhexane.png
-
-NOW PROCESSING: 2-methylhex-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylhex-2-ene.png
-
-NOW PROCESSING: butyl-formate
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/butyl-formate.png
-
-NOW PROCESSING: 13-dithiane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/13-dithiane.png
-
-NOW PROCESSING: 1-pentyne-trans
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-pentyne-trans.png
-
-NOW PROCESSING: cyclopentene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/cyclopentene.png
-
-NOW PROCESSING: 1R2R3S-123-trimethylcyclopentane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1R2R3S-123-trimethylcyclopentane.png
-
-NOW PROCESSING: bromoethene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/bromoethene.png
-
-NOW PROCESSING: 2E-5-methylhex-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2E-5-methylhex-2-ene.png
-
-NOW PROCESSING: 1234-tetrafluorobenzene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1234-tetrafluorobenzene.png
-
-NOW PROCESSING: 2-ethoxyethyl-acetate
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-ethoxyethyl-acetate.png
-
-NOW PROCESSING: 3E-2-methylhex-3-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3E-2-methylhex-3-ene.png
-
-NOW PROCESSING: 24-dimethylpentan-3-ol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/24-dimethylpentan-3-ol.png
-
-NOW PROCESSING: 2E4E-hexa-24-diene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2E4E-hexa-24-diene.png
-
-NOW PROCESSING: 3E-hept-3-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3E-hept-3-ene.png
-
-NOW PROCESSING: 23-dimethylhex-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/23-dimethylhex-2-ene.png
-
-NOW PROCESSING: 33-dimethylpent-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/33-dimethylpent-1-ene.png
-
-NOW PROCESSING: 3-methylthiophene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylthiophene.png
-
-NOW PROCESSING: phenylmethoxymethylbenzene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/phenylmethoxymethylbenzene.png
-
-NOW PROCESSING: 124-trifluorobenzene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/124-trifluorobenzene.png
-
-NOW PROCESSING: 1-phenyl-1-propanol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-phenyl-1-propanol.png
-
-NOW PROCESSING: cyclooctene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/cyclooctene.png
-
-NOW PROCESSING: 111333-hexafluoro-2-propanol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/111333-hexafluoro-2-propanol.png
-
-NOW PROCESSING: 4-fluoroaniline
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-fluoroaniline.png
-
-NOW PROCESSING: 44-dimethylhex-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/44-dimethylhex-1-ene.png
-
-NOW PROCESSING: 2-butyne
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-butyne.png
-
-NOW PROCESSING: 3Z-3-methyl-penta-13-diene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3Z-3-methyl-penta-13-diene.png
-
-NOW PROCESSING: 2-ethylbut-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-ethylbut-1-ene.png
-
-NOW PROCESSING: 3-methyl-1-pentyne
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methyl-1-pentyne.png
-
-NOW PROCESSING: 3-methylcyclopentanone
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylcyclopentanone.png
-
-NOW PROCESSING: chloromethylbenzene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/chloromethylbenzene.png
-
-NOW PROCESSING: Z-pent-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/Z-pent-2-ene.png
-
-NOW PROCESSING: hexa-15-diyne
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/hexa-15-diyne.png
-
-NOW PROCESSING: 123-trimethylcyclopent-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/123-trimethylcyclopent-1-ene.png
-
-NOW PROCESSING: 6-methylhept-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/6-methylhept-1-ene.png
-
-NOW PROCESSING: 2-butanethiol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-butanethiol.png
-
-NOW PROCESSING: 14-difluorobenzene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/14-difluorobenzene.png
-
-NOW PROCESSING: thiobis-2-ethanol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/thiobis-2-ethanol.png
-
-NOW PROCESSING: 24-dichlorotoluene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/24-dichlorotoluene.png
-
-NOW PROCESSING: cyclopent-2-en-1-one
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/cyclopent-2-en-1-one.png
-
-NOW PROCESSING: E-4-methylpent-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/E-4-methylpent-2-ene.png
-
-NOW PROCESSING: 34-dihydro-2H-pyran
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/34-dihydro-2H-pyran.png
-
-NOW PROCESSING: m-tolualdehyde
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/m-tolualdehyde.png
-
-NOW PROCESSING: cis-decalin
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/cis-decalin.png
-
-NOW PROCESSING: 3-methylideneheptane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylideneheptane.png
-
-NOW PROCESSING: 1R2R-12-dimethylcyclopropane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1R2R-12-dimethylcyclopropane.png
-
-NOW PROCESSING: fluoroethene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/fluoroethene.png
-
-NOW PROCESSING: 3-methylpent-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylpent-1-ene.png
-
-NOW PROCESSING: 1-bromononane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-bromononane.png
-
-NOW PROCESSING: 2-methyldecane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methyldecane.png
-
-NOW PROCESSING: 2-methylheptane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylheptane.png
-
-NOW PROCESSING: 2Z-55-dimethylhex-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2Z-55-dimethylhex-2-ene.png
-
-NOW PROCESSING: 1--ethoxyethylphosphoryl-oxyethane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1--ethoxyethylphosphoryl-oxyethane.png
-
-NOW PROCESSING: 2-methyl-3-methylidenepentane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methyl-3-methylidenepentane.png
-
-NOW PROCESSING: 3-methylhex-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylhex-1-ene.png
-
-NOW PROCESSING: 3-chloro-12-propanediol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-chloro-12-propanediol.png
-
-NOW PROCESSING: diisopropyl-ether
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/diisopropyl-ether.png
-
-NOW PROCESSING: phthalan
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/phthalan.png
-
-NOW PROCESSING: trans-3-methylcyclohexanol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/trans-3-methylcyclohexanol.png
-
-NOW PROCESSING: Z-hex-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/Z-hex-2-ene.png
-
-NOW PROCESSING: 3E-5-methylhept-3-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3E-5-methylhept-3-ene.png
-
-NOW PROCESSING: 2-propanethiol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-propanethiol.png
-
-NOW PROCESSING: fluoranthene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/fluoranthene.png
-
-NOW PROCESSING: indole
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/indole.png
-
-NOW PROCESSING: 223-trimethylbutane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/223-trimethylbutane.png
-
-NOW PROCESSING: 1-propanethiol-trans
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-propanethiol-trans.png
-
-NOW PROCESSING: 1245-tetrafluorobenzene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1245-tetrafluorobenzene.png
-
-NOW PROCESSING: 3-fluoropyridine
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-fluoropyridine.png
-
-NOW PROCESSING: prop-2-en-1-ylbenzene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/prop-2-en-1-ylbenzene.png
-
-NOW PROCESSING: 26-ditert-butylpyridine
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/26-ditert-butylpyridine.png
-
-NOW PROCESSING: butane-12-diol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/butane-12-diol.png
-
-NOW PROCESSING: hexadecane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/hexadecane.png
-
-NOW PROCESSING: 233-trimethylpentane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/233-trimethylpentane.png
-
-NOW PROCESSING: 22-dimethylpropanenitrile
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/22-dimethylpropanenitrile.png
-
-NOW PROCESSING: 3-ethyl-2-methylpent-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethyl-2-methylpent-2-ene.png
-
-NOW PROCESSING: 2E-3-methylhex-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2E-3-methylhex-2-ene.png
-
-NOW PROCESSING: isopropylcyclopropane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/isopropylcyclopropane.png
-
-NOW PROCESSING: dodecan-1-ol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/dodecan-1-ol.png
-
-NOW PROCESSING: chlorocyclohexane-axial
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/chlorocyclohexane-axial.png
-
-NOW PROCESSING: 12-dimethoxyethane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/12-dimethoxyethane.png
-
-NOW PROCESSING: sec-butyl-acetate
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/sec-butyl-acetate.png
 
 NOW PROCESSING: butanal
 
@@ -3865,7 +25,7 @@ NOW PROCESSING: butanal
 
 PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/butanal.png
 
-NOW PROCESSING: 5-methylhex-1-yne
+NOW PROCESSING: 2-ethylbut-1-ene
 
 <G4>
 
@@ -3879,9 +39,9 @@ NOW PROCESSING: 5-methylhex-1-yne
 
 <OPLS>
 
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/5-methylhex-1-yne.png
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-ethylbut-1-ene.png
 
-NOW PROCESSING: 13-benzothiazole
+NOW PROCESSING: 1-ethoxy-2-2-ethoxyethoxyethane
 
 <G4>
 
@@ -3895,9 +55,9 @@ NOW PROCESSING: 13-benzothiazole
 
 <OPLS>
 
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/13-benzothiazole.png
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-ethoxy-2-2-ethoxyethoxyethane.png
 
-NOW PROCESSING: 3-heptanol
+NOW PROCESSING: 2-ethoxyethyl-acetate
 
 <G4>
 
@@ -3911,9 +71,9 @@ NOW PROCESSING: 3-heptanol
 
 <OPLS>
 
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-heptanol.png
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-ethoxyethyl-acetate.png
 
-NOW PROCESSING: 35-dichloroaniline
+NOW PROCESSING: 234-trimethylpent-2-ene
 
 <G4>
 
@@ -3927,9 +87,9 @@ NOW PROCESSING: 35-dichloroaniline
 
 <OPLS>
 
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/35-dichloroaniline.png
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/234-trimethylpent-2-ene.png
 
-NOW PROCESSING: trans-13-pentadiene
+NOW PROCESSING: 3-ethylpyridine
 
 <G4>
 
@@ -3943,9 +103,9 @@ NOW PROCESSING: trans-13-pentadiene
 
 <OPLS>
 
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/trans-13-pentadiene.png
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethylpyridine.png
 
-NOW PROCESSING: 2-thiophene-carbonitrile
+NOW PROCESSING: 3-methylcyclopentanone
 
 <G4>
 
@@ -3959,1399 +119,7 @@ NOW PROCESSING: 2-thiophene-carbonitrile
 
 <OPLS>
 
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-thiophene-carbonitrile.png
-
-NOW PROCESSING: 2Z-44-dimethylpent-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2Z-44-dimethylpent-2-ene.png
-
-NOW PROCESSING: quinoline
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/quinoline.png
-
-NOW PROCESSING: ethylamine-gauche
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/ethylamine-gauche.png
-
-NOW PROCESSING: 3-methylhexane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylhexane.png
-
-NOW PROCESSING: 4-methylheptane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-methylheptane.png
-
-NOW PROCESSING: thiane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/thiane.png
-
-NOW PROCESSING: 224-trimethylpent-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/224-trimethylpent-2-ene.png
-
-NOW PROCESSING: 1-nitropropane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-nitropropane.png
-
-NOW PROCESSING: 2Z-5-methylhex-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2Z-5-methylhex-2-ene.png
-
-NOW PROCESSING: 1-phenylpropan-2-one
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-phenylpropan-2-one.png
-
-NOW PROCESSING: non-2-yne
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/non-2-yne.png
-
-NOW PROCESSING: 4-methylhex-2-yne
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-methylhex-2-yne.png
-
-NOW PROCESSING: 33-dimethylpentane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/33-dimethylpentane.png
-
-NOW PROCESSING: 3-methyl-2-cyclopenten-1-one
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methyl-2-cyclopenten-1-one.png
-
-NOW PROCESSING: 1S2R-1-ethyl-2-methylcyclopropane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1S2R-1-ethyl-2-methylcyclopropane.png
-
-NOW PROCESSING: 1-diethoxyphosphorylethene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-diethoxyphosphorylethene.png
-
-NOW PROCESSING: n-pentylamine
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/n-pentylamine.png
-
-NOW PROCESSING: 1-chloropentane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-chloropentane.png
-
-NOW PROCESSING: 25-dimethylhex-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/25-dimethylhex-2-ene.png
-
-NOW PROCESSING: non-4-yne
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/non-4-yne.png
-
-NOW PROCESSING: hexane-1-thiol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/hexane-1-thiol.png
-
-NOW PROCESSING: 3Z-25-dimethylhex-3-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3Z-25-dimethylhex-3-ene.png
-
-NOW PROCESSING: 2Z-4-methylhex-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2Z-4-methylhex-2-ene.png
-
-NOW PROCESSING: 1-ethyl-1-methylcyclopentane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-ethyl-1-methylcyclopentane.png
-
-NOW PROCESSING: 3-ethyl-4-methylpent-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethyl-4-methylpent-1-ene.png
-
-NOW PROCESSING: ethylcyclohexane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/ethylcyclohexane.png
-
-NOW PROCESSING: 3-methyl-2-butanone
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methyl-2-butanone.png
-
-NOW PROCESSING: neopentane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/neopentane.png
-
-NOW PROCESSING: 2-mercaptoethanol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-mercaptoethanol.png
-
-NOW PROCESSING: heptanoic-acid
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/heptanoic-acid.png
-
-NOW PROCESSING: 3-ethylpentane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethylpentane.png
-
-NOW PROCESSING: 12-ethanedithiol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/12-ethanedithiol.png
-
-NOW PROCESSING: hexanoic-acid
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/hexanoic-acid.png
-
-NOW PROCESSING: allyl-acrylate
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/allyl-acrylate.png
-
-NOW PROCESSING: 25-dimethylhexane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/25-dimethylhexane.png
-
-NOW PROCESSING: 3-bromopentane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-bromopentane.png
-
-NOW PROCESSING: 1Z3Z-cycloocta-13-diene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1Z3Z-cycloocta-13-diene.png
-
-NOW PROCESSING: dodecane-1-thiol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/dodecane-1-thiol.png
-
-NOW PROCESSING: 222-trichloroethanol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/222-trichloroethanol.png
-
-NOW PROCESSING: 4-methyl-1-pentyne
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-methyl-1-pentyne.png
-
-NOW PROCESSING: 23-dimethylbut-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/23-dimethylbut-1-ene.png
-
-NOW PROCESSING: 24-dimethylhexane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/24-dimethylhexane.png
-
-NOW PROCESSING: 2-methyl-13-butadiene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methyl-13-butadiene.png
-
-NOW PROCESSING: 3-methyl-4-methylidenehexane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methyl-4-methylidenehexane.png
-
-NOW PROCESSING: 1-butanethiol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-butanethiol.png
-
-NOW PROCESSING: 2-methyl-N-phenylmethylpropan-2-amine
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methyl-N-phenylmethylpropan-2-amine.png
-
-NOW PROCESSING: cyanoacetylene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/cyanoacetylene.png
-
-NOW PROCESSING: 3-methyl-1-butene-gauche
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methyl-1-butene-gauche.png
-
-NOW PROCESSING: 2E-4-methylhept-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2E-4-methylhept-2-ene.png
-
-NOW PROCESSING: 1R2S-12-dimethylcyclopropane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1R2S-12-dimethylcyclopropane.png
-
-NOW PROCESSING: 2-2-ethoxyethoxyethyl-acetate
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-2-ethoxyethoxyethyl-acetate.png
-
-NOW PROCESSING: acridine
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/acridine.png
-
-NOW PROCESSING: methyl-propionate
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/methyl-propionate.png
-
-NOW PROCESSING: 13-dioxolane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/13-dioxolane.png
-
-NOW PROCESSING: 1R4R-14-dimethylcyclohexane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1R4R-14-dimethylcyclohexane.png
-
-NOW PROCESSING: E-3-methylpent-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/E-3-methylpent-2-ene.png
-
-NOW PROCESSING: 3-ethyl-3-methylpent-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethyl-3-methylpent-1-ene.png
-
-NOW PROCESSING: 3E-2-methylpenta-13-diene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3E-2-methylpenta-13-diene.png
-
-NOW PROCESSING: diethyl-hydrogen-phosphate
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/diethyl-hydrogen-phosphate.png
-
-NOW PROCESSING: 3-methylaniline
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylaniline.png
-
-NOW PROCESSING: 14-butanedithiol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/14-butanedithiol.png
-
-NOW PROCESSING: 13-thiazole
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/13-thiazole.png
-
-NOW PROCESSING: isobutyl-acrylate
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/isobutyl-acrylate.png
-
-NOW PROCESSING: tetrahydrofurfuryl-alcohol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/tetrahydrofurfuryl-alcohol.png
-
-NOW PROCESSING: 12-dimethoxybenzene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/12-dimethoxybenzene.png
-
-NOW PROCESSING: ethylcyclobutane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/ethylcyclobutane.png
-
-NOW PROCESSING: 2-methylbut-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylbut-1-ene.png
-
-NOW PROCESSING: o-ethylaniline
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/o-ethylaniline.png
-
-NOW PROCESSING: 1S2S-12-dimethylcyclohexane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1S2S-12-dimethylcyclohexane.png
-
-NOW PROCESSING: 23-dimethylpent-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/23-dimethylpent-2-ene.png
-
-NOW PROCESSING: 24-dimethyl-3-pentanone
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/24-dimethyl-3-pentanone.png
-
-NOW PROCESSING: butyl-ethyl-ether
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/butyl-ethyl-ether.png
-
-NOW PROCESSING: oct-3-yne
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/oct-3-yne.png
-
-NOW PROCESSING: 1-chlorooctane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-chlorooctane.png
-
-NOW PROCESSING: 24-dimethylpent-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/24-dimethylpent-2-ene.png
-
-NOW PROCESSING: 2E-44-dimethylpent-2-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2E-44-dimethylpent-2-ene.png
-
-NOW PROCESSING: 24-dimethylpentane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/24-dimethylpentane.png
-
-NOW PROCESSING: 23-dimethylhex-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/23-dimethylhex-1-ene.png
-
-NOW PROCESSING: phenazine
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/phenazine.png
-
-NOW PROCESSING: 3-methylsulfolane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylsulfolane.png
-
-NOW PROCESSING: 4-methylhex-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-methylhex-1-ene.png
-
-NOW PROCESSING: 33-dimethylhex-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/33-dimethylhex-1-ene.png
-
-NOW PROCESSING: 3Z-2-methylhex-3-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3Z-2-methylhex-3-ene.png
-
-NOW PROCESSING: 3-methylpenta-14-diene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylpenta-14-diene.png
-
-NOW PROCESSING: 1-butene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-butene.png
-
-NOW PROCESSING: oct-4-yne
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/oct-4-yne.png
-
-NOW PROCESSING: 1-chloro-3-methylbutane
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-chloro-3-methylbutane.png
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylcyclopentanone.png
 
 NOW PROCESSING: 1-pentene
 
@@ -5369,7 +137,7 @@ NOW PROCESSING: 1-pentene
 
 PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-pentene.png
 
-NOW PROCESSING: 234-trimethylpentane
+NOW PROCESSING: thiane
 
 <G4>
 
@@ -5383,71 +151,7 @@ NOW PROCESSING: 234-trimethylpentane
 
 <OPLS>
 
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/234-trimethylpentane.png
-
-NOW PROCESSING: 4-ethylhex-1-ene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-ethylhex-1-ene.png
-
-NOW PROCESSING: 1-octanol
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-octanol.png
-
-NOW PROCESSING: 3-methylbutanoic-acid
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylbutanoic-acid.png
-
-NOW PROCESSING: prop-1-en-2-ylbenzene
-
-<G4>
-
-<OEP>
-
-<CGenFF>
-
-<GAFF-BCC>
-
-<GAFF-ESP>
-
-<OPLS>
-
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/prop-1-en-2-ylbenzene.png
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/thiane.png
 
 NOW PROCESSING: 34-dimethylpent-1-ene
 
@@ -5465,6 +169,1142 @@ NOW PROCESSING: 34-dimethylpent-1-ene
 
 PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/34-dimethylpent-1-ene.png
 
+NOW PROCESSING: 1-diethoxyphosphorylethene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-diethoxyphosphorylethene.png
+
+NOW PROCESSING: propanoic-acid-cis
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/propanoic-acid-cis.png
+
+NOW PROCESSING: tetrahydrofurfuryl-alcohol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/tetrahydrofurfuryl-alcohol.png
+
+NOW PROCESSING: 3-chloro-12-propanediol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-chloro-12-propanediol.png
+
+NOW PROCESSING: 2E4E-hexa-24-diene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2E4E-hexa-24-diene.png
+
+NOW PROCESSING: anisole
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/anisole.png
+
+NOW PROCESSING: 1234-tetrafluorobenzene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1234-tetrafluorobenzene.png
+
+NOW PROCESSING: bromoethene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/bromoethene.png
+
+NOW PROCESSING: 4-methylpenta-13-diene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-methylpenta-13-diene.png
+
+NOW PROCESSING: 1-chlorooctane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-chlorooctane.png
+
+NOW PROCESSING: 3-methylpent-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylpent-1-ene.png
+
+NOW PROCESSING: propylamine
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/propylamine.png
+
+NOW PROCESSING: methyl-propionate
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/methyl-propionate.png
+
+NOW PROCESSING: 3-methyl-1-butene-gauche
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methyl-1-butene-gauche.png
+
+NOW PROCESSING: 2S5R-25-dimethyltetrahydrofuran
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2S5R-25-dimethyltetrahydrofuran.png
+
+NOW PROCESSING: 4-methyloctane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-methyloctane.png
+
+NOW PROCESSING: 2233-tetrafluoro-1-propanol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2233-tetrafluoro-1-propanol.png
+
+NOW PROCESSING: 2-ethylphenol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-ethylphenol.png
+
+NOW PROCESSING: 7-methyloct-3-yne
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/7-methyloct-3-yne.png
+
+NOW PROCESSING: hexa-15-diyne
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/hexa-15-diyne.png
+
+NOW PROCESSING: 2-heptanol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-heptanol.png
+
+NOW PROCESSING: 2-methyl-3-methylidenepentane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methyl-3-methylidenepentane.png
+
+NOW PROCESSING: 34-dimethylhexane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/34-dimethylhexane.png
+
+NOW PROCESSING: 1-phenyl-1-propanol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-phenyl-1-propanol.png
+
+NOW PROCESSING: 1-butene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-butene.png
+
+NOW PROCESSING: butyl-ethyl-ether
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/butyl-ethyl-ether.png
+
+NOW PROCESSING: 1-octanol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-octanol.png
+
+NOW PROCESSING: tetrahydropyran
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/tetrahydropyran.png
+
+NOW PROCESSING: 2-ethylnaphthalene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-ethylnaphthalene.png
+
+NOW PROCESSING: sec-butyl-acetate
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/sec-butyl-acetate.png
+
+NOW PROCESSING: neopentane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/neopentane.png
+
+NOW PROCESSING: 3-methyl-1-butanethiol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methyl-1-butanethiol.png
+
+NOW PROCESSING: phenylmethoxymethylbenzene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/phenylmethoxymethylbenzene.png
+
+NOW PROCESSING: 123-trimethylcyclopent-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/123-trimethylcyclopent-1-ene.png
+
+NOW PROCESSING: 3Z-3-methyl-penta-13-diene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3Z-3-methyl-penta-13-diene.png
+
+NOW PROCESSING: 3-pentanol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-pentanol.png
+
+NOW PROCESSING: indole
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/indole.png
+
+NOW PROCESSING: 3-methylideneheptane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylideneheptane.png
+
+NOW PROCESSING: 2-propan-2-ylphenol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-propan-2-ylphenol.png
+
+NOW PROCESSING: 1-bromononane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-bromononane.png
+
+NOW PROCESSING: 23-dimethylpent-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/23-dimethylpent-1-ene.png
+
+NOW PROCESSING: 2-thiophene-carbonitrile
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-thiophene-carbonitrile.png
+
+NOW PROCESSING: 2E-4-methylhex-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2E-4-methylhex-2-ene.png
+
+NOW PROCESSING: 2-methyl-13-butadiene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methyl-13-butadiene.png
+
+NOW PROCESSING: 1-phenylpropan-1-one
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-phenylpropan-1-one.png
+
+NOW PROCESSING: 3-methylbutyraldehyde
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylbutyraldehyde.png
+
+NOW PROCESSING: chloromethylbenzene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/chloromethylbenzene.png
+
+NOW PROCESSING: heptan-1-ol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/heptan-1-ol.png
+
+NOW PROCESSING: heptanoic-acid
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/heptanoic-acid.png
+
+NOW PROCESSING: prop-1-en-2-ylbenzene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/prop-1-en-2-ylbenzene.png
+
+NOW PROCESSING: 22-dimethylpentane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/22-dimethylpentane.png
+
+NOW PROCESSING: 33-dimethylbutan-2-one
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/33-dimethylbutan-2-one.png
+
+NOW PROCESSING: 22-dimethylbutane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/22-dimethylbutane.png
+
+NOW PROCESSING: 3E-hept-3-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3E-hept-3-ene.png
+
+NOW PROCESSING: 3E-25-dimethylhex-3-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3E-25-dimethylhex-3-ene.png
+
+NOW PROCESSING: ethylcyclopropane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/ethylcyclopropane.png
+
+NOW PROCESSING: 24-dimethylpent-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/24-dimethylpent-2-ene.png
+
+NOW PROCESSING: E-4-methylpent-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/E-4-methylpent-2-ene.png
+
+NOW PROCESSING: non-4-yne
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/non-4-yne.png
+
+NOW PROCESSING: 2-methylbut-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylbut-2-ene.png
+
+NOW PROCESSING: methylpropene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/methylpropene.png
+
+NOW PROCESSING: hexamethylphosphoric-triamide
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/hexamethylphosphoric-triamide.png
+
+NOW PROCESSING: 2E-44-dimethylhex-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2E-44-dimethylhex-2-ene.png
+
+NOW PROCESSING: propanenitrile
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/propanenitrile.png
+
+NOW PROCESSING: 24-dimethylpent-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/24-dimethylpent-1-ene.png
+
+NOW PROCESSING: 1245-tetrafluorobenzene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1245-tetrafluorobenzene.png
+
+NOW PROCESSING: 1--butylsulfinyl-butane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1--butylsulfinyl-butane.png
+
+NOW PROCESSING: 3-methylaniline
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylaniline.png
+
+NOW PROCESSING: fluoranthene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/fluoranthene.png
+
+NOW PROCESSING: o-ethylaniline
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/o-ethylaniline.png
+
+NOW PROCESSING: 2R-1-bromo-2-methylbutane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2R-1-bromo-2-methylbutane.png
+
 NOW PROCESSING: 33-dimethylhexane
 
 <G4>
@@ -5481,7 +1321,7 @@ NOW PROCESSING: 33-dimethylhexane
 
 PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/33-dimethylhexane.png
 
-NOW PROCESSING: 2Z-344-trimethylpent-2-ene
+NOW PROCESSING: 13-benzothiazole
 
 <G4>
 
@@ -5495,7 +1335,2199 @@ NOW PROCESSING: 2Z-344-trimethylpent-2-ene
 
 <OPLS>
 
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2Z-344-trimethylpent-2-ene.png
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/13-benzothiazole.png
+
+NOW PROCESSING: 1--ethoxyethylphosphoryl-oxyethane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1--ethoxyethylphosphoryl-oxyethane.png
+
+NOW PROCESSING: trans-13-pentadiene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/trans-13-pentadiene.png
+
+NOW PROCESSING: ethylamine-gauche
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/ethylamine-gauche.png
+
+NOW PROCESSING: non-1-yne
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/non-1-yne.png
+
+NOW PROCESSING: 4-1h-13-benzodiazol-2-yl-13-thiazole
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-1h-13-benzodiazol-2-yl-13-thiazole.png
+
+NOW PROCESSING: ethyl-2-chloroacetate
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/ethyl-2-chloroacetate.png
+
+NOW PROCESSING: 1-methylpyrrolidin-2-one
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-methylpyrrolidin-2-one.png
+
+NOW PROCESSING: 3-ethylhexane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethylhexane.png
+
+NOW PROCESSING: 2-bromopropene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-bromopropene.png
+
+NOW PROCESSING: n-propyl-propionate
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/n-propyl-propionate.png
+
+NOW PROCESSING: 34-dihydro-2H-pyran
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/34-dihydro-2H-pyran.png
+
+NOW PROCESSING: 3-amino-1-propanol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-amino-1-propanol.png
+
+NOW PROCESSING: 2E-5-methylhex-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2E-5-methylhex-2-ene.png
+
+NOW PROCESSING: N-methyl-N-phenyl-formamide
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/N-methyl-N-phenyl-formamide.png
+
+NOW PROCESSING: 2-methylhept-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylhept-2-ene.png
+
+NOW PROCESSING: cyclohexanethiol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/cyclohexanethiol.png
+
+NOW PROCESSING: 2Z-55-dimethylhex-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2Z-55-dimethylhex-2-ene.png
+
+NOW PROCESSING: 1-pentyne-trans
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-pentyne-trans.png
+
+NOW PROCESSING: 2-mercaptoethanol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-mercaptoethanol.png
+
+NOW PROCESSING: cyclohepta-135-triene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/cyclohepta-135-triene.png
+
+NOW PROCESSING: 2-methylbut-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylbut-1-ene.png
+
+NOW PROCESSING: 2-acetyloxyethyl-acetate
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-acetyloxyethyl-acetate.png
+
+NOW PROCESSING: 3-methyl-2-cyclopenten-1-one
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methyl-2-cyclopenten-1-one.png
+
+NOW PROCESSING: 23-dimethylhex-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/23-dimethylhex-2-ene.png
+
+NOW PROCESSING: 2-methyldecane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methyldecane.png
+
+NOW PROCESSING: n-aminoethyl-ethanolamine
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/n-aminoethyl-ethanolamine.png
+
+NOW PROCESSING: 5-methylhex-1-yne
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/5-methylhex-1-yne.png
+
+NOW PROCESSING: p-ethylphenol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/p-ethylphenol.png
+
+NOW PROCESSING: acridine
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/acridine.png
+
+NOW PROCESSING: 2-methylhex-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylhex-2-ene.png
+
+NOW PROCESSING: 3-methyl-4-methylidenehexane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methyl-4-methylidenehexane.png
+
+NOW PROCESSING: 13-dioxolane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/13-dioxolane.png
+
+NOW PROCESSING: phenazine
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/phenazine.png
+
+NOW PROCESSING: diethyl-sulfide
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/diethyl-sulfide.png
+
+NOW PROCESSING: 1133-tetramethylurea
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1133-tetramethylurea.png
+
+NOW PROCESSING: 3-methylpenta-14-diene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylpenta-14-diene.png
+
+NOW PROCESSING: pentadecane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/pentadecane.png
+
+NOW PROCESSING: 2-propanethiol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-propanethiol.png
+
+NOW PROCESSING: 33-dimethylpentane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/33-dimethylpentane.png
+
+NOW PROCESSING: 233-trimethylpentane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/233-trimethylpentane.png
+
+NOW PROCESSING: cis-13-pentadiene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/cis-13-pentadiene.png
+
+NOW PROCESSING: 3-heptanone
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-heptanone.png
+
+NOW PROCESSING: dimethyl-disulfide
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/dimethyl-disulfide.png
+
+NOW PROCESSING: Z-pent-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/Z-pent-2-ene.png
+
+NOW PROCESSING: Z-hex-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/Z-hex-2-ene.png
+
+NOW PROCESSING: 2E-34-dimethylhex-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2E-34-dimethylhex-2-ene.png
+
+NOW PROCESSING: 33-dimethylhex-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/33-dimethylhex-1-ene.png
+
+NOW PROCESSING: naphthalene-2-carbaldehyde
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/naphthalene-2-carbaldehyde.png
+
+NOW PROCESSING: 4-methylhex-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-methylhex-1-ene.png
+
+NOW PROCESSING: diisopropyl-ether
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/diisopropyl-ether.png
+
+NOW PROCESSING: 1R2S-12-dimethylcyclopropane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1R2S-12-dimethylcyclopropane.png
+
+NOW PROCESSING: 3Z-2-methylhex-3-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3Z-2-methylhex-3-ene.png
+
+NOW PROCESSING: 1236-tetrahydrobenzaldehyde
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1236-tetrahydrobenzaldehyde.png
+
+NOW PROCESSING: 3Z-2-methylhept-3-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3Z-2-methylhept-3-ene.png
+
+NOW PROCESSING: cyclooctene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/cyclooctene.png
+
+NOW PROCESSING: 3-ethyl-4-methylpent-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethyl-4-methylpent-1-ene.png
+
+NOW PROCESSING: oct-2-yne
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/oct-2-yne.png
+
+NOW PROCESSING: 2-methylhex-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylhex-1-ene.png
+
+NOW PROCESSING: 25-dimethylhex-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/25-dimethylhex-2-ene.png
+
+NOW PROCESSING: 1-propanethiol-trans
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-propanethiol-trans.png
+
+NOW PROCESSING: naphthalene-1-carbaldehyde
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/naphthalene-1-carbaldehyde.png
+
+NOW PROCESSING: diethylene-glycol-monomethyl-ether
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/diethylene-glycol-monomethyl-ether.png
+
+NOW PROCESSING: 4-fluoroaniline
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-fluoroaniline.png
+
+NOW PROCESSING: trans-1-propenylbenzene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/trans-1-propenylbenzene.png
+
+NOW PROCESSING: 2E-44-dimethylpent-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2E-44-dimethylpent-2-ene.png
+
+NOW PROCESSING: 2-methylheptane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylheptane.png
+
+NOW PROCESSING: methylcyclobutane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/methylcyclobutane.png
+
+NOW PROCESSING: cyanoacetylene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/cyanoacetylene.png
+
+NOW PROCESSING: 11-dimethylcyclopropane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/11-dimethylcyclopropane.png
+
+NOW PROCESSING: 24-dichlorotoluene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/24-dichlorotoluene.png
+
+NOW PROCESSING: 3-methylsulfolane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylsulfolane.png
+
+NOW PROCESSING: 33-dimethyl-1-butyne
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/33-dimethyl-1-butyne.png
+
+NOW PROCESSING: 2-methylaniline
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylaniline.png
+
+NOW PROCESSING: N-prop-2-enylprop-2-en-1-amine
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/N-prop-2-enylprop-2-en-1-amine.png
+
+NOW PROCESSING: 23-dimethylhex-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/23-dimethylhex-1-ene.png
+
+NOW PROCESSING: 3-hexanol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-hexanol.png
+
+NOW PROCESSING: 1-4-chlorophenylethanone
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-4-chlorophenylethanone.png
+
+NOW PROCESSING: butane-12-diol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/butane-12-diol.png
+
+NOW PROCESSING: 1-nitropropane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-nitropropane.png
+
+NOW PROCESSING: 244-trimethylpent-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/244-trimethylpent-1-ene.png
+
+NOW PROCESSING: fluoroethene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/fluoroethene.png
+
+NOW PROCESSING: ethylcyclobutane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/ethylcyclobutane.png
+
+NOW PROCESSING: 3-methyl-1-pentyne
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methyl-1-pentyne.png
+
+NOW PROCESSING: 3-methylcyclopentene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylcyclopentene.png
+
+NOW PROCESSING: 4-chlorobutanoic-acid
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-chlorobutanoic-acid.png
+
+NOW PROCESSING: 4-methylhex-2-yne
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-methylhex-2-yne.png
+
+NOW PROCESSING: hex-3-yne
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/hex-3-yne.png
+
+NOW PROCESSING: 2Z-3-methylhex-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2Z-3-methylhex-2-ene.png
+
+NOW PROCESSING: 111333-hexafluoro-2-propanol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/111333-hexafluoro-2-propanol.png
+
+NOW PROCESSING: 2-methylpropanenitrile
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylpropanenitrile.png
+
+NOW PROCESSING: pyrrolidine-axial
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/pyrrolidine-axial.png
+
+NOW PROCESSING: hexane-1-thiol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/hexane-1-thiol.png
+
+NOW PROCESSING: azulene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/azulene.png
+
+NOW PROCESSING: thiobis-2-ethanol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/thiobis-2-ethanol.png
+
+NOW PROCESSING: 3-fluoropyridine
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-fluoropyridine.png
+
+NOW PROCESSING: 2Z-34-dimethylpent-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2Z-34-dimethylpent-2-ene.png
+
+NOW PROCESSING: 9-chloroanthracene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/9-chloroanthracene.png
+
+NOW PROCESSING: 222-trichloroethanol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/222-trichloroethanol.png
+
+NOW PROCESSING: 3--hydroxymethyl-pyridine
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3--hydroxymethyl-pyridine.png
+
+NOW PROCESSING: 45-dimethylhex-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/45-dimethylhex-1-ene.png
+
+NOW PROCESSING: 2Z-4-methylhex-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2Z-4-methylhex-2-ene.png
+
+NOW PROCESSING: dodecane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/dodecane.png
+
+NOW PROCESSING: 3-ethyl-2-methylpentane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethyl-2-methylpentane.png
+
+NOW PROCESSING: 1R2R-12-dimethylcyclopropane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1R2R-12-dimethylcyclopropane.png
+
+NOW PROCESSING: 23-dihydro-1H-indole
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/23-dihydro-1H-indole.png
+
+NOW PROCESSING: 3-ethyl-2-methylpent-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethyl-2-methylpent-2-ene.png
+
+NOW PROCESSING: 3-ethylpentan-3-ol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethylpentan-3-ol.png
+
+NOW PROCESSING: 26-ditert-butylpyridine
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/26-ditert-butylpyridine.png
+
+NOW PROCESSING: 1--3-pyridinyl-ethanone
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1--3-pyridinyl-ethanone.png
+
+NOW PROCESSING: 25-dimethylhexane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/25-dimethylhexane.png
+
+NOW PROCESSING: 3-methylbutanoic-acid
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylbutanoic-acid.png
+
+NOW PROCESSING: m-tolualdehyde
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/m-tolualdehyde.png
+
+NOW PROCESSING: 22-dimethylpropanenitrile
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/22-dimethylpropanenitrile.png
+
+NOW PROCESSING: methyl-acetoacetate
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/methyl-acetoacetate.png
+
+NOW PROCESSING: 13-thiazole
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/13-thiazole.png
+
+NOW PROCESSING: oct-3-yne
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/oct-3-yne.png
+
+NOW PROCESSING: 1S2S-12-dimethylcyclohexane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1S2S-12-dimethylcyclohexane.png
+
+NOW PROCESSING: diethyl-oxalate
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/diethyl-oxalate.png
+
+NOW PROCESSING: 2-butyne
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-butyne.png
+
+NOW PROCESSING: 2E-4-methylhept-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2E-4-methylhept-2-ene.png
+
+NOW PROCESSING: hexanoic-acid
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/hexanoic-acid.png
+
+NOW PROCESSING: 2E-3-methylhex-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2E-3-methylhex-2-ene.png
+
+NOW PROCESSING: 13-dithiane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/13-dithiane.png
+
+NOW PROCESSING: 234-trimethylpentane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/234-trimethylpentane.png
+
+NOW PROCESSING: 1R2R3S-123-trimethylcyclopentane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1R2R3S-123-trimethylcyclopentane.png
+
+NOW PROCESSING: 3Z-25-dimethylhex-3-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3Z-25-dimethylhex-3-ene.png
+
+NOW PROCESSING: 3-ethylpentane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethylpentane.png
+
+NOW PROCESSING: 44-dimethylhex-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/44-dimethylhex-1-ene.png
+
+NOW PROCESSING: butylcyclopentane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/butylcyclopentane.png
+
+NOW PROCESSING: non-2-yne
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/non-2-yne.png
+
+NOW PROCESSING: 24-pentanediol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/24-pentanediol.png
+
+NOW PROCESSING: 25-dimethylhex-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/25-dimethylhex-1-ene.png
+
+NOW PROCESSING: 2-methylnonane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylnonane.png
+
+NOW PROCESSING: 25-dihydrofuran
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/25-dihydrofuran.png
+
+NOW PROCESSING: 1-phenylpropan-2-one
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-phenylpropan-2-one.png
+
+NOW PROCESSING: allyl-acrylate
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/allyl-acrylate.png
+
+NOW PROCESSING: 4E-hexa-14-diene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4E-hexa-14-diene.png
 
 NOW PROCESSING: 2-methylquinoline
 
@@ -5513,7 +3545,7 @@ NOW PROCESSING: 2-methylquinoline
 
 PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylquinoline.png
 
-NOW PROCESSING: 2233-tetrafluoro-1-propanol
+NOW PROCESSING: pent-2-yne
 
 <G4>
 
@@ -5527,16 +3559,1996 @@ NOW PROCESSING: 2233-tetrafluoro-1-propanol
 
 <OPLS>
 
-PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2233-tetrafluoro-1-propanol.png
-G4  PC:  90  of  345
-G4  SC:  90  of  345
-OEP  PC:  95  of  345
-OEP  SC:  95  of  345
-CGenFF  PC:  23  of  345
-CGenFF  SC:  23  of  345
-GAFF-BCC  PC:  4  of  345
-GAFF-BCC  SC:  4  of  345
-GAFF-ESP  PC:  3  of  345
-GAFF-ESP  SC:  3  of  345
-OPLS  PC:  6  of  345
-OPLS  SC:  6  of  345
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/pent-2-yne.png
+
+NOW PROCESSING: 3-ethylhex-3-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethylhex-3-ene.png
+
+NOW PROCESSING: 1-ethylcyclopent-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-ethylcyclopent-1-ene.png
+
+NOW PROCESSING: decane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/decane.png
+
+NOW PROCESSING: 23-dimethylbut-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/23-dimethylbut-1-ene.png
+
+NOW PROCESSING: 12-dimethoxybenzene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/12-dimethoxybenzene.png
+
+NOW PROCESSING: 1-ethyl-1-methylcyclopentane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-ethyl-1-methylcyclopentane.png
+
+NOW PROCESSING: 24-dimethyl-3-pentanone
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/24-dimethyl-3-pentanone.png
+
+NOW PROCESSING: N-methylformamide
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/N-methylformamide.png
+
+NOW PROCESSING: 3-heptanol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-heptanol.png
+
+NOW PROCESSING: 2Z-44-dimethylpent-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2Z-44-dimethylpent-2-ene.png
+
+NOW PROCESSING: 25-dimethyl-24-hexadiene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/25-dimethyl-24-hexadiene.png
+
+NOW PROCESSING: 1S2R-1-ethyl-2-methylcyclopropane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1S2R-1-ethyl-2-methylcyclopropane.png
+
+NOW PROCESSING: ethyl-trans-cinnamate
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/ethyl-trans-cinnamate.png
+
+NOW PROCESSING: 13-oxazole
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/13-oxazole.png
+
+NOW PROCESSING: 2Z-344-trimethylpent-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2Z-344-trimethylpent-2-ene.png
+
+NOW PROCESSING: 3-methyl-1-pentanol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methyl-1-pentanol.png
+
+NOW PROCESSING: cis-decalin
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/cis-decalin.png
+
+NOW PROCESSING: 13-difluorobenzene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/13-difluorobenzene.png
+
+NOW PROCESSING: 2-butanethiol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-butanethiol.png
+
+NOW PROCESSING: 3-methylhex-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylhex-1-ene.png
+
+NOW PROCESSING: 2-methylpropyl-cyclopentane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylpropyl-cyclopentane.png
+
+NOW PROCESSING: 23-dimethylpent-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/23-dimethylpent-2-ene.png
+
+NOW PROCESSING: 34-dimethylhex-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/34-dimethylhex-1-ene.png
+
+NOW PROCESSING: 2-fluoropyridine
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-fluoropyridine.png
+
+NOW PROCESSING: 1R4R-14-dimethylcyclohexane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1R4R-14-dimethylcyclohexane.png
+
+NOW PROCESSING: 24-dimethylhexane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/24-dimethylhexane.png
+
+NOW PROCESSING: 233-trimethylbut-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/233-trimethylbut-1-ene.png
+
+NOW PROCESSING: 4-methyl-1-pentyne
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-methyl-1-pentyne.png
+
+NOW PROCESSING: 4R-4-methylhept-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4R-4-methylhept-1-ene.png
+
+NOW PROCESSING: cis-2-buten-1-ol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/cis-2-buten-1-ol.png
+
+NOW PROCESSING: 2-tert-butylphenol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-tert-butylphenol.png
+
+NOW PROCESSING: 15-dimethylcyclopent-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/15-dimethylcyclopent-1-ene.png
+
+NOW PROCESSING: n-pentylamine
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/n-pentylamine.png
+
+NOW PROCESSING: furfuryl-alcohol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/furfuryl-alcohol.png
+
+NOW PROCESSING: 2-methylfuran
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylfuran.png
+
+NOW PROCESSING: E-3-methylpent-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/E-3-methylpent-2-ene.png
+
+NOW PROCESSING: 11-difluoroethane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/11-difluoroethane.png
+
+NOW PROCESSING: 4-methylheptane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-methylheptane.png
+
+NOW PROCESSING: dichloroacetic-acid
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/dichloroacetic-acid.png
+
+NOW PROCESSING: 3E-5-methylhept-3-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3E-5-methylhept-3-ene.png
+
+NOW PROCESSING: 3E-2-methylhex-3-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3E-2-methylhex-3-ene.png
+
+NOW PROCESSING: trifluoroacetic-acid
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/trifluoroacetic-acid.png
+
+NOW PROCESSING: 2-methyl-2-propanethiol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methyl-2-propanethiol.png
+
+NOW PROCESSING: but-3-en-2-ol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/but-3-en-2-ol.png
+
+NOW PROCESSING: 1-chloro-3-methylbutane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-chloro-3-methylbutane.png
+
+NOW PROCESSING: quinoline
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/quinoline.png
+
+NOW PROCESSING: trans-3-methylcyclohexanol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/trans-3-methylcyclohexanol.png
+
+NOW PROCESSING: isobutyl-acrylate
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/isobutyl-acrylate.png
+
+NOW PROCESSING: m-phenylenediamine
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/m-phenylenediamine.png
+
+NOW PROCESSING: 1-butanethiol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-butanethiol.png
+
+NOW PROCESSING: 1-chloropentane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-chloropentane.png
+
+NOW PROCESSING: 14-difluorobenzene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/14-difluorobenzene.png
+
+NOW PROCESSING: 24-dimethylpentan-3-ol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/24-dimethylpentan-3-ol.png
+
+NOW PROCESSING: 2Z-5-methylhex-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2Z-5-methylhex-2-ene.png
+
+NOW PROCESSING: 3-methylhexane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylhexane.png
+
+NOW PROCESSING: pentyl-formate
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/pentyl-formate.png
+
+NOW PROCESSING: 3E-3-methyl-13-pentadiene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3E-3-methyl-13-pentadiene.png
+
+NOW PROCESSING: 1-methylpyrrole
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-methylpyrrole.png
+
+NOW PROCESSING: 124-trifluorobenzene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/124-trifluorobenzene.png
+
+NOW PROCESSING: 44-dimethylpent-2-yne
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/44-dimethylpent-2-yne.png
+
+NOW PROCESSING: ethylcyclohexane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/ethylcyclohexane.png
+
+NOW PROCESSING: 3-ethyl-2-methylpent-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethyl-2-methylpent-1-ene.png
+
+NOW PROCESSING: 3-ethylcyclopent-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethylcyclopent-1-ene.png
+
+NOW PROCESSING: 3E-2-methylpenta-13-diene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3E-2-methylpenta-13-diene.png
+
+NOW PROCESSING: 33-dimethylpent-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/33-dimethylpent-1-ene.png
+
+NOW PROCESSING: phthalan
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/phthalan.png
+
+NOW PROCESSING: 2-2-ethoxyethoxyethyl-acetate
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-2-ethoxyethoxyethyl-acetate.png
+
+NOW PROCESSING: 1Z3Z-cycloocta-13-diene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1Z3Z-cycloocta-13-diene.png
+
+NOW PROCESSING: 3-methyl-1-butyne
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methyl-1-butyne.png
+
+NOW PROCESSING: 3Z-3-methylhex-3-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3Z-3-methylhex-3-ene.png
+
+NOW PROCESSING: spiropentane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/spiropentane.png
+
+NOW PROCESSING: morpholine
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/morpholine.png
+
+NOW PROCESSING: isopropylcyclopropane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/isopropylcyclopropane.png
+
+NOW PROCESSING: oct-4-yne
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/oct-4-yne.png
+
+NOW PROCESSING: butyl-formate
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/butyl-formate.png
+
+NOW PROCESSING: 124-trimethylbenzene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/124-trimethylbenzene.png
+
+NOW PROCESSING: 2-methylpenta-14-diene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methylpenta-14-diene.png
+
+NOW PROCESSING: 223-trimethylbutane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/223-trimethylbutane.png
+
+NOW PROCESSING: 3-ethyl-3-methylpent-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethyl-3-methylpent-1-ene.png
+
+NOW PROCESSING: 12-ethanedithiol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/12-ethanedithiol.png
+
+NOW PROCESSING: Z-3-methylpent-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/Z-3-methylpent-2-ene.png
+
+NOW PROCESSING: dicyclopropylmethanone
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/dicyclopropylmethanone.png
+
+NOW PROCESSING: methyl-butanoate
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/methyl-butanoate.png
+
+NOW PROCESSING: 1-bromonaphthalene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-bromonaphthalene.png
+
+NOW PROCESSING: 3-chloropropan-1-ol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-chloropropan-1-ol.png
+
+NOW PROCESSING: dibutyl-ether
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/dibutyl-ether.png
+
+NOW PROCESSING: oxetane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/oxetane.png
+
+NOW PROCESSING: dodecan-1-ol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/dodecan-1-ol.png
+
+NOW PROCESSING: 3E-22-dimethylhex-3-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3E-22-dimethylhex-3-ene.png
+
+NOW PROCESSING: 3-methylthiophene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methylthiophene.png
+
+NOW PROCESSING: 3-methoxypropanenitrile
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methoxypropanenitrile.png
+
+NOW PROCESSING: propyl-formate
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/propyl-formate.png
+
+NOW PROCESSING: diethyl-hydrogen-phosphate
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/diethyl-hydrogen-phosphate.png
+
+NOW PROCESSING: prop-2-en-1-ylbenzene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/prop-2-en-1-ylbenzene.png
+
+NOW PROCESSING: cyclopent-2-en-1-one
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/cyclopent-2-en-1-one.png
+
+NOW PROCESSING: dodecane-1-thiol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/dodecane-1-thiol.png
+
+NOW PROCESSING: 22-dichloro-111-trifluoroethane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/22-dichloro-111-trifluoroethane.png
+
+NOW PROCESSING: 3-ethylpent-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-ethylpent-1-ene.png
+
+NOW PROCESSING: 12345-pentafluorobenzene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/12345-pentafluorobenzene.png
+
+NOW PROCESSING: 1-chloro-2-propanol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/1-chloro-2-propanol.png
+
+NOW PROCESSING: Z-hex-3-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/Z-hex-3-ene.png
+
+NOW PROCESSING: 4-chlorobenzenemethanethiol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-chlorobenzenemethanethiol.png
+
+NOW PROCESSING: 14-butanedithiol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/14-butanedithiol.png
+
+NOW PROCESSING: 224-trimethylpent-2-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/224-trimethylpent-2-ene.png
+
+NOW PROCESSING: naphthalen-1-amine
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/naphthalen-1-amine.png
+
+NOW PROCESSING: chlorocyclohexane-axial
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/chlorocyclohexane-axial.png
+
+NOW PROCESSING: 2-chloroethanol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-chloroethanol.png
+
+NOW PROCESSING: 2-methyl-N-phenylmethylpropan-2-amine
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/2-methyl-N-phenylmethylpropan-2-amine.png
+
+NOW PROCESSING: 4-ethylhex-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/4-ethylhex-1-ene.png
+
+NOW PROCESSING: nonanoic-acid
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/nonanoic-acid.png
+
+NOW PROCESSING: 12-dimethoxyethane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/12-dimethoxyethane.png
+
+NOW PROCESSING: bis-2-chloroethyl-ether
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/bis-2-chloroethyl-ether.png
+
+NOW PROCESSING: 3-bromopentane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-bromopentane.png
+
+NOW PROCESSING: 6-methylhept-1-ene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/6-methylhept-1-ene.png
+
+NOW PROCESSING: cyclopentene
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/cyclopentene.png
+
+NOW PROCESSING: 23-dimethylhexane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/23-dimethylhexane.png
+
+NOW PROCESSING: 35-dichloroaniline
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/35-dichloroaniline.png
+
+NOW PROCESSING: 23-dihydrofuran
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/23-dihydrofuran.png
+
+NOW PROCESSING: 3-methyl-2-butanone
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/3-methyl-2-butanone.png
+
+NOW PROCESSING: hexane-16-dithiol
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/hexane-16-dithiol.png
+
+NOW PROCESSING: 24-dimethylpentane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/24-dimethylpentane.png
+
+NOW PROCESSING: N-butylacetamide
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/N-butylacetamide.png
+
+NOW PROCESSING: hexadecane
+
+<G4>
+
+<OEP>
+
+<CGenFF>
+
+<GAFF-BCC>
+
+<GAFF-ESP>
+
+<OPLS>
+
+PNG file saved at: /home/henning/projects/IR-Spectra/results_with_comparison/PNG/hexadecane.png
+G4 vs. Exp. Pearson correct:  74  of  345
+G4 vs. Exp. Spearman correct:  35  of  345
+Exp. vs. G4 Pearson correct:  71  of  345
+Exp. vs. G4 Spearman correct:  98  of  345
+OEP vs. Exp. Pearson correct:  78  of  345
+OEP vs. Exp. Spearman correct:  45  of  345
+Exp. vs. OEP Pearson correct:  63  of  345
+Exp. vs. OEP Spearman correct:  119  of  345
+CGenFF vs. Exp. Pearson correct:  18  of  345
+CGenFF vs. Exp. Spearman correct:  11  of  345
+Exp. vs. CGenFF Pearson correct:  10  of  345
+Exp. vs. CGenFF Spearman correct:  17  of  345
+GAFF-BCC vs. Exp. Pearson correct:  1  of  345
+GAFF-BCC vs. Exp. Spearman correct:  4  of  345
+Exp. vs. GAFF-BCC Pearson correct:  2  of  345
+Exp. vs. GAFF-BCC Spearman correct:  6  of  345
+GAFF-ESP vs. Exp. Pearson correct:  3  of  345
+GAFF-ESP vs. Exp. Spearman correct:  2  of  345
+Exp. vs. GAFF-ESP Pearson correct:  1  of  345
+Exp. vs. GAFF-ESP Spearman correct:  4  of  345
+OPLS vs. Exp. Pearson correct:  4  of  345
+OPLS vs. Exp. Spearman correct:  5  of  345
+Exp. vs. OPLS Pearson correct:  2  of  345
+Exp. vs. OPLS Spearman correct:  3  of  345

@@ -18,4 +18,6 @@ python /home/henning/projects/IR-Spectra/scripts/GenerateSpectra/mk_spectra.py \
 -ffd /home/henning/wd/THERMO \
 -ffs CGenFF GAFF-BCC GAFF-ESP OPLS \
 -o /home/henning/projects/IR-Spectra/results_with_comparison \
+-min 550 \
+-max 3846 \
 --png

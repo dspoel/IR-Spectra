@@ -42,6 +42,8 @@ if __name__ == "__main__":
 	
 	molecules = find_molecules(exp_dir, qm_dir, qms, ff_dir, ffs)
 	
+	#molecules = molecules[0:10]
+
 	print('\nThe following number of molecules were found in all listed directories and will be processed:', len(molecules))
 
 	csv_dir = output_dir + "/CSV"
@@ -66,11 +68,10 @@ if __name__ == "__main__":
 		check_or_die(statistics_file, True)	
 
 	all_spectra = {} 
-	#molecules = molecules[0:10]
 
 	for molecule in molecules:
 		print('\nNOW PROCESSING:', molecule)
 		all_spectra[molecule] = save_spectrum(exp_dir, qm_dir, qms, ff_dir, ffs, molecule, output_dir,
-                                                     gamma, generate_png, generate_pdf, generate_svg)
+                                                     start, stop, gamma, generate_png, generate_pdf, generate_svg)
 
 	cross_compare(molecules, all_spectra, types, output_dir)

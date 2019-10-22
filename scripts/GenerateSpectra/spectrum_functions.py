@@ -215,8 +215,8 @@ def cross_compare(molecules, all_spectra, methods, output_dir):
 		out_spearman = open(output_dir + '/CSV/' + method + '_spearman.csv', 'w')
 		write_pearson = csv.writer(out_pearson, delimiter ='|')
 		write_spearman = csv.writer(out_spearman, delimiter ='|')
-		write_pearson.writerow(['Molecules'] + molecules)
-		write_spearman.writerow(['Molecules'] + molecules)
+		write_pearson.writerow(['Theory/Exp.'] + molecules)
+		write_spearman.writerow(['Theory/Exp.'] + molecules)
 		pearsoncorrect = 0
 		spearmancorrect = 0
 		for molecule1 in molecules:
@@ -235,12 +235,47 @@ def cross_compare(molecules, all_spectra, methods, output_dir):
 						pearsoncorrect += 1
 					if molecules[spearmans.index(max(spearmans))] == molecule1:
 						spearmancorrect += 1
+					pearsons.append(molecules[pearsons.index(max(pearsons))])
+					spearmans.append(molecules[spearmans.index(max(spearmans))])
 					pearsons.insert(0, molecule1)
 					spearmans.insert(0, molecule1)
 					write_pearson.writerow(pearsons)
 					write_spearman.writerow(spearmans)
-		print(method, " PC: ", pearsoncorrect, " of ", len(molecules))
-		print(method, " SC: ", pearsoncorrect, " of ", len(molecules))
+		print(method, "vs. Exp. Pearson correct: ", pearsoncorrect, " of ", len(molecules))
+		print(method, "vs. Exp. Spearman correct: ", spearmancorrect, " of ", len(molecules))
+
+		out_pearson_inv = open(output_dir + '/CSV/' + method + '_pearson_inv.csv', 'w')
+		out_spearman_inv = open(output_dir + '/CSV/' + method + '_spearman_inv.csv', 'w')
+		write_pearson_inv = csv.writer(out_pearson_inv, delimiter ='|')
+		write_spearman_inv = csv.writer(out_spearman_inv, delimiter ='|')
+		write_pearson_inv.writerow(['Exp./Theory'] + molecules)
+		write_spearman_inv.writerow(['Exp./Theory'] + molecules)
+		pearsoncorrect_inv = 0
+		spearmancorrect_inv = 0
+		for molecule1 in molecules:
+			pearsons = []
+			spearmans = []
+			for molecule2 in molecules:
+				for spectrum in all_spectra[molecule2]:
+					if spectrum[3] == method:
+						if len(all_spectra[molecule1][0][1]) == len(spectrum[1]):
+							pearsons.append(pearsonr(all_spectra[molecule1][0][1], spectrum[1])[0])
+							spearmans.append(spearmanr(all_spectra[molecule1][0][1], spectrum[1])[0])
+						else:
+							pearsons.append(0)
+							spearmans.append(0)
+			if molecules[pearsons.index(max(pearsons))] == molecule1:
+				pearsoncorrect_inv += 1
+			if molecules[spearmans.index(max(spearmans))] == molecule1:
+				spearmancorrect_inv += 1
+			pearsons.append(molecules[pearsons.index(max(pearsons))])
+			spearmans.append(molecules[spearmans.index(max(spearmans))])
+			pearsons.insert(0, molecule1)
+			spearmans.insert(0, molecule1)
+			write_pearson_inv.writerow(pearsons)
+			write_spearman_inv.writerow(spearmans)
+		print("Exp. vs.", method, "Pearson correct: ", pearsoncorrect_inv, " of ", len(molecules))
+		print("Exp. vs.", method, "Spearman correct: ", spearmancorrect_inv, " of ", len(molecules))
 
 def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 	"""Write the spectrum of all normal modes of a molecule as a PNG, PDF or SVG"""
@@ -280,10 +315,17 @@ def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 	check_or_die(output, False)
 	print('\n' + outformat.upper() + ' file saved at:', output)
 
-def save_spectrum(exp_dir, qm_dir, qms, ff_dir, ffs, molecule, output_dir, gamma, png, pdf, svg):
+def save_spectrum(exp_dir, qm_dir, qms, ff_dir, ffs, molecule, output_dir, start, stop, gamma, png, pdf, svg):
 	spectra = []
 	
-	exp_spectrum, start, stop, npoints = read_exp_data(exp_dir, molecule)
+	exp_spectrum, start_exp, stop_exp, deltax = read_exp_data(exp_dir, molecule)
+	if start_exp > start:
+		start = start_exp
+	if stop_exp < stop:
+		stop = stop_exp
+	exp_spectrum[1] = exp_spectrum[1][np.logical_and((np.array(exp_spectrum[0]) >= start), (np.array(exp_spectrum[0]) <= stop))]
+	npoints = int(((stop - start) / deltax) + 1)
+	exp_spectrum[0] = np.linspace(start, stop, npoints)
 	spectra.append(exp_spectrum)
 	
 	method_factors = {"G4": 0.965, "OEP": 0.968}
@@ -356,12 +398,14 @@ def read_exp_data(exp_dir, molecule):
 					start = float(words[1])
 				elif "NPOINTS" in words[0]:
 					npoints = int(words[1])
+				elif "DELTAX" in words[0]:
+					deltax = float(words[1])
 			else:
 				words = line.split()
 				if words[0].replace('.','',1).isdigit():
 					for word in words[1:]:
 						intensities.append(float(word))
 		frequencies = np.linspace(start, stop, npoints)
-		return [frequencies, np.array(intensities), None, "Experimental data"], start, stop, npoints
+		return [frequencies, np.array(intensities), None, "Experimental data"], start, stop, deltax
 	else:
 		sys.exit("The experimental data file does not exist!!!")

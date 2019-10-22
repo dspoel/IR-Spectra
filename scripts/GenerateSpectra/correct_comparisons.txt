@@ -1,0 +1,29 @@
+G4 vs. Exp. Pearson correct:  74  of  345
+G4 vs. Exp. Spearman correct:  35  of  345
+Exp. vs. G4 Pearson correct:  71  of  345
+Exp. vs. G4 Spearman correct:  98  of  345
+
+OEP vs. Exp. Pearson correct:  78  of  345
+OEP vs. Exp. Spearman correct:  45  of  345
+Exp. vs. OEP Pearson correct:  63  of  345
+Exp. vs. OEP Spearman correct:  119  of  345
+
+CGenFF vs. Exp. Pearson correct:  18  of  345
+CGenFF vs. Exp. Spearman correct:  11  of  345
+Exp. vs. CGenFF Pearson correct:  10  of  345
+Exp. vs. CGenFF Spearman correct:  17  of  345
+
+GAFF-BCC vs. Exp. Pearson correct:  1  of  345
+GAFF-BCC vs. Exp. Spearman correct:  4  of  345
+Exp. vs. GAFF-BCC Pearson correct:  2  of  345
+Exp. vs. GAFF-BCC Spearman correct:  6  of  345
+
+GAFF-ESP vs. Exp. Pearson correct:  3  of  345
+GAFF-ESP vs. Exp. Spearman correct:  2  of  345
+Exp. vs. GAFF-ESP Pearson correct:  1  of  345
+Exp. vs. GAFF-ESP Spearman correct:  4  of  345
+
+OPLS vs. Exp. Pearson correct:  4  of  345
+OPLS vs. Exp. Spearman correct:  5  of  345
+Exp. vs. OPLS Pearson correct:  2  of  345
+Exp. vs. OPLS Spearman correct:  3  of  345

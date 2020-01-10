@@ -66,7 +66,10 @@ class Molecule:
 	def __init__(self, eigfreq_count, atoms, normal_modes):
 		"""Initialize a Molecule object"""
 		self.__atoms        = atoms
-		self.__normal_modes = normal_modes[-eigfreq_count:]
+		if eigfreq_count == 0:
+			self.__normal_modes = normal_modes
+		else:
+			self.__normal_modes = normal_modes[-eigfreq_count:]
 
 	def atoms(self):
 		"""Return a list of Atom objects in Molecule"""

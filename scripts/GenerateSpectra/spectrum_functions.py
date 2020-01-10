@@ -4,11 +4,12 @@ import matplotlib.pyplot as plt
 plt.switch_backend('agg')
 plt.rcParams.update({'font.size': 11})
 from numpy import linalg as la
-from numpy import trapz
+from numpy import trapz, mean
 from distutils.spawn import find_executable
 from pathlib import Path
 from spectrum_classes import *
-from scipy.stats import pearsonr, spearmanr
+from statistics import median
+from scipy.stats import pearsonr, spearmanr, rankdata
 
 def intersection(lst1, lst2): 
 	return set(lst1).intersection(lst2)
@@ -179,7 +180,7 @@ def generate_cauchy_distribution(frequencies, eigenfrequency, gamma, intensity):
 	return cauchy
 
 def generate_spectrum(input_dir, origin, molecule, eigfreq_count, start, stop, npoints, gamma, scaling_factor):
-	print("\n<" + origin + ">")
+	#print("\n<" + origin + ">")
 	if origin in ["G4", "OEP"]:
 		path = "%s/%s/%s" % (input_dir, origin, molecule)
 		return generate_spectrum_from_log(path, origin, start, stop, npoints, gamma, scaling_factor)
@@ -200,7 +201,7 @@ def generate_spectrum(input_dir, origin, molecule, eigfreq_count, start, stop, n
 
 def normalize_spectra(spectra):
 	for i, spectrum in enumerate(spectra):
-		spectra[i][1] = spectrum[1]/np.trapz(spectrum[1],spectrum[0])
+		spectra[i][1] = (spectrum[1] - min(spectrum[1]))/np.trapz((spectrum[1] - min(spectrum[1])),spectrum[0])
 	return spectra
 
 def cosine_distance(spectrum1, spectrum2):
@@ -210,6 +211,7 @@ def rmsd(eigfreqs1, eigfreqs2):
 	return math.sqrt(sum((eigfreqs1-eigfreqs2)**2)/len(eigfreqs1))
 
 def cross_compare(molecules, all_spectra, methods, output_dir):
+	out_stats = open(output_dir + '/CSV/matching.txt', 'w')
 	for method in methods:
 		out_pearson = open(output_dir + '/CSV/' + method + '_pearson.csv', 'w')
 		out_spearman = open(output_dir + '/CSV/' + method + '_spearman.csv', 'w')
@@ -219,6 +221,8 @@ def cross_compare(molecules, all_spectra, methods, output_dir):
 		write_spearman.writerow(['Theory/Exp.'] + molecules)
 		pearsoncorrect = 0
 		spearmancorrect = 0
+		pearsonranks = []
+		spearmanranks = []
 		for molecule1 in molecules:
 			for spectrum in all_spectra[molecule1]:
 				if spectrum[3] == method:
@@ -235,14 +239,16 @@ def cross_compare(molecules, all_spectra, methods, output_dir):
 						pearsoncorrect += 1
 					if molecules[spearmans.index(max(spearmans))] == molecule1:
 						spearmancorrect += 1
+					pearsonranks.append(len(pearsons) + 1 - rankdata(pearsons)[pearsons.index(pearsonr(all_spectra[molecule1][0][1], spectrum[1])[0])].astype(int))
+					spearmanranks.append(len(spearmans) + 1 - rankdata(spearmans)[spearmans.index(spearmanr(all_spectra[molecule1][0][1], spectrum[1])[0])].astype(int))
 					pearsons.append(molecules[pearsons.index(max(pearsons))])
 					spearmans.append(molecules[spearmans.index(max(spearmans))])
 					pearsons.insert(0, molecule1)
 					spearmans.insert(0, molecule1)
 					write_pearson.writerow(pearsons)
 					write_spearman.writerow(spearmans)
-		print(method, "vs. Exp. Pearson correct: ", pearsoncorrect, " of ", len(molecules))
-		print(method, "vs. Exp. Spearman correct: ", spearmancorrect, " of ", len(molecules))
+		out_stats.write("%s vs. Exp. Pearson correct:  %d of %d, rank average: %.2f rank median: %d \n" % (method, pearsoncorrect, len(molecules), mean(pearsonranks), median(pearsonranks)))
+		out_stats.write("%s vs. Exp. Spearman correct: %d of %d, rank average: %.2f rank median: %d \n" % (method, spearmancorrect, len(molecules), mean(spearmanranks), median(spearmanranks)))
 
 		out_pearson_inv = open(output_dir + '/CSV/' + method + '_pearson_inv.csv', 'w')
 		out_spearman_inv = open(output_dir + '/CSV/' + method + '_spearman_inv.csv', 'w')
@@ -252,6 +258,8 @@ def cross_compare(molecules, all_spectra, methods, output_dir):
 		write_spearman_inv.writerow(['Exp./Theory'] + molecules)
 		pearsoncorrect_inv = 0
 		spearmancorrect_inv = 0
+		pearsonranks = []
+		spearmanranks = []
 		for molecule1 in molecules:
 			pearsons = []
 			spearmans = []
@@ -268,14 +276,41 @@ def cross_compare(molecules, all_spectra, methods, output_dir):
 				pearsoncorrect_inv += 1
 			if molecules[spearmans.index(max(spearmans))] == molecule1:
 				spearmancorrect_inv += 1
+			for spectrum in all_spectra[molecule1]:
+				if spectrum[3] == method:
+					pearsonranks.append(len(pearsons) + 1 - rankdata(pearsons)[pearsons.index(pearsonr(all_spectra[molecule1][0][1], spectrum[1])[0])].astype(int))
+					spearmanranks.append(len(spearmans) + 1 - rankdata(spearmans)[spearmans.index(spearmanr(all_spectra[molecule1][0][1], spectrum[1])[0])].astype(int))
 			pearsons.append(molecules[pearsons.index(max(pearsons))])
 			spearmans.append(molecules[spearmans.index(max(spearmans))])
 			pearsons.insert(0, molecule1)
 			spearmans.insert(0, molecule1)
 			write_pearson_inv.writerow(pearsons)
 			write_spearman_inv.writerow(spearmans)
-		print("Exp. vs.", method, "Pearson correct: ", pearsoncorrect_inv, " of ", len(molecules))
-		print("Exp. vs.", method, "Spearman correct: ", spearmancorrect_inv, " of ", len(molecules))
+		out_stats.write("Exp. vs. %s Pearson correct:  %d of %d, rank average: %.2f rank median: %d \n" % (method, pearsoncorrect_inv, len(molecules), mean(pearsonranks), median(pearsonranks)))
+		out_stats.write("Exp. vs. %s Spearman correct: %d of %d, rank average: %.2f rank median: %d \n\n" % (method, spearmancorrect_inv, len(molecules), mean(spearmanranks), median(spearmanranks)))
+
+def exp_intracorr(molecules, all_spectra, output_dir):
+	out_pearson = open(output_dir + '/CSV/exp_intra_pearson.csv', 'w')
+	out_spearman = open(output_dir + '/CSV/exp_intra_spearman.csv', 'w')
+	write_pearson = csv.writer(out_pearson, delimiter ='|')
+	write_spearman = csv.writer(out_spearman, delimiter ='|')
+	write_pearson.writerow(['Exp./Exp.'] + molecules)
+	write_spearman.writerow(['Exp./Exp.'] + molecules)
+	for molecule1 in molecules:
+		pearsons = []
+		spearmans = []
+		for molecule2 in molecules:
+			if len(all_spectra[molecule2][0][1]) == len(all_spectra[molecule1][0][1]):
+				pearsons.append(pearsonr(all_spectra[molecule2][0][1], all_spectra[molecule1][0][1])[0])
+				spearmans.append(spearmanr(all_spectra[molecule2][0][1], all_spectra[molecule1][0][1])[0])
+			else:
+				pearsons.append(0)
+				spearmans.append(0)
+		pearsons.insert(0, molecule1)
+		spearmans.insert(0, molecule1)
+		write_pearson.writerow(pearsons)
+		write_spearman.writerow(spearmans)
+
 
 def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 	"""Write the spectrum of all normal modes of a molecule as a PNG, PDF or SVG"""
@@ -284,28 +319,31 @@ def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 		os.system("mkdir " + outformat_dir)
 	output = outformat_dir + "/" + molecule + '.' + outformat
 	
-	spectra = normalize_spectra(spectra)
 
 	#colors     = itertools.cycle(('k', 'r', 'b'))
 	colors     = itertools.cycle(('k', '#1b9e77', '#d95f02', '#7570b3', '#e7298a', '#66a61e', '#e6ab02'))
 	linestyles = itertools.cycle(('-', '--', '--', '-', '-','-', '-'))
 	plt.figure(figsize=(10.8, 4.8))
 	for spectrum in spectra:
-		if not spectrum[3] == "Experimental data":
-			cos_score       = cosine_distance(spectra[0][1], spectrum[1])
-			pearson_score   = pearsonr(spectra[0][1], spectrum[1])[0]
-			spearman_score  = spearmanr(spectra[0][1], spectrum[1])[0]
-			statistics_file = output_dir + '/CSV/SINGLE/' + spectrum[3] + '_statistics.csv'
-			with open(statistics_file, 'a') as csvfile:
-			 	writer = csv.writer(csvfile, delimiter='|')
-			 	writer.writerow([molecule, cos_score, pearson_score, spearman_score])
+		#if not spectrum[3] == "Experimental data":
+			#cos_score       = cosine_distance(spectra[0][1], spectrum[1])
+			#pearson_score   = pearsonr(spectra[0][1], spectrum[1])[0]
+			#spearman_score  = spearmanr(spectra[0][1], spectrum[1])[0]
+			#statistics_file = output_dir + '/CSV/SINGLE/' + spectrum[3] + '_statistics.csv'
+			#with open(statistics_file, 'a') as csvfile:
+			 	#writer = csv.writer(csvfile, delimiter='|')
+			 	#writer.writerow([molecule, cos_score, pearson_score, spearman_score])
+		figlabel = spectrum[3]
+		intensities = spectrum[1]
 		if spectrum[3] == "OEP":
 			figlabel = "B3LYP/aug-cc-pVTZ"
+			intensities = -1 * spectrum[1]
 		elif spectrum[3] == "G4":
 			figlabel = "B3LYP/6-31G(2df,p)"
-		else:
-			figlabel = spectrum[3]
-		plt.plot(spectrum[0], spectrum[1], color=next(colors), linestyle=next(linestyles), label=spectrum[3])
+			intensities = -1 * spectrum[1]
+		elif spectrum[3] == "Experimental data":
+			intensities = -1 * spectrum[1]
+		plt.plot(spectrum[0], intensities, color=next(colors), linestyle=next(linestyles), label=figlabel)
 	plt.legend(loc='upper right')
 	plt.xlabel('Frequency, $cm^{-1}$')
 	plt.ylabel('IR intensity')
@@ -314,19 +352,40 @@ def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 	plt.close()
 	check_or_die(output, False)
 	print('\n' + outformat.upper() + ' file saved at:', output)
+	
+	# save spectral data
+	outdata_dir = output_dir + "/spectral_data"
+	if not Path(outdata_dir).is_dir():
+		os.system("mkdir " + outdata_dir)
+	outdata_file = outdata_dir + "/" + molecule + ".csv"
+	with open(outdata_file, 'w') as csvfile:
+		writer = csv.writer(csvfile, delimiter='|')
+		line = ['Frequency']
+		for spectrum in spectra:
+			line.append(spectrum[3])
+		writer.writerow(line)
+		for freqn in range(len(spectra[0][0])):
+			line = []
+			line.append(spectra[0][0][freqn])
+			for spectrum in spectra:
+				line.append(spectrum[1][freqn])
+			writer.writerow(line)
 
-def save_spectrum(exp_dir, qm_dir, qms, ff_dir, ffs, molecule, output_dir, start, stop, gamma, png, pdf, svg):
+def save_spectrum(exp_dir, qm_dir, qms, ff_dir, ffs, molecule, output_dir, start, stop, npoints, gamma, png, pdf, svg):
 	spectra = []
 	
-	exp_spectrum, start_exp, stop_exp, deltax = read_exp_data(exp_dir, molecule)
-	if start_exp > start:
-		start = start_exp
-	if stop_exp < stop:
-		stop = stop_exp
-	exp_spectrum[1] = exp_spectrum[1][np.logical_and((np.array(exp_spectrum[0]) >= start), (np.array(exp_spectrum[0]) <= stop))]
-	npoints = int(((stop - start) / deltax) + 1)
-	exp_spectrum[0] = np.linspace(start, stop, npoints)
-	spectra.append(exp_spectrum)
+	exp_path = exp_dir + '/' + molecule + '.jdx'
+	if Path(exp_path).exists():
+		exp_spectrum, start_exp, stop_exp, deltax = read_exp_data(exp_dir, molecule)
+		if start_exp > start:
+			start = start_exp
+		if stop_exp < stop:
+			stop = stop_exp
+		exp_spectrum[1] = exp_spectrum[1][np.logical_and((np.array(exp_spectrum[0]) >= start), (np.array(exp_spectrum[0]) <= stop))]
+		#npoints = int(np.round(((stop - start) / deltax) + 1))
+		npoints = int(len(exp_spectrum[1]))
+		exp_spectrum[0] = np.linspace(start, stop, npoints)
+		spectra.append(exp_spectrum)
 	
 	method_factors = {"G4": 0.965, "OEP": 0.968}
 	for qm in qms:
@@ -337,7 +396,19 @@ def save_spectrum(exp_dir, qm_dir, qms, ff_dir, ffs, molecule, output_dir, start
 	for ff in ffs:
 		scaling_factor = method_factors.get(ff, 1.0)
 		spectra.append(generate_spectrum(ff_dir, ff, molecule, eigfreq_count, start, stop, npoints, gamma, scaling_factor))
+
+	spectra = normalize_spectra(spectra)
 	
+	for spectrum in spectra:
+		if not spectrum[3] == "Experimental data":
+			cos_score       = cosine_distance(spectra[0][1], spectrum[1])
+			pearson_score   = pearsonr(spectra[0][1], spectrum[1])[0]
+			spearman_score  = spearmanr(spectra[0][1], spectrum[1])[0]
+			statistics_file = output_dir + '/CSV/SINGLE/' + spectrum[3] + '_statistics.csv'
+			with open(statistics_file, 'a') as csvfile:
+			 	writer = csv.writer(csvfile, delimiter='|')
+			 	writer.writerow([molecule, cos_score, pearson_score, spearman_score])
+
 	possible_formats         = ["png", "pdf", "svg"]
 	desired_formats          = [ png,   pdf,   svg ]
 	for i, desired_format in enumerate(desired_formats):
@@ -345,6 +416,80 @@ def save_spectrum(exp_dir, qm_dir, qms, ff_dir, ffs, molecule, output_dir, start
 			selected_format = possible_formats[i]
 			if selected_format in [ "png", "pdf", "svg" ]:
 				save_spectra_as_figure(spectra, output_dir, molecule, selected_format)
+	return spectra
+
+def cmp_spectra(exp_dir, md_dir, n_pool, ff_dir, ffs, molecule, argons, output_dir, start, stop, npoints, gamma, png, pdf, svg):
+	spectra = []
+	method_factors = {"G4": 0.965, "OEP": 0.968}
+
+	for n_argon in argons:
+		mdspec_path = md_dir + '/' + molecule + '/spectrum-na' + str(n_argon) + '-len100-temp350/IR-spectrum.xvg'
+		lines = open(mdspec_path, 'r').readlines()
+		frequencies = []
+		intensities = []
+		for line in lines:
+			frequency = float(line.split()[0])
+			#if (frequency >= start) and (frequency <= stop): 
+			frequencies.append(frequency)
+			intensities.append(float(line.split()[1]))
+		#smooth and downsample spectrum
+		freqs_flat = np.convolve(frequencies, np.ones((n_pool, ))/n_pool, mode='valid')[::n_pool]
+		intens_flat = np.convolve(intensities, np.ones((n_pool, ))/n_pool, mode='valid')[::n_pool]
+		#select range for ouput
+		mask = np.multiply((freqs_flat >= start),  (freqs_flat <= stop))
+		frequencies = freqs_flat[mask]
+		intensities = intens_flat[mask]
+		spectrum = [frequencies, np.array(intensities), None, "n_Ar = " + str(n_argon)]
+		spectra.append(spectrum)
+	npoints = len(frequencies)
+	start = min(frequencies)
+	stop = max(frequencies)
+
+	#exp_path = exp_dir + '/' + molecule + '.jdx'
+	#if Path(exp_path).exists():
+		#exp_spectrum, start_exp, stop_exp, deltax = read_exp_data(exp_dir, molecule)
+		#if start_exp > start:
+			#start = start_exp
+		#if stop_exp < stop:
+			#stop = stop_exp
+		#exp_spectrum[1] = exp_spectrum[1][np.logical_and((np.array(exp_spectrum[0]) >= start), (np.array(exp_spectrum[0]) <= stop))]
+		#npoints = int(len(exp_spectrum[1]))
+		#exp_spectrum[0] = np.linspace(start, stop, npoints)
+		#spectra.append(exp_spectrum)
+	
+	eigfreq_count = 0
+	for ff in ffs:
+		scaling_factor = method_factors.get(ff, 1.0)
+		spectra.append(generate_spectrum(ff_dir, ff, molecule, eigfreq_count, start, stop, npoints, gamma, scaling_factor))
+	
+	spectra = normalize_spectra(spectra)
+
+	oldspecs = []
+	pearsons = [molecule + ' Pearson']
+	spearmans = [molecule + ' Spearman']
+	for spec1 in spectra:
+		oldspecs.append(spec1[3])
+		for spec2 in spectra:
+			if not (spec2[3] in oldspecs):
+				pearsons.append(pearsonr(spec1[1],spec2[1])[0])
+				spearmans.append(spearmanr(spec1[1],spec2[1])[0])
+
+	statistics_file = output_dir + '/CSV/cmp_statistics.csv'
+	with open(statistics_file, 'a') as csvfile:
+		writer = csv.writer(csvfile, delimiter ='|')
+		writer.writerow(pearsons)
+		writer.writerow(spearmans)
+
+	spectra[-1][1] *= -1
+
+	possible_formats         = ["png", "pdf", "svg"]
+	desired_formats          = [ png,   pdf,   svg ]
+	for i, desired_format in enumerate(desired_formats):
+		if desired_format:
+			selected_format = possible_formats[i]
+			if selected_format in [ "png", "pdf", "svg" ]:
+				save_spectra_as_figure(spectra, output_dir, molecule, selected_format)
+
 	return spectra
 
 def generate_spectrum_from_log(path, origin, start, stop, npoints, gamma, scaling_factor):

@@ -14,6 +14,21 @@ from scipy.stats import pearsonr, spearmanr, rankdata
 def intersection(lst1, lst2): 
 	return set(lst1).intersection(lst2)
 
+def find_molecules_linear(ff_dir, ffs):
+	common_molecules = []
+	for ff in ffs:
+		ff_molecules     = [f.path.split("/")[-1] for f in os.scandir(ff_dir + "/" + ff) if f.is_dir()]
+		print("Number of molecules in %s data directory: %d" % (ff, len(ff_molecules)))
+		if common_molecules == []:
+			common_molecules = ff_molecules
+		else:
+			common_molecules = intersection(common_molecules, ff_molecules)
+		linear_molecules     = ["-".join(f.path.split("/")[-1].split("-")[:-1]) for f in os.scandir(ff_dir + "/" + ff) if (f.is_dir and ("-linear" in str(f)))]
+		print(linear_molecules)
+		print("Number of linear molecules in %s data directory: %d" % (ff, len(linear_molecules)))
+		common_molecules = intersection(common_molecules, linear_molecules)
+	return list(common_molecules)
+
 def find_molecules(exp_dir, qm_dir, qms, ff_dir, ffs):
 	exp_molecules    = [os.path.splitext(os.path.basename(f.path))[0] for f in os.scandir(exp_dir) if f.is_file()]
 	print("Number of molecules in %s data directory: %d" % ("experimental", len(exp_molecules)))
@@ -27,6 +42,36 @@ def find_molecules(exp_dir, qm_dir, qms, ff_dir, ffs):
 		print("Number of molecules in %s data directory: %d" % (ff, len(ff_molecules)))
 		common_molecules = intersection(common_molecules, ff_molecules)
 	return list(common_molecules)
+
+def find_all_molecules(exp_dir, qm_dir, qms, ff_dir, ffs):
+	all_molecules = [] 
+	exp_molecules    = [os.path.splitext(os.path.basename(f.path))[0] for f in os.scandir(exp_dir) if f.is_file()]
+	print("Number of molecules in %s data directory: %d" % ("experimental", len(exp_molecules)))
+	for molecule in exp_molecules:
+		all_molecules.append([molecule, 'Experimental data'])
+	for qm in qms:
+		qm_molecules     = [f.path.split("/")[-1] for f in os.scandir(qm_dir + "/" + qm) if f.is_dir()]
+		print("Number of molecules in %s data directory: %d" % (qm, len(qm_molecules)))
+		for molecule in all_molecules:
+			if (molecule[0] in qm_molecules):
+				all_molecules[all_molecules.index(molecule)].append(qm)
+				#print(all_molecules[all_molecules.index(molecule)], all_molecules.index(molecule))
+				qm_molecules.remove(molecule[0])
+		for new_molecule in qm_molecules:
+			all_molecules.append([new_molecule, qm])
+	for ff in ffs:
+		ff_molecules     = [f.path.split("/")[-1] for f in os.scandir(ff_dir + "/" + ff) if (f.is_dir() and (os.path.isfile(f.path + "/" + "eigenvec.trr")))]
+		print("Number of molecules in %s data directory: %d" % (ff, len(ff_molecules)))
+		for molecule in all_molecules:
+			if (molecule[0] in ff_molecules):
+				all_molecules[all_molecules.index(molecule)].append(ff)
+				#print(all_molecules[all_molecules.index(molecule)], all_molecules.index(molecule))
+				ff_molecules.remove(molecule[0])
+		for new_molecule in ff_molecules:
+			all_molecules.append([new_molecule, ff])
+	
+	print(all_molecules)
+	return all_molecules
 
 def check_or_die(filenm, die):
 	if not os.path.isfile(filenm):
@@ -74,12 +119,12 @@ def extract_eigenfrequencies(molecule_path, scaling_factor):
 			eigenfrequencies.append(float(words[1]) * scaling_factor)
 	return eigenfrequencies
 
-def extract_eigenvectors(molecule_path):
+def extract_eigenvectors(molecule_path, output_dir):
 	"""Extract eigenvectors from GROMACS eigenvector file"""
 	eigenvectors = []
 	eigenvector  = np.empty([0,3])
 	full_path    = molecule_path + "/eigenvec.trr"
-	temp_txt     = "eigenvec.txt"
+	temp_txt     = output_dir + "eigenvec.txt"
 	#print('reading eigenvectors from:', full_path )
 	os.system(find_gmx() + " dump -f " + full_path + " -quiet > " + temp_txt)
 	for line in open(temp_txt, "r").readlines():
@@ -90,7 +135,7 @@ def extract_eigenvectors(molecule_path):
 			eigenvectors.append(eigenvector)
 			eigenvector = np.empty([0,3])
 	eigenvectors.append(eigenvector)
-	os.remove(temp_txt)
+	#os.remove(temp_txt)
 	return eigenvectors[1:]
 
 def read_topol(topol):
@@ -153,20 +198,20 @@ def generate_atoms(molecule_path):
 		atoms.append(atom)
 	return atoms
 
-def generate_normal_modes(molecule_path, scaling_factor):
+def generate_normal_modes(molecule_path, scaling_factor, output_dir):
 	"""Initialize NormalMode objects and return them as a list"""
 	eigenfrequencies = extract_eigenfrequencies(molecule_path, scaling_factor)
-	eigenvectors     = extract_eigenvectors(molecule_path)
+	eigenvectors     = extract_eigenvectors(molecule_path, output_dir)
 	normal_modes     = []
 	for i in range(len(eigenfrequencies)):
 		normal_mode = NormalMode(eigenfrequencies[i],eigenvectors[i])
 		normal_modes.append(normal_mode)
 	return normal_modes
 
-def generate_molecule(molecule_path, eigfreq_count, scaling_factor):
+def generate_molecule(molecule_path, eigfreq_count, scaling_factor, output_dir):
 	"""Initialize Molecule object"""
 	atoms        = generate_atoms(molecule_path)
-	normal_modes = generate_normal_modes(molecule_path, scaling_factor)
+	normal_modes = generate_normal_modes(molecule_path, scaling_factor, output_dir)
 	molecule     = Molecule(eigfreq_count, atoms, normal_modes)
 	for normal_mode in molecule.normal_modes():
 		normal_mode.calculate_intensity(molecule.atoms())
@@ -179,23 +224,29 @@ def generate_cauchy_distribution(frequencies, eigenfrequency, gamma, intensity):
 		cauchy[i] = intensity*(1/math.pi)*(((1/2)*gamma)/((frequencies[i]-eigenfrequency)**2+((1/2)*gamma)**2))
 	return cauchy
 
-def generate_spectrum(input_dir, origin, molecule, eigfreq_count, start, stop, npoints, gamma, scaling_factor):
+def generate_spectrum(input_dir, origin, molecule, eigfreq_count, start, stop, npoints, gamma, scaling_factor, output_dir, linear):
 	#print("\n<" + origin + ">")
+	if linear:
+		mol_name = molecule + "-linear"
+		method_name = origin + "-linear"
+	else:
+		mol_name = molecule
+		method_name = origin
 	if origin in ["G4", "OEP"]:
 		path = "%s/%s/%s" % (input_dir, origin, molecule)
 		return generate_spectrum_from_log(path, origin, start, stop, npoints, gamma, scaling_factor)
 	elif origin in ["CGenFF", "GAFF-ESP", "GAFF-BCC", "OPLS"]:
 		frequencies         = np.linspace(start, stop, npoints)
 		intensity_all_modes = np.zeros(len(frequencies))
-		path = input_dir + "/" + origin + "/" + molecule
-		molecule            = generate_molecule(path, eigfreq_count, scaling_factor)
+		path = input_dir + "/" + origin + "/" + mol_name
+		molecule            = generate_molecule(path, eigfreq_count, scaling_factor, output_dir)
 		normal_modes        = molecule.normal_modes()
 		eigenfrequencies    = []
 		for normal_mode in normal_modes:
 			intensity_one_mode   = generate_cauchy_distribution(frequencies, normal_mode.eigenfrequency(), gamma, normal_mode.intensity())
 			intensity_all_modes += intensity_one_mode
 			eigenfrequencies.append(normal_mode.eigenfrequency())
-		return [frequencies, intensity_all_modes, np.array(eigenfrequencies), origin]
+		return [frequencies, intensity_all_modes, np.array(eigenfrequencies), method_name]
 	else:
 		raise Exception("%s is not a supported format. Please add it to code!" % (origin))
 
@@ -318,12 +369,29 @@ def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 	if not Path(outformat_dir).is_dir():
 		os.system("mkdir " + outformat_dir)
 	output = outformat_dir + "/" + molecule + '.' + outformat
-	
+	output2 = outformat_dir + "/" + molecule + '2.' + outformat
 
 	#colors     = itertools.cycle(('k', 'r', 'b'))
-	colors     = itertools.cycle(('k', '#1b9e77', '#d95f02', '#7570b3', '#e7298a', '#66a61e', '#e6ab02'))
-	linestyles = itertools.cycle(('-', '--', '--', '-', '-','-', '-'))
-	plt.figure(figsize=(10.8, 4.8))
+	colors     = {
+			'Experimental data': 'k', 
+			'G4': '#1b9e77', 
+			'OEP': '#d95f02', 
+			'CGenFF': '#7570b3', 
+			'GAFF-BCC': '#e7298a', 
+			'GAFF-ESP': '#66a61e', 
+			'OPLS': '#e6ab02'
+	}
+	linestyles = {
+			'Experimental data': '-', 
+			'G4': '--', 
+			'OEP': '-.', 
+			'CGenFF': ':', 
+			'GAFF-BCC': (0, (4, 1, 1, 1, 1, 1)), 
+			'GAFF-ESP': (0, (4, 4)), 
+			'OPLS': (0, (4, 2, 1, 1, 1, 1, 1, 2)) 
+	}
+	plt.figure(figsize=(10.8, 6.75))
+	plt.rc('font', size=16)
 	for spectrum in spectra:
 		#if not spectrum[3] == "Experimental data":
 			#cos_score       = cosine_distance(spectra[0][1], spectrum[1])
@@ -337,18 +405,19 @@ def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 		intensities = spectrum[1]
 		if spectrum[3] == "OEP":
 			figlabel = "B3LYP/aug-cc-pVTZ"
-			intensities = -1 * spectrum[1]
+			#intensities = -1 * spectrum[1]
 		elif spectrum[3] == "G4":
 			figlabel = "B3LYP/6-31G(2df,p)"
-			intensities = -1 * spectrum[1]
-		elif spectrum[3] == "Experimental data":
-			intensities = -1 * spectrum[1]
-		plt.plot(spectrum[0], intensities, color=next(colors), linestyle=next(linestyles), label=figlabel)
-	plt.legend(loc='upper right')
-	plt.xlabel('Frequency, $cm^{-1}$')
-	plt.ylabel('IR intensity')
+			#intensities = -1 * spectrum[1]
+		#elif spectrum[3] == "Experimental data":
+			#intensities = -1 * spectrum[1]
+		plt.plot(spectrum[0], intensities, color=colors[spectrum[3]], linestyle=linestyles[spectrum[3]], label=figlabel)
+	plt.xlabel('Wavenumber, $cm^{-1}$', size = 24)
+	plt.ylabel('IR intensity', size = 24)
 	plt.yticks([])
 	plt.savefig(output, format=outformat, bbox_inches='tight')
+	plt.legend(loc='upper right')
+	plt.savefig(output2, format=outformat, bbox_inches='tight')
 	plt.close()
 	check_or_die(output, False)
 	print('\n' + outformat.upper() + ' file saved at:', output)
@@ -371,6 +440,17 @@ def save_spectra_as_figure(spectra, output_dir, molecule, outformat):
 				line.append(spectrum[1][freqn])
 			writer.writerow(line)
 
+def save_statistics(spectra, output_dir):
+	for spectrum in spectra:
+		if not spectrum[3] == "Experimental data":
+			cos_score       = cosine_distance(spectra[0][1], spectrum[1])
+			pearson_score   = pearsonr(spectra[0][1], spectrum[1])[0]
+			spearman_score  = spearmanr(spectra[0][1], spectrum[1])[0]
+			statistics_file = output_dir + '/CSV/SINGLE/' + spectrum[3] + '_statistics.csv'
+			with open(statistics_file, 'a') as csvfile:
+			 	writer = csv.writer(csvfile, delimiter='|')
+			 	writer.writerow([molecule, cos_score, pearson_score, spearman_score])
+
 def save_spectrum(exp_dir, qm_dir, qms, ff_dir, ffs, molecule, output_dir, start, stop, npoints, gamma, png, pdf, svg):
 	spectra = []
 	
@@ -387,15 +467,52 @@ def save_spectrum(exp_dir, qm_dir, qms, ff_dir, ffs, molecule, output_dir, start
 		exp_spectrum[0] = np.linspace(start, stop, npoints)
 		spectra.append(exp_spectrum)
 	
-	method_factors = {"G4": 0.965, "OEP": 0.968}
+	method_factors = {"G4": 0.955, "OEP": 0.959}
+	#method_factors = {"G4": 0.965, "OEP": 0.968}
 	for qm in qms:
 		scaling_factor = method_factors.get(qm, 1.0)
-		spectra.append(generate_spectrum(qm_dir, qm, molecule, None, start, stop, npoints, gamma, scaling_factor))
+		spectra.append(generate_spectrum(qm_dir, qm, molecule, None, start, stop, npoints, gamma, scaling_factor, output_dir, False))
 	
-	eigfreq_count = len(spectra[1][2])
+	eigfreq_count = 0
+	#len(spectra[1][2])
 	for ff in ffs:
 		scaling_factor = method_factors.get(ff, 1.0)
-		spectra.append(generate_spectrum(ff_dir, ff, molecule, eigfreq_count, start, stop, npoints, gamma, scaling_factor))
+		spectra.append(generate_spectrum(ff_dir, ff, molecule, eigfreq_count, start, stop, npoints, gamma, scaling_factor, output_dir, False))
+
+	spectra = normalize_spectra(spectra)
+	
+	#save_statistics(spectra, output_dir)
+
+	possible_formats         = ["png", "pdf", "svg"]
+	desired_formats          = [ png,   pdf,   svg ]
+	for i, desired_format in enumerate(desired_formats):
+		if desired_format:
+			selected_format = possible_formats[i]
+			if selected_format in [ "png", "pdf", "svg" ]:
+				save_spectra_as_figure(spectra, output_dir, molecule, selected_format)
+	return spectra
+
+def save_spectrum_linear(exp_dir, ff_dir, ffs, molecule, output_dir, start, stop, npoints, gamma, png, pdf, svg):
+	spectra = []
+	
+	exp_path = exp_dir + '/' + molecule + '.jdx'
+	if Path(exp_path).exists():
+		exp_spectrum, start_exp, stop_exp, deltax = read_exp_data(exp_dir, molecule)
+		if start_exp > start:
+			start = start_exp
+		if stop_exp < stop:
+			stop = stop_exp
+		exp_spectrum[1] = exp_spectrum[1][np.logical_and((np.array(exp_spectrum[0]) >= start), (np.array(exp_spectrum[0]) <= stop))]
+		#npoints = int(np.round(((stop - start) / deltax) + 1))
+		npoints = int(len(exp_spectrum[1]))
+		exp_spectrum[0] = np.linspace(start, stop, npoints)
+		spectra.append(exp_spectrum)
+	
+	eigfreq_count = 0
+	for ff in ffs:
+		scaling_factor = 1.0
+		spectra.append(generate_spectrum(ff_dir, ff, molecule, eigfreq_count, start, stop, npoints, gamma, scaling_factor, output_dir, True))
+		spectra.append(generate_spectrum(ff_dir, ff, molecule, eigfreq_count, start, stop, npoints, gamma, scaling_factor, output_dir, False))
 
 	spectra = normalize_spectra(spectra)
 	
@@ -460,7 +577,7 @@ def cmp_spectra(exp_dir, md_dir, n_pool, ff_dir, ffs, molecule, argons, output_d
 	eigfreq_count = 0
 	for ff in ffs:
 		scaling_factor = method_factors.get(ff, 1.0)
-		spectra.append(generate_spectrum(ff_dir, ff, molecule, eigfreq_count, start, stop, npoints, gamma, scaling_factor))
+		spectra.append(generate_spectrum(ff_dir, ff, molecule, eigfreq_count, start, stop, npoints, gamma, scaling_factor, output_dir, False))
 	
 	spectra = normalize_spectra(spectra)
 

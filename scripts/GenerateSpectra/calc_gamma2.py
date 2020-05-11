@@ -5,6 +5,7 @@ from spectrum_functions import *
 from pathlib import Path
 from scipy.optimize import minimize
 from scipy.optimize import minimize_scalar
+import numpy as np
 
 pwd = os.getcwd()
 parser = argparse.ArgumentParser(description='Generate the IR-spectrum for a molecule using GROMACS output files.')
@@ -24,10 +25,9 @@ parser.add_argument('--pdf'      ,                                       help='G
 parser.add_argument('--svg'      ,                                       help='Generate the spectrum as a SVG'        , action='store_true')
 
 
-def produce_measure(scaling_factor):
+def produce_measure(gamma):
 	total_score = 0
 	for molecule in molecules:
-		#print('\nNOW PROCESSING:', molecule)
 		spectra = []
 		exp_spectrum, start, stop, deltax = read_exp_data(exp_dir, molecule)
 		npoints = int(np.round(((stop - start) / deltax) + 1))
@@ -36,11 +36,11 @@ def produce_measure(scaling_factor):
 			spectra.append(generate_spectrum(qm_dir, method, molecule, None, start, stop, npoints, gamma, scaling_factor, output_dir))
 		if method in ffs:
 			spectra.append(generate_spectrum(ff_dir, method, molecule, eigfreq_count[molecule], start, stop, npoints, gamma, scaling_factor, output_dir))
-		pearson_score   = pearsonr(spectra[0][1], spectra[1][1])[0]
-		#spearman_score  = spearmanr(spectra[0][1], spectra[1][1])[0]
-		#total_score += spearman_score
-		total_score += pearson_score
-	return -1 * total_score / len(molecules)
+		#pearson_score   = pearsonr(spectra[0][1], spectra[1][1])[0]
+		spearman_score  = spearmanr(spectra[0][1], spectra[1][1])[0]
+		#total_score += pearson_score
+		total_score += spearman_score
+	return -1 * total_score 
 
 if __name__ == "__main__":
   
@@ -71,17 +71,19 @@ if __name__ == "__main__":
 	all_scaling_factors = {}
 	all_measures = {}
 	unscaled_measures = {}
-	#molecules = ["propylamine", "cyanoacetylene", "butyl-formate", "decane", "3-bromopentane"]
+	#molecules = molecules[0:5]
 	eigfreq_count = {}
 	for molecule in molecules:
 		spectrum = generate_spectrum(qm_dir, qms[0], molecule, None, start, stop, npoints, gamma, 1.0, output_dir)
 		eigfreq_count[molecule] = len(spectrum[2])
 
-	for method in types: 
-		print('\n NOW WORKING ON: ', method)
-		all_scaling_factors[method] = minimize_scalar(produce_measure).x
-		all_measures[method] = -1 * produce_measure(all_scaling_factors[method])
-		unscaled_measures[method] = -1 * produce_measure(1.0)
 	for method in types:
-		print(method, all_scaling_factors[method], all_measures[method])
-		print(method, "1.0" , unscaled_measures[method])
+		all_scaling_factors[method] = 1.0
+	all_scaling_factors['G4'] = 0.965
+	all_scaling_factors['OEP'] = 0.968
+
+	for method in types: 
+		scaling_factor = all_scaling_factors[method]
+		for gamma in range(10):
+			all_measures[method] = -1 * produce_measure((gamma + 1) * 6.0)
+			print(method, (gamma + 1) * 6.0, all_measures[method] / len(molecules))

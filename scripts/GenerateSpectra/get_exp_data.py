@@ -21,18 +21,18 @@ if __name__ == "__main__":
 	print(len(CAS_registry_numbers))	
 	
 
-	outpath = "/home/henning/JCAMP-DX/"
+	outpath = "/home/henning/JCAMP-DX_3/"
 	for i, molecule in enumerate(molecules):
 		CAS_registry_number = CAS_registry_numbers[i]
 		numbers             = CAS_registry_number.split(';')
 		for number in numbers:
-			url      = 'https://webbook.nist.gov/cgi/cbook.cgi?ID=%s&Units=SI&cIR=on' % (number.replace(" ",""))
+			url      = 'https://webbook.nist.gov/cgi/cbook.cgi?ID=%s&Units=SI&Type=IR-SPEC&Index=0' % (number.replace(" ",""))
 			response = urllib.request.urlopen(url)
 			data     = response.read()
 			text     = data.decode('utf-8')
 			lines    = text.splitlines()
 			for line in lines:
-				if "Download <a" in line:
+				if "Download <a" in line: 
 					words = line.split('"')
 					url   = "https://webbook.nist.gov" + words[1].replace("&amp;","&")
 					urllib.request.urlretrieve(url, outpath + molecule + ".jdx")

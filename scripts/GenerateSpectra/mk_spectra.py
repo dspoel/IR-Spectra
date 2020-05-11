@@ -12,10 +12,11 @@ parser.add_argument('-qms'	 , type=str  , required=True, nargs='+', help='<Requi
 parser.add_argument('-ffd'       , type=str  , required=True           , help='<Required> Input GROMACS directory with force field directories')
 parser.add_argument('-ffs'       , type=str  , required=True, nargs='+', help='<Required> List the names of the force field directories found in the input GROMACS directory' )
 parser.add_argument('-o'         , type=str  , default=pwd             , help='Output spectrum directory. DEFAULT: working directory')
-parser.add_argument('-min'       , type=int  , default=500             , help='Lowest frequency to visualize in spectrum. DEFAULT: 0')
+parser.add_argument('-min'       , type=int  , default=0               , help='Lowest frequency to visualize in spectrum. DEFAULT: 0')
 parser.add_argument('-max'       , type=int  , default=4000            , help='Highest frequency to visualize in spectrum. DEFAULT: 4000')
-parser.add_argument('-n'         , type=int  , default=876             , help='Number of points on the frequency axis. DEFAULT: 1001')
+parser.add_argument('-n'         , type=int  , default=1001            , help='Number of points on the frequency axis. DEFAULT: 1001')
 parser.add_argument('-g'         , type=float, default=24              , help='Set gamma for Cauchy distribution. DEFAULT: 24')
+parser.add_argument('--cross'    ,                                       help='Run cross comparison (requires all experimental spectra to have the same resolution)'    , action='store_true')
 parser.add_argument('--linear'   ,                                       help='Molecule is linear'                    , action='store_true')
 parser.add_argument('--png'      ,                                       help='Generate the spectrum as a PNG'        , action='store_true')
 parser.add_argument('--pdf'      ,                                       help='Generate the spectrum as a PDF'        , action='store_true')
@@ -36,12 +37,13 @@ if __name__ == "__main__":
 	stop         = args.max
 	npoints      = args.n
 	gamma        = args.g
+	do_cross     = args.cross
 	generate_png = args.png
 	generate_pdf = args.pdf
 	generate_svg = args.svg
 	
 	molecules = find_molecules(exp_dir, qm_dir, qms, ff_dir, ffs)
-	#molecules = ['butane-23-dione', 'hexane-2-thiol', 'propane-13-diol']
+	#molecules = ['cis-decalin', '13-oxazole', 'ethyl-sulfate', 'diethyl-oxalate']
 	#molecules = molecules[0:5]
 
 	print('\nThe following number of molecules were found in all listed directories and will be processed:', len(molecules))
@@ -74,5 +76,6 @@ if __name__ == "__main__":
 		all_spectra[molecule] = save_spectrum(exp_dir, qm_dir, qms, ff_dir, ffs, molecule, output_dir,
                                                      start, stop, npoints, gamma, generate_png, generate_pdf, generate_svg)
 
-	#cross_compare(molecules, all_spectra, types, output_dir)
-	#exp_intracorr(molecules, all_spectra, output_dir)
+	if do_cross:
+		cross_compare(molecules, all_spectra, types, output_dir)
+		exp_intracorr(molecules, all_spectra, output_dir)

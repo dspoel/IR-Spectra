@@ -33,9 +33,9 @@ def produce_measure(gamma):
 		npoints = int(np.round(((stop - start) / deltax) + 1))
 		spectra.append(exp_spectrum)	
 		if method in qms:
-			spectra.append(generate_spectrum(qm_dir, method, molecule, None, start, stop, npoints, gamma, scaling_factor))
+			spectra.append(generate_spectrum(qm_dir, method, molecule, None, start, stop, npoints, gamma, scaling_factor, output_dir))
 		if method in ffs:
-			spectra.append(generate_spectrum(ff_dir, method, molecule, eigfreq_count[molecule], start, stop, npoints, gamma, scaling_factor))
+			spectra.append(generate_spectrum(ff_dir, method, molecule, eigfreq_count[molecule], start, stop, npoints, gamma, scaling_factor, output_dir))
 		pearson_score   = pearsonr(spectra[0][1], spectra[1][1])[0]
 		#spearman_score  = spearmanr(spectra[0][1], spectra[1][1])[0]
 		total_score += pearson_score
@@ -74,7 +74,7 @@ if __name__ == "__main__":
 	#molecules = molecules[0:5]
 	eigfreq_count = {}
 	for molecule in molecules:
-		spectrum = generate_spectrum(qm_dir, qms[0], molecule, None, start, stop, npoints, gamma, 1.0)
+		spectrum = generate_spectrum(qm_dir, qms[0], molecule, None, start, stop, npoints, gamma, 1.0, output_dir)
 		eigfreq_count[molecule] = len(spectrum[2])
 
 	for method in types:

@@ -19,6 +19,5 @@ python /home/henning/projects/IR-Spectra/scripts/GenerateSpectra/cmp_spectra.py 
 -ffs CGenFF \
 -o /home/henning/projects/IR-Spectra/results_comp_MD \
 -max 4000 \
--g 24 \
 --png
 

@@ -5,6 +5,12 @@ IR spectra can be computed based on normal mode analysis from either quantum che
 
 Force field calculations of frequency-dependent properties have been published here: https://pubs.acs.org/doi/10.1021/acs.jpca.8b09867 and eventually the resulting spectra will be published on http://virtualchemistry.org.
 
+We have published two papers related to this work:
++ Theoretical Infrared Spectra: Quantitative Similarity Measures and Force Fields
+Henning Henschel, Alfred T. Andersson, Willem Jespers, Mohammad Mehdi Ghahremanpour, and David van der Spoel, https://doi.org/10.1021/acs.jctc.0c00126
++ An Intuitively Understandable Quality Measure for Theoretical Vibrational Spectra
+Henning Henschel and David van der Spoel, https://doi.org/10.1021/acs.jpclett.0c01655
+
 Note for using the scripts:
 ===========================
 
